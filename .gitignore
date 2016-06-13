@@ -1,5 +1,4 @@
-/target/
-
+DataProvider/target/classes/org/DataProvider/testdata/
 .DS_Store
 .classpath
 .project
