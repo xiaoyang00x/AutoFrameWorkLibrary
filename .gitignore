@@ -1,4 +1,5 @@
 DataProvider/target/
+PageObject/.gitignore
 .DS_Store
 .classpath
 .project
