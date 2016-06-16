@@ -53,7 +53,7 @@ public class WaitTool {
      * This value should be access through the getDefaultWait4Element static
      * method, to ensure that any application specific overrides are applied
      */
-    public static final int DEFAULT_WAIT_4_PAGE = 12;
+    public static final int DEFAULT_WAIT_4_PAGE = 60;
     private static int defaultWait4Page = DEFAULT_WAIT_4_PAGE;
 
     /**
@@ -117,9 +117,6 @@ public class WaitTool {
         return defaultPolling4Element;
     }
 
-    // To Prevent instantiation
-    private WaitTool() {
-    }
 
     /**
      * Wait for an expected an expectedCondition.
