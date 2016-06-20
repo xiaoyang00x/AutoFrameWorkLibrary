@@ -134,7 +134,7 @@ public class WaitTool {
 	 *             immediately propagate all others.
 	 */
 	public static <V> V waitFor(WebDriver driver, ExpectedCondition<V> expectedCondition, int timeOutInSeconds) {
-		return new WebDriverWait(driver, timeOutInSeconds, defaultPolling4Element).until(expectedCondition);
+        return new WebDriverWait(driver, timeOutInSeconds, defaultPolling4Element).until(expectedCondition);
 	}
 
 	/**

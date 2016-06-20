@@ -4,3 +4,4 @@ PageObject/.gitignore
 .classpath
 .project
 .settings/
+PageObject/target/

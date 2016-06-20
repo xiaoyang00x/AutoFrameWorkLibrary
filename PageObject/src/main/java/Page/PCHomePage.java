@@ -5,9 +5,11 @@ import org.openqa.selenium.WebElement;
 
 public class PCHomePage extends AbstractPage {
 
-	
-	public PCHomePage(WebDriver driver) {
-		super(driver,PCHomePage.class);
-	}
+    public PCHomePage() {
+    }
+
+    public PCHomePage(WebDriver driver) {
+        super(driver);
+    }
 
 }
