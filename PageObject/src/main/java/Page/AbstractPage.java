@@ -11,7 +11,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import Page.Mytest.TestPage;
 import Tool.WaitTool;
 
 public class AbstractPage {
