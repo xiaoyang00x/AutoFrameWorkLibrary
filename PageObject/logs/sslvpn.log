@@ -1,0 +1,5 @@
+2016-06-22 17:16:10,631 [main] [Factory.LogFactory] [INFO] - **----info-----**
+  2016-06-22 17:16:10,632 [main] [Factory.LogFactory] [WARN] - **----warn-----**
+  2016-06-22 17:16:10,632 [main] [Factory.LogFactory] [ERROR] - **----error-----**
+  2016-06-22 17:16:10,632 [main] [Factory.LogFactory] [FATAL] - **----fatal-----**
+  

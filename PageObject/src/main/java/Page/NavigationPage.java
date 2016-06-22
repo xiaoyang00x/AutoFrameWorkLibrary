@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import Tool.WaitTool;
+import BasicTool.WaitTool;
 
 public class NavigationPage extends AbstractPage {
 
@@ -18,11 +18,10 @@ public class NavigationPage extends AbstractPage {
     @FindBy(css = "#common-header li a[href='/functionDetail.html']")
     private WebElement FunctionDetialLink;
 
-    public NavigationPage() {
-    }
 
     public NavigationPage(WebDriver driver) {
         super(driver);
+        switchFrame();
         WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(HomePageLink), DefaultWaitElementTime4Page);
     }
 

@@ -1,21 +1,18 @@
 package Page;
 
-import java.io.File;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.PageFactory;
 
-import Tool.WaitTool;
+import BasicTool.WaitTool;
+import BasicTool.Frame.FrameNavigator;
 
 public class AbstractPage {
-    public static final int DefaultWaitElementTime4Page = 60;
 
+    protected final WebDriver driver;
+    public static final int DefaultWaitElementTime4Page = 60;
+    private final FrameNavigator frameNavigator;
 
     /**
      * Construct a Component Page Object until the page loaded.
@@ -29,16 +26,11 @@ public class AbstractPage {
      *             if the timeout expires
      * 
      */
-    public <PageObjectStyle extends AbstractPage> AbstractPage() {
-    }
 
-    public <PageObjectStyle extends AbstractPage> AbstractPage(WebDriver driver) {
+    protected <PageObjectStyle extends AbstractPage> AbstractPage(WebDriver driver) {
+        this.driver = driver;
+        this.frameNavigator = new FrameNavigator(driver, this);
         WaitTool.waitFor(driver, WaitTool.pageLoadDone());
-
-    }
-
-    protected <PageObjectStyle extends AbstractPage> AbstractPage(WebDriver driver, WebElement webElement, int waitTime) {
-        WaitTool.waitFor(driver, waitTime, webElement);
 
     }
 
@@ -51,7 +43,7 @@ public class AbstractPage {
      * @return Whether or not the element is displayed
      */
 
-    public static boolean isDisplayed(final WebDriver driver, final WebElement element) {
+    protected static boolean isDisplayed(final WebDriver driver, final WebElement element) {
         try {
             return element.isDisplayed();
         } catch (NoSuchElementException e) {
@@ -59,5 +51,23 @@ public class AbstractPage {
         }
     }
 
+    /**
+     * Explicitly switch the current frame to the default frame for this page. This method is already invoked by all
+     * methods in this class, where applicable.
+     */
+    protected void switchFrame() {
+        frameNavigator.switchFrame();
+    }
+
+    /**
+     * Explicitly switch the current frame to the frame of a WebElement. This method is already invoked by all methods
+     * in this class, where applicable.
+     * 
+     * @param element
+     *            the WebElement used to determine the target frame.
+     */
+    protected void switchFrame(WebElement element) {
+        frameNavigator.switchFrame(element);
+    }
 
 }
