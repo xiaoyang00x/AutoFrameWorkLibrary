@@ -10,9 +10,16 @@ import BasicTool.Frame.FrameNavigator;
 
 public class AbstractPage {
 
-    protected final WebDriver driver;
+    protected WebDriver driver;
     public static final int DefaultWaitElementTime4Page = 60;
-    private final FrameNavigator frameNavigator;
+    protected FrameNavigator frameNavigator;
+
+    /**
+     * This no paramater construct for init element
+     */
+    protected <PageObjectStyle extends AbstractPage> AbstractPage() {
+
+    }
 
     /**
      * Construct a Component Page Object until the page loaded.

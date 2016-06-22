@@ -18,6 +18,8 @@ public class NavigationPage extends AbstractPage {
     @FindBy(css = "#common-header li a[href='/functionDetail.html']")
     private WebElement FunctionDetialLink;
 
+    public NavigationPage() {
+    }
 
     public NavigationPage(WebDriver driver) {
         super(driver);
