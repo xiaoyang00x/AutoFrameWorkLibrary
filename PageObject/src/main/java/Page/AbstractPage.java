@@ -5,6 +5,7 @@ import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import BasicTool.WaitTool;
 import BasicTool.Frame.FrameNavigator;
@@ -45,12 +46,12 @@ public class AbstractPage {
      * @return Whether or not the element is displayed
      */
 
-    protected static boolean isDisplayed(final WebDriver driver, final WebElement element) {
+    protected static boolean isDisplayed(WebElement element) {
         try {
             return element.isDisplayed();
         } catch (NoSuchElementException e) {
-            return false;
         }
+        return false;
     }
 
     /**
@@ -70,6 +71,48 @@ public class AbstractPage {
      */
     protected void switchFrame(WebElement element) {
         frameNavigator.switchFrame(element);
+    }
+
+    /**
+     * A simple click mehtod
+     * 
+     * @param element
+     *            You want to click element
+     */
+    protected void click(WebElement element) {
+        switchFrame(element);
+        isDisplayed(element);
+        element.click();
+
+    }
+
+    /**
+     * 
+     * @param element
+     *            click on element
+     * @param nextPageClass
+     *            expect pageobject's class
+     * @return
+     * @throws Exception
+     */
+    protected <W extends AbstractPage> W click(WebElement element, Class<W> nextPageClass) throws Exception {
+        click(element);
+        return nextPageClass.getDeclaredConstructor(WebDriver.class).newInstance(this.driver);
+    }
+
+    /**
+     * 
+     * @param element
+     *            click on element
+     * @param expectedElement
+     *            except to get element
+     * @return
+     * @throws Exception
+     */
+    protected WebElement click(WebElement element, WebElement expectedElement) throws Exception {
+        click(element);
+        return ((WebElement) WaitTool.waitFor(this.driver, ExpectedConditions.visibilityOf(expectedElement),
+                WaitTool.getDefaultWait4Page()));
     }
 
 }
