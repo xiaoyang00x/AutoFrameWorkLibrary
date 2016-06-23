@@ -4,6 +4,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
 import BasicTool.WaitTool;
 import BasicTool.Frame.FrameNavigator;
@@ -12,14 +13,7 @@ public class AbstractPage {
 
     protected WebDriver driver;
     public static final int DefaultWaitElementTime4Page = 60;
-    protected FrameNavigator frameNavigator;
-
-    /**
-     * This no paramater construct for init element
-     */
-    protected <PageObjectStyle extends AbstractPage> AbstractPage() {
-
-    }
+    protected final FrameNavigator frameNavigator;
 
     /**
      * Construct a Component Page Object until the page loaded.
@@ -38,6 +32,7 @@ public class AbstractPage {
         this.driver = driver;
         this.frameNavigator = new FrameNavigator(driver, this);
         WaitTool.waitFor(driver, WaitTool.pageLoadDone());
+        PageFactory.initElements(driver, this);
 
     }
 
