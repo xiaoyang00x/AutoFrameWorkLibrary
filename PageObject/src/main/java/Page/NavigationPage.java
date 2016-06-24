@@ -16,7 +16,7 @@ public class NavigationPage extends AbstractPage {
     private WebElement PayPageLink;
 
     @FindBy(css = "#common-header li a[href='/functionDetail.html']")
-    private WebElement FunctionDetialLink;
+    private WebElement FunctionDetaillLink;
 
     public NavigationPage(WebDriver driver) {
         super(driver);
@@ -24,12 +24,12 @@ public class NavigationPage extends AbstractPage {
         WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(HomePageLink), DefaultWaitElementTime4Page);
     }
 
-    public void clickPayPageLink() {
-        PayPageLink.click();
+    public PaymentPage clickPayPageLink() throws Exception {
+        return click(PayPageLink, PaymentPage.class);
     }
 
-    public void clickFunctionDetialLink() {
-        FunctionDetialLink.click();
+    public FunctionDetailPage clickFunctionDetaillLink() throws Exception {
+        return click(FunctionDetaillLink, FunctionDetailPage.class);
     }
 
 }
