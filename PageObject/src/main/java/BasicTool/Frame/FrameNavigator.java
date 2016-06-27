@@ -65,17 +65,8 @@ public class FrameNavigator {
      *            the named frame
      */
     public void switchFrame(String newFrame) {
-        // FWK-680 in a component framing system. This fails to work correctly.
-        // It also fails in a martini-perf-api environment as there the perf
-        // might change frames.
-        // if (!currentFrame.equals(newFrame)) {
-        logger.info("Switching to frame: " + newFrame);
-        /*
-         * if (driver instanceof InternetExplorerDriver) { switchFrame(""); }
-         */
         switchFrame(driver, newFrame);
         currentFrame = newFrame;
-        // }
     }
 
     /**
