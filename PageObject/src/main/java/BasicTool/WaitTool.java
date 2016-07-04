@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class WaitTool {
 
     /**
-     * Default wait time for an element. 7 seconds.
+     * Default wait time for an element. 60 seconds.
      * <p>
      * This value should be access through the getDefaultWait4Element static method, to ensure that any application
      * specific overrides are applied
