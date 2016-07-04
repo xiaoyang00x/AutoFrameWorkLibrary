@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import com.customize.reporter.WebReporter;
+
 import BasicTool.WaitTool;
 import BasicTool.Frame.FrameNavigator;
 
@@ -80,6 +82,7 @@ public class AbstractPage {
      *            You want to click element
      */
     protected void click(WebElement element) {
+    	WebReporter.log(driver, driver.getTitle(), true, true);
         switchFrame(element);
         isDisplayed(element);
         element.click();
@@ -96,6 +99,7 @@ public class AbstractPage {
      * @throws Exception
      */
     protected <W extends AbstractPage> W click(WebElement element, Class<W> nextPageClass) throws Exception {
+    	WebReporter.log(driver, driver.getTitle(), true, true);
         click(element);
         return nextPageClass.getDeclaredConstructor(WebDriver.class).newInstance(this.driver);
     }
@@ -110,6 +114,7 @@ public class AbstractPage {
      * @throws Exception
      */
     protected WebElement click(WebElement element, WebElement expectedElement) throws Exception {
+    	WebReporter.log(driver, driver.getTitle(), true, true);
         click(element);
         return ((WebElement) WaitTool.waitFor(this.driver, ExpectedConditions.visibilityOf(expectedElement),
                 WaitTool.getDefaultWait4Page()));
