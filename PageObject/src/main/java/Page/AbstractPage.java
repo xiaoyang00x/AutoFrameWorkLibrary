@@ -82,7 +82,6 @@ public class AbstractPage {
      *            You want to click element
      */
     protected void click(WebElement element) {
-    	WebReporter.log(driver, driver.getTitle(), true, true);
         switchFrame(element);
         isDisplayed(element);
         element.click();
