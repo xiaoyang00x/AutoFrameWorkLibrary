@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.lendingtreasure</groupId>
 	<artifactId>H5AutoFreamWorkLibrary</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 	<modules>
 		<module>PageObject</module>
@@ -25,5 +25,27 @@
 		</dependency>
 	</dependencies>
 
+
+	<repositories>
+        <repository>
+            <id>JDB</id>
+            <name>H5AutomationNexus</name>
+            <url>http://localhost:8081/nexus/content/repositories/JDB</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+	
+	 <distributionManagement>
+        <repository>
+            <id>JDB</id>
+            <name>H5AutomationNexus</name>
+            <url>http://localhost:8081/nexus/content/repositories/JDB</url>
+        </repository>
+    </distributionManagement>
 
 </project>
