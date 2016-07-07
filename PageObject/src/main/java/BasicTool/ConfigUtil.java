@@ -39,11 +39,11 @@ public class ConfigUtil {
 		return testConfig.getProperty(key);
 	}
 
-	public static void setConfigValue(String... Paramater) {		
-			for (String paramater : Paramater) {
-				System.out.println("*********"+paramater+"*********");
+	public static void setConfigValue(String... Paramater) {
+		for (String paramater : Paramater) {
+			if (System.getProperty(paramater) != null)
 				testConfig.setProperty(paramater, System.getProperty(paramater));
-			}
+		}
 
 	}
 
