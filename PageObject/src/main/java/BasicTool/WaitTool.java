@@ -92,8 +92,8 @@ public class WaitTool {
      *            the new polling value. If <code>null</code> the value reverts back to DEFAULT_POLLING_4_ELEMENT.
      */
     public static void setDefaultPolling4Element(Integer timeoutInMilliSeconds) {
-        defaultPolling4Element = timeoutInMilliSeconds == null || timeoutInMilliSeconds <= DEFAULT_POLLING_4_ELEMENT ? DEFAULT_POLLING_4_ELEMENT
-                : timeoutInMilliSeconds;
+        defaultPolling4Element = timeoutInMilliSeconds == null || timeoutInMilliSeconds <= DEFAULT_POLLING_4_ELEMENT
+                ? DEFAULT_POLLING_4_ELEMENT : timeoutInMilliSeconds;
     }
 
     /**

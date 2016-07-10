@@ -12,7 +12,6 @@ public class PaymentPage extends AbstractPage {
     @FindBy(css = "#qrcode img.canvasStyle")
     private WebElement qrcodeIMG;
 
-
     public PaymentPage(WebDriver driver) {
         super(driver);
         WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(qrcodeIMG), 60);

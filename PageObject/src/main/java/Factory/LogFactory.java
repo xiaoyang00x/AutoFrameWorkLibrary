@@ -7,8 +7,8 @@ public class LogFactory {
     private static Logger log = Logger.getLogger(LogFactory.class);
 
     static {
-        PropertyConfigurator.configure(Thread.currentThread().getContextClassLoader().getResource("log4j.propertie")
-                .getPath());
+        PropertyConfigurator
+                .configure(Thread.currentThread().getContextClassLoader().getResource("log4j.propertie").getPath());
     }
 
     public static Logger getLogger(Class<?> clazz) {

@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import org.apache.log4j.Logger;
 
 import Factory.LogFactory;
@@ -262,6 +263,7 @@ public class ReflectionUtils {
     }
 
     private static Map<Class<?>, Class<?>> SPECIAL_TYPES = new HashMap<Class<?>, Class<?>>();
+
     static {
         SPECIAL_TYPES.put(Byte.TYPE, Byte.class);
         SPECIAL_TYPES.put(Short.TYPE, Short.class);

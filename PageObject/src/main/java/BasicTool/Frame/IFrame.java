@@ -1,12 +1,10 @@
 package BasicTool.Frame;
 
-
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-
 
 /**
  * A annotation that describes the frame represented by the page object.
@@ -21,7 +19,7 @@ import java.lang.annotation.Target;
  * For example:
  * 
  * <pre>
- * @IFrame(name="contents.broadcast")
+ * &#64;IFrame(name="contents.broadcast")
  * public class FramePage extends MyAppWebPage {
  *  
  *  ... // Rest of class declaration
@@ -42,4 +40,3 @@ public @interface IFrame {
 
     String cssLocator() default FrameNavigator.NO_SUCH_FRAME;
 }
-

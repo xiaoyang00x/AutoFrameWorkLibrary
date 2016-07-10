@@ -20,17 +20,16 @@ public class NavigationPage extends AbstractPage {
 
     @FindBy(css = "[href='https://qiye.jiedaibao.com/']")
     private WebElement BusinessVersionLink;
-    
+
     @FindBy(css = "[href='/pcNewsList.html']")
     private WebElement NewListLink;
-    
+
     @FindBy(css = "[href='/partials/aboutUs/promoterApply.html']")
     private WebElement PromotionAndCooperationLink;
-    
+
     @FindBy(css = "[href='/pcAbout.html']")
     private WebElement AboutWeLink;
-    
-    
+
     public NavigationPage(WebDriver driver) {
         super(driver);
         switchFrame();
@@ -45,21 +44,20 @@ public class NavigationPage extends AbstractPage {
         return click(FunctionDetaillLink, FunctionDetailPage.class);
     }
 
-    public BusinessVersionPage clickBusinessVersionLink() throws Exception{
-    	return click(BusinessVersionLink,BusinessVersionPage.class);
+    public BusinessVersionPage clickBusinessVersionLink() throws Exception {
+        return click(BusinessVersionLink, BusinessVersionPage.class);
     }
-   
-    
-    public NewListPage clickNewListLink() throws Exception{
-    	return click(NewListLink,NewListPage.class);
+
+    public NewListPage clickNewListLink() throws Exception {
+        return click(NewListLink, NewListPage.class);
     }
-    
-    public PromotionAndCooperationPage clickPromotionAndCooperationLink() throws Exception{
-    	return click(PromotionAndCooperationLink,PromotionAndCooperationPage.class);
+
+    public PromotionAndCooperationPage clickPromotionAndCooperationLink() throws Exception {
+        return click(PromotionAndCooperationLink, PromotionAndCooperationPage.class);
     }
-    
-    public AboutWePage clickAboutWeLink() throws Exception{
-    	return click(AboutWeLink,AboutWePage.class);
+
+    public AboutWePage clickAboutWeLink() throws Exception {
+        return click(AboutWeLink, AboutWePage.class);
     }
-    
+
 }

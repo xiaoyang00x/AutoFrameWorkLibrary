@@ -47,8 +47,8 @@ public class WindowsUtil {
     }
 
     /**
-     * Explicitly switch from the new window to previous window. This method is already invoked by all methods in this class,
-     * where applicable.
+     * Explicitly switch from the new window to previous window. This method is already invoked by all methods in this
+     * class, where applicable.
      * 
      * @return
      */

@@ -37,10 +37,10 @@ public abstract class Container {
         }
         throw new Exception("Element with partial text '" + text + "' was not foun!");
     }
-    
-    protected WebElement getElementByPartialValue(By by, String text) throws Exception{
-        for(WebElement element : parentElement){
-            if( element.findElement(by).getAttribute("value").contains(text)){
+
+    protected WebElement getElementByPartialValue(By by, String text) throws Exception {
+        for (WebElement element : parentElement) {
+            if (element.findElement(by).getAttribute("value").contains(text)) {
                 return element.findElement(by);
             }
         }
@@ -54,7 +54,7 @@ public abstract class Container {
         }
         return -1;
     }
-    
+
     protected int getElementIndexByPartialText(By by, String text) {
         for (WebElement element : parentElement) {
             if (element.findElement(by).getText().contains(text))
@@ -62,7 +62,7 @@ public abstract class Container {
         }
         return -1;
     }
-    
+
     protected int getElementIndexByPartialValue(By by, String text) {
         for (WebElement element : parentElement) {
             if (element.findElement(by).getAttribute("value").contains(text))
@@ -78,7 +78,7 @@ public abstract class Container {
     protected WebElement getElement(By by) {
         return parentElement.get(index).findElement(by);
     }
-    
+
     protected String getElement(int index) {
         return parentElement.get(index).getText();
     }

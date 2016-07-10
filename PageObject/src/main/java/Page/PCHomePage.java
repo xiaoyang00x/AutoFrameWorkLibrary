@@ -8,9 +8,9 @@ import BasicTool.WaitTool;
 
 public class PCHomePage extends AbstractPage {
 
-	@FindBy(css = "div.downloads")
-	private WebElement DownLoadButton;
-	
+    @FindBy(css = "div.downloads")
+    private WebElement DownLoadButton;
+
     public PCHomePage(WebDriver driver) {
         super(driver);
         WaitTool.waitFor(driver, WaitTool.DEFAULT_WAIT_4_ELEMENT, DownLoadButton);
