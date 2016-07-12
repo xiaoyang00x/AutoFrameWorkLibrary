@@ -29,7 +29,7 @@ public class AbstractPage {
      * 
      */
 
-    protected <PageObjectStyle extends AbstractPage> AbstractPage(WebDriver driver) {
+    protected AbstractPage(WebDriver driver) {
         this.driver = driver;
         this.frameNavigator = new FrameNavigator(driver, this);
         WaitTool.waitFor(driver, WaitTool.pageLoadDone());

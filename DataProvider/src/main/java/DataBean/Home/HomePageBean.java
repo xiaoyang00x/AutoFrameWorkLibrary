@@ -38,10 +38,4 @@ public class HomePageBean {
         this.sex = sex;
     }
 
-    public static void main(String[] args) {
-        System.out.println(HomePageBean.class.getResource(""));
-        System.out.println(HomePageBean.class.getName().replace(".", "/").replace("DataBean", "Yaml"));
-        System.out.println(HomePageBean.class.getClassLoader().getResource(""));
-
-    }
 }
