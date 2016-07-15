@@ -1,4 +1,4 @@
-package BasicTool;
+package BasicTool.Config;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -55,6 +55,17 @@ public class ConfigUtil {
             e.printStackTrace();
         }
         return testconfigProperties;
+    }
+
+    public static void initTestConfig() {
+
+        for (String value : TESTCONFIG.getAllEnumValue()) {
+            try {
+                testConfig.setProperty(value, System.getProperty(value));
+            } catch (NullPointerException e) {
+
+            }
+        }
     }
 
 }
