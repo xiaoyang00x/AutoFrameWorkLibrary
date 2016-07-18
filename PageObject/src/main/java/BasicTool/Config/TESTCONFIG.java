@@ -16,7 +16,6 @@ public enum TESTCONFIG {
     INTERNETEXPLORERDRIVERPATH("internetExplorerDriverPath"),
     SAFARIVERSION("safariVersion"),
     DEFAULTURL("defaultURL"),
-    GROUP("group"),
     TESTNAME("testName"),
     REMOTEDRIVER("remoteDriverURL");
 
