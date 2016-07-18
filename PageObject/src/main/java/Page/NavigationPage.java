@@ -60,4 +60,8 @@ public class NavigationPage extends AbstractPage {
         return click(AboutWeLink, AboutWePage.class);
     }
 
+    public PCHomePage clickHomePageLink() throws Exception {
+        return click(HomePageLink, PCHomePage.class);
+    }
+
 }
