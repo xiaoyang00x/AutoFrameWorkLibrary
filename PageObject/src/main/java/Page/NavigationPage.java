@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import Page.Payment.PaymentLoginPage;
 import BasicTool.WaitTool;
 
 public class NavigationPage extends AbstractPage {
@@ -36,8 +37,8 @@ public class NavigationPage extends AbstractPage {
         WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(HomePageLink), DefaultWaitElementTime4Page);
     }
 
-    public PaymentPage clickPayPageLink() throws Exception {
-        return click(PayPageLink, PaymentPage.class);
+    public PaymentLoginPage clickPayPageLink() throws Exception {
+        return click(PayPageLink, PaymentLoginPage.class);
     }
 
     public FunctionDetailPage clickFunctionDetaillLink() throws Exception {
@@ -56,8 +57,8 @@ public class NavigationPage extends AbstractPage {
         return click(PromotionAndCooperationLink, PromotionAndCooperationPage.class);
     }
 
-    public AboutWePage clickAboutWeLink() throws Exception {
-        return click(AboutWeLink, AboutWePage.class);
+    public AboutUsPage clickAboutWeLink() throws Exception {
+        return click(AboutWeLink, AboutUsPage.class);
     }
 
     public PCHomePage clickHomePageLink() throws Exception {
