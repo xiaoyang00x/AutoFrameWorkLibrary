@@ -17,7 +17,8 @@ public enum TESTCONFIG {
     SAFARIVERSION("safariVersion"),
     DEFAULTURL("defaultURL"),
     TESTNAME("testName"),
-    REMOTEDRIVER("remoteDriverURL");
+    REMOTEDRIVER("remoteDriverURL"),
+    PAYMENTURL("paymentURL");
 
     String value;
 
