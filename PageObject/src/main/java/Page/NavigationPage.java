@@ -29,7 +29,7 @@ public class NavigationPage extends AbstractPage {
     private WebElement PromotionAndCooperationLink;
 
     @FindBy(css = "[href='/pcAbout.html']")
-    private WebElement AboutWeLink;
+    private WebElement aboutUsLink;
 
     public NavigationPage(WebDriver driver) {
         super(driver);
@@ -57,8 +57,8 @@ public class NavigationPage extends AbstractPage {
         return click(PromotionAndCooperationLink, PromotionAndCooperationPage.class);
     }
 
-    public AboutUsPage clickAboutWeLink() throws Exception {
-        return click(AboutWeLink, AboutUsPage.class);
+    public AboutUsPage clickAboutUsLink() throws Exception {
+        return click(aboutUsLink, AboutUsPage.class);
     }
 
     public PCHomePage clickHomePageLink() throws Exception {

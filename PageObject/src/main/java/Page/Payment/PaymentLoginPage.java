@@ -15,7 +15,7 @@ public class PaymentLoginPage extends AbstractPage {
     @FindBy(css = "#qrcode img.canvasStyle")
     private WebElement qrcodeIMG;
 
-    @FindBy(tagName = "qrcode")
+    @FindBy(css = "qrcode")
     private WebElement qrCode;
 
     PaymentLoginScanQRCodeUtils login = PaymentLoginScanQRCodeUtils.getInstance();
