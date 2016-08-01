@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import BasicTool.WaitTool;
+import BasicTool.Config.ConfigUtil;
 import BasicTool.QRCode.PaymentLoginScanQRCodeUtils;
 import Page.AbstractPage;
 
@@ -41,6 +42,14 @@ public class PaymentLoginPage extends AbstractPage {
         login.setAndriodRequestParams(getTokenFromQrCode());
         login.sendPostRequest();
         return new PaymentBalancePage(driver);
+    }
+
+    public PaymentBalancePage loginPaymentPage(String loginDevice) throws Exception {
+        System.out.println(ConfigUtil.getConfigUtil().getConfigFileContent("phonePlatform"));
+        if (ConfigUtil.getConfigUtil().getConfigFileContent("phonePlatform").equals(loginDevice))
+            return scanQrCodeByIOS();
+        else
+            return scanQrCodeByANDRIOD();
     }
 
 }

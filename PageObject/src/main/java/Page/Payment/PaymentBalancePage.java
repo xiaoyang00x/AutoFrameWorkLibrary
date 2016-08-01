@@ -9,19 +9,19 @@ import BasicTool.WaitTool;
 import Page.AbstractPage;
 
 public class PaymentBalancePage extends AbstractPage {
-	
-	@FindBy(css = ".countNum.ng-binding")
-	private WebElement balanceNumber;
-	
-	@FindBy(css = ".usherbtn")
-	private WebElement logoutButton;
-	
-	public PaymentBalancePage(WebDriver driver) {
+
+    @FindBy(css = "a[ng-href='/pay']")
+    private WebElement paymentNowButton;
+
+    @FindBy(css = ".usherbtn")
+    private WebElement logoutButton;
+
+    public PaymentBalancePage(WebDriver driver) {
         super(driver);
-        WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(balanceNumber), 60);
+        WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(paymentNowButton), 60);
     }
-	
-	public PaymentLoginPage logout() throws Exception {
-		return click(logoutButton, PaymentLoginPage.class);
-	}
+
+    public PaymentLoginPage logout() throws Exception {
+        return click(logoutButton, PaymentLoginPage.class);
+    }
 }

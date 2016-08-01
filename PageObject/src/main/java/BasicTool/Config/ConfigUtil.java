@@ -57,6 +57,10 @@ public class ConfigUtil {
         return testconfigProperties;
     }
 
+    /**
+     * init test_Config File for run testcases by paramater.
+     */
+
     public static void initTestConfig() {
 
         for (String value : TESTCONFIG.getAllEnumValue()) {
@@ -66,6 +70,15 @@ public class ConfigUtil {
 
             }
         }
+    }
+
+    /**
+     * 
+     * @return testConfig filed
+     */
+
+    public static Properties getTestConfig() {
+        return testConfig;
     }
 
 }

@@ -18,7 +18,8 @@ public enum TESTCONFIG {
     DEFAULTURL("defaultURL"),
     TESTNAME("testName"),
     REMOTEDRIVER("remoteDriverURL"),
-    PAYMENTURL("paymentURL");
+    PAYMENTURL("paymentURL"),
+    PHONEPLATFORM("phonePlatform");
 
     String value;
 
