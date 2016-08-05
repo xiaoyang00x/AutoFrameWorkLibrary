@@ -34,7 +34,6 @@ public class AbstractPage {
         this.frameNavigator = new FrameNavigator(driver, this);
         WaitTool.waitFor(driver, WaitTool.pageLoadDone());
         PageFactory.initElements(driver, this);
-
     }
 
     /**

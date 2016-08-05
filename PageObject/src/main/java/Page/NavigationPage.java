@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Page.Payment.PaymentLoginPage;
+import Page.promoterApply.OpromoterApplyPage;
 import BasicTool.WaitTool;
 
 public class NavigationPage extends AbstractPage {
@@ -26,7 +27,7 @@ public class NavigationPage extends AbstractPage {
     private WebElement NewListLink;
 
     @FindBy(css = "[href='/partials/aboutUs/promoterApply.html']")
-    private WebElement PromotionAndCooperationLink;
+    private WebElement promoterApplyLink;
 
     @FindBy(css = "[href='/pcAbout.html']")
     private WebElement aboutUsLink;
@@ -53,8 +54,8 @@ public class NavigationPage extends AbstractPage {
         return click(NewListLink, NewListPage.class);
     }
 
-    public PromotionAndCooperationPage clickPromotionAndCooperationLink() throws Exception {
-        return click(PromotionAndCooperationLink, PromotionAndCooperationPage.class);
+    public OpromoterApplyPage clickPromoterApplyLink() throws Exception {
+        return click(promoterApplyLink, OpromoterApplyPage.class);
     }
 
     public AboutUsPage clickAboutUsLink() throws Exception {
