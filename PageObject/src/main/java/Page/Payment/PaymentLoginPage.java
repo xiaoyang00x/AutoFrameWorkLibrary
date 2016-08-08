@@ -46,7 +46,7 @@ public class PaymentLoginPage extends AbstractPage {
 
     public PaymentBalancePage loginPaymentPage(String loginDevice) throws Exception {
         System.out.println(ConfigUtil.getConfigUtil().getConfigFileContent("phonePlatform"));
-        if (ConfigUtil.getConfigUtil().getConfigFileContent("phonePlatform").equals(loginDevice))
+        if ("IOS".equals(loginDevice))
             return scanQrCodeByIOS();
         else
             return scanQrCodeByANDRIOD();

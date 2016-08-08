@@ -1,6 +1,7 @@
 package DataBean.Home;
 
-import DataTool.DataFactory;
+import DataBean.OpromoterBean;
+import DataTool.InitYamlFileUtil;
 
 public class Mytest {
 
@@ -42,15 +43,10 @@ public class Mytest {
     }
 
     public static void main(String[] args) {
-        // Mytest mytest = new Mytest();
-        //
-        // mytest.setAge(25);
-        // mytest.setName("yangyu");
-        // mytest.setSex("male");
-        // mytest.setHomePageBean(DataFactory.GetData(HomePageBean.class));
-        // InitYamlFileUtil.initYamlFile(mytest);
-        Mytest mytest = DataFactory.GetData(Mytest.class);
-        System.out.println(mytest);
+        OpromoterBean opromoterBean = new OpromoterBean("tester", "612657189910110389", "19100000012",
+                "test@jiedaibao.com", "北京", "沙河", "cooperSource");
+        InitYamlFileUtil.initYamlFile(opromoterBean);
+
     }
 
 }
