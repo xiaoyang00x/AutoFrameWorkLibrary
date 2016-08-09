@@ -2,13 +2,11 @@ package Page.promoterApply;
 
 import java.util.List;
 
-import org.openqa.selenium.JavascriptExecutor;
+import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import com.customize.reporter.WebReporter;
 
 import BasicTool.WaitTool;
 import DataBean.OpromoterBean;
@@ -54,48 +52,37 @@ public class OpromoterApplyPage extends AbstractPage{
 	@FindBy(css="a[href*='company']")
 	private WebElement companyOpromoterLink;
 	
-	@FindBy(css=".blue_toast")
-	private WebElement sucessToastLabel;
-
 	public OpromoterApplyPage(WebDriver driver) {
 		super(driver);
 		WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(personRadioButton), 60);
 	}
-	public void applyForPersonOpromoter(OpromoterBean opromoter)throws Exception{
-		click(personRadioButton,promoterNameTextFiled);
-		fillOpromoterInformation(opromoter);
-		WebReporter.log(driver, driver.getTitle(), true, true);
-	}
-	
-	
-	public void applyForCompanyOpromoter(OpromoterBean opromoter)throws Exception{
-		click(companyRadioButton,promoterNameTextFiled);
-		fillOpromoterInformation(opromoter);
-		Thread.sleep(1000);
-		WebReporter.log(driver, driver.getTitle(), true, true);
-	}
 	
     public void fillOpromoterInformation(OpromoterBean opromoter) throws Exception{
-    	if(!opromoter.getPromoterName().equals("") || opromoter.getPromoterName()!=null){
+    	if(opromoter.getPromotionDirection()== 0){
+    		click(personRadioButton,promoterNameTextFiled);
+    	}else{
+    		click(companyRadioButton,promoterNameTextFiled);
+    	}
+    	if(StringUtils.isNoneEmpty(opromoter.getPromoterName())){
     		setInputText(promoterNameTextFiled, opromoter.getPromoterName());
     	}
-    	if(!opromoter.getIdCardNo().equals("") || opromoter.getIdCardNo()!=null){
+    	if(StringUtils.isNoneEmpty(opromoter.getIdCardNo())){
     		setInputText(IdCardNoTextFiled, opromoter.getIdCardNo());
     	}
-    	if(!opromoter.getTelePhoneNo().equals("") || opromoter.getTelePhoneNo()!=null){
+    	if(StringUtils.isNoneEmpty(opromoter.getTelePhoneNo())){
     		setInputText(telePhoneNoTextFiled, opromoter.getTelePhoneNo());
     	}
-    	if(!opromoter.getEmail().equals("") || opromoter.getEmail()!=null){
+    	if(StringUtils.isNoneEmpty(opromoter.getEmail())){
     		setInputText(emailTextFiled, opromoter.getEmail());
     	}
-        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView()", emailTextFiled);
-    	if(!opromoter.getProvince().equals("") || opromoter.getProvince()!=null){
-    		selectProvinceByLabel(opromoter.getProvince());
+    	if(StringUtils.isNoneEmpty(opromoter.getProvince())){
+    		setInputText(provinceTextFiled, opromoter.getProvince());
+    		emailTextFiled.click();
     	}
-    	if(!opromoter.getCity().equals("") || opromoter.getCity()!=null){
+    	if(StringUtils.isNoneEmpty(opromoter.getCity())){
     		setInputText(cityTextFiled, opromoter.getCity());
     	}
-    	if(!opromoter.getCooperSource().equals("") || opromoter.getCooperSource()!=null){
+    	if(StringUtils.isNoneEmpty(opromoter.getCooperSource())){
     		setInputText(cooperSourceTextFiled, opromoter.getCooperSource());
     	}
 	}
@@ -113,9 +100,8 @@ public class OpromoterApplyPage extends AbstractPage{
     	throw new Exception("The expected option is not listed in select list options");
     }
     
-	public void clickSubmitButton() throws Exception{
-		click(submitButton,sucessToastLabel);
-		WebReporter.log(driver, driver.getTitle(), true, true);
+	public SucessToastPage clickSubmitButton() throws Exception{
+		return click(submitButton,SucessToastPage.class);
 	}
 	
 	public PersonOpromoterPage clickPersonOpromoterLink() throws Exception{

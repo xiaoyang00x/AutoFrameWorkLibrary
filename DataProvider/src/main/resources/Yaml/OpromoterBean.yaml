@@ -1,8 +1,9 @@
 --- !DataBean.OpromoterBean
+promoterName: tester1
+idCardNo: 612657189910110389
+telePhoneNo: 19100000012
+email: test@jiedaibao.com
+province: 北京
 city: 沙河
 cooperSource: cooperSource
-email: test@jiedaibao.com
-idCardNo: "612657189910110389"
-promoterName: tester1
-province: 北京
-telePhoneNo: "19100000012"
+promotionDirection: 0
