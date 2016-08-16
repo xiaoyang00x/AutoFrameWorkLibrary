@@ -67,7 +67,6 @@ public class ConfigUtil {
             try {
                 testConfig.setProperty(value, System.getProperty(value));
             } catch (NullPointerException e) {
-
             }
         }
     }

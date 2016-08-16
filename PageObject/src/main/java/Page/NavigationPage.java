@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import BasicTool.WaitTool;
 import Page.Payment.PaymentLoginPage;
 import Page.promoterApply.OpromoterApplyPage;
-import BasicTool.WaitTool;
 
 public class NavigationPage extends AbstractPage {
 

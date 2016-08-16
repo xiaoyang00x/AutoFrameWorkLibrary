@@ -9,12 +9,12 @@ import BasicTool.WaitTool;
 import Page.AbstractPage;
 
 public class PersonOpromoterPage extends AbstractPage {
-	@FindBy(id="typeText")
-	private WebElement titleLabel;
+    @FindBy(id = "typeText")
+    private WebElement titleLabel;
 
-	public PersonOpromoterPage(WebDriver driver) {
-		super(driver);
-		WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(titleLabel), 60);
-	}
+    public PersonOpromoterPage(WebDriver driver) {
+        super(driver);
+        WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(titleLabel), 60);
+    }
 
 }
