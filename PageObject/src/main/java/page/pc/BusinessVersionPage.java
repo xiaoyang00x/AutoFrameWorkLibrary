@@ -1,4 +1,4 @@
-package page;
+package page.pc;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 import basicTool.WaitTool;
 
-public class BusinessVersionPage extends AbstractPage {
+public class BusinessVersionPage extends AbstractPCPage {
 
     @FindBy(css = "[href='#/news']")
     private WebElement newsLabel;

@@ -1,4 +1,4 @@
-package page;
+package page.pc;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,10 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import basicTool.WaitTool;
-import page.payment.PaymentLoginPage;
-import page.promoterApply.OpromoterApplyPage;
+import page.pc.payment.PaymentLoginPage;
+import page.pc.promoterApply.OpromoterApplyPage;
 
-public class NavigationPage extends AbstractPage {
+public class NavigationPage extends AbstractPCPage {
 
     @FindBy(css = "#common-header li a[href='/pcIndex.html']")
     private WebElement HomePageLink;

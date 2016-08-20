@@ -1,4 +1,4 @@
-package page.promoterApply;
+package page.pc.promoterApply;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import basicTool.WaitTool;
-import page.AbstractPage;
+import page.pc.AbstractPCPage;
 
-public class CompanyOpromoterPage extends AbstractPage {
+public class CompanyOpromoterPage extends AbstractPCPage {
 
     @FindBy(id = "typeText")
     private WebElement titleLabel;

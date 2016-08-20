@@ -1,4 +1,4 @@
-package page.payment;
+package page.pc.payment;
 
 import org.json.JSONObject;
 import org.openqa.selenium.WebDriver;
@@ -9,9 +9,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import basicTool.WaitTool;
 import basicTool.config.ConfigUtil;
 import basicTool.qRCode.PaymentLoginScanQRCodeUtils;
-import page.AbstractPage;
+import page.pc.AbstractPCPage;
 
-public class PaymentLoginPage extends AbstractPage {
+public class PaymentLoginPage extends AbstractPCPage {
 
     @FindBy(css = "#qrcode img.canvasStyle")
     private WebElement qrcodeIMG;

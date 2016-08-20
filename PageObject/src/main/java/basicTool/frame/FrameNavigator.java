@@ -11,14 +11,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import basicTool.ReflectionUtils;
 import basicTool.WaitTool;
 import factory.LogFactory;
-import page.AbstractPage;
+import page.pc.AbstractPCPage;
 
 public class FrameNavigator {
 
     public static final String NO_SUCH_FRAME = "no-such-frame";
     private final Logger logger = LogFactory.getLogger(FrameNavigator.class);
     private final WebDriver driver;
-    private final AbstractPage page;
+    private final AbstractPCPage page;
     private final String defaultFrameName;
     private String currentFrame;
 
@@ -30,7 +30,7 @@ public class FrameNavigator {
      * @param page
      *            the page for whose frames are managed. Frame management extends to any sub-class of this object.
      */
-    public FrameNavigator(WebDriver driver, AbstractPage page) {
+    public FrameNavigator(WebDriver driver, AbstractPCPage page) {
         this.driver = driver;
         this.page = page;
         this.defaultFrameName = getFrameName(page.getClass());
@@ -109,7 +109,7 @@ public class FrameNavigator {
      *            the page object representing the frame. The page object must be annotated with the WebPageFrame
      *            annotation.
      */
-    public void switchFrame(Class<? extends AbstractPage> clazz) {
+    public void switchFrame(Class<? extends AbstractPCPage> clazz) {
         switchFrame(getFrameName(clazz));
     }
 

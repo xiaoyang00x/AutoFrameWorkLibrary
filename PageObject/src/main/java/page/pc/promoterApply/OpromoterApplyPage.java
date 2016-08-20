@@ -1,4 +1,4 @@
-package page.promoterApply;
+package page.pc.promoterApply;
 
 import java.util.List;
 
@@ -10,9 +10,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import DataBean.OpromoterBean;
 import basicTool.WaitTool;
-import page.AbstractPage;
+import page.pc.AbstractPCPage;
 
-public class OpromoterApplyPage extends AbstractPage {
+public class OpromoterApplyPage extends AbstractPCPage {
     @FindBy(css = "#check i[id='0']")
     private WebElement personRadioButton;
 
@@ -57,7 +57,7 @@ public class OpromoterApplyPage extends AbstractPage {
         WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(personRadioButton), 60);
     }
 
-    public <expectPage extends AbstractPage> expectPage fillOpromoterInformation(OpromoterBean opromoter,
+    public <expectPage extends AbstractPCPage> expectPage fillOpromoterInformation(OpromoterBean opromoter,
             Boolean passOrBlock) throws Exception {
         if (StringUtils.isNoneEmpty(opromoter.getPromoterName())) {
             if (opromoter.getPromotionDirection() == 0)

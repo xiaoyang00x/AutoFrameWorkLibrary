@@ -1,4 +1,4 @@
-package page;
+package page.pc;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 import basicTool.WaitTool;
 
-public class NewListPage extends AbstractPage {
+public class NewListPage extends AbstractPCPage {
 
     @FindBy(css = "img[src='images/news_words.png']")
     private WebElement newListPageIMG;
