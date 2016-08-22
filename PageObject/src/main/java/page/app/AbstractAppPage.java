@@ -146,6 +146,14 @@ public class AbstractAppPage implements AbstractPage {
         return false;
     }
 
+    /**
+     * Set content into webElement
+     * 
+     * @param element
+     *            need to fill content element
+     * @param content
+     *            want to fill content
+     */
     protected void setInputText(WebElement element, String content) {
         element.clear();
         element.sendKeys(new CharSequence[] { content });

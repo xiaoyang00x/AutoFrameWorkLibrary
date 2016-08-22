@@ -20,7 +20,7 @@ public class LoginPage extends AbstractAppPage {
     @FindBy(xpath = "//UIAApplication/UIAWindow/UIATextField/UIATextField[@value=请输入借贷宝登录密码]")
     private WebElement passWordTextField;
 
-    protected LoginPage(AppiumDriver driver) {
+    public LoginPage(AppiumDriver driver) {
         super(driver);
     }
 
