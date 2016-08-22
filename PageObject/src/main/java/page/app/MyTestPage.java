@@ -14,21 +14,54 @@ public class MyTestPage {
 
     public static IOSDriver driver;
 
-    @FindBy()
-    public WebElement a;
+    @FindBy(xpath = "//UIAApplication/UIAWindow/UIAScrollView/UIAButton[@type='UIAButton']")
+    // @type='UIAButton'
+    public static WebElement a;
 
     public MyTestPage(IOSDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    public void swipe(String isLeft, int times) {
+    /**
+     * 
+     * @param type
+     *            1： From top to bottom 2： From bottom to top 3： From left to right 4： From right to left
+     * @param times
+     *            swipe times
+     */
+    public void swipe(int type, int times) {
 
         int widht = driver.manage().window().getSize().width;
         int height = driver.manage().window().getSize().height;
-        for (int i = 0; i < times; i++)
-            // 向左滑动！
-            driver.swipe(widht * 6 / 7, height / 2, widht / 7, height / 2, 2);
+
+        switch (type) {
+        case 1:
+
+            for (int i = 0; i < times; i++)
+                driver.swipe(widht / 2, height / 2, widht / 2, height, 2);
+            break;
+
+        case 2:
+
+            for (int i = 0; i < times; i++)
+                driver.swipe(widht / 2, height, widht / 2, height / 2, 2);
+            break;
+        case 3:
+
+            for (int i = 0; i < times; i++)
+                driver.swipe(widht / 2, height / 2, widht, height / 2, 2);
+            break;
+
+        case 4:
+
+            for (int i = 0; i < times; i++)
+                driver.swipe(widht, height / 2, widht / 2, height / 2, 2);
+            break;
+
+        default:
+            break;
+        }
 
     }
 
@@ -42,8 +75,8 @@ public class MyTestPage {
         driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
         MyTestPage myTestPage = new MyTestPage(driver);
-        myTestPage.swipe("true", 3);
-
+        myTestPage.swipe(4, 2);
+        a.click();
     }
 
 }
