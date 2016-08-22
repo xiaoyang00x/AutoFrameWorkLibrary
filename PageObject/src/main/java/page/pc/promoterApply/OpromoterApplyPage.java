@@ -54,17 +54,17 @@ public class OpromoterApplyPage extends AbstractPCPage {
 
     public OpromoterApplyPage(WebDriver driver) {
         super(driver);
-        WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(personRadioButton), 60);
+        WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(companyOpromoterLink), 60);
     }
 
     public <expectPage extends AbstractPCPage> expectPage fillOpromoterInformation(OpromoterBean opromoter,
             Boolean passOrBlock) throws Exception {
-        if (StringUtils.isNoneEmpty(opromoter.getPromoterName())) {
-            if (opromoter.getPromotionDirection() == 0)
-                click(personRadioButton, promoterNameTextFiled);
-            else
-                click(companyRadioButton, promoterNameTextFiled);
-        }
+//        if (StringUtils.isNoneEmpty(opromoter.getPromoterName())) {
+//            if (opromoter.getPromotionDirection() == 0)
+//                click(personRadioButton, promoterNameTextFiled);
+//            else
+//                click(companyRadioButton, promoterNameTextFiled);
+//        }
         if (StringUtils.isNoneEmpty(opromoter.getPromoterName())) {
             setInputText(promoterNameTextFiled, opromoter.getPromoterName());
         }
@@ -102,8 +102,8 @@ public class OpromoterApplyPage extends AbstractPCPage {
         return click(submitButton, OpromoterApplyPage.class);
     }
 
-    public PersonOpromoterPage clickPersonOpromoterLink() throws Exception {
-        return click(personOpromoterLink, PersonOpromoterPage.class);
+    public CompanyOpromoterPage clickPersonOpromoterLink() throws Exception {
+        return click(personOpromoterLink, CompanyOpromoterPage.class);
     }
 
     public CompanyOpromoterPage clickCompanyOpromoterLink() throws Exception {
