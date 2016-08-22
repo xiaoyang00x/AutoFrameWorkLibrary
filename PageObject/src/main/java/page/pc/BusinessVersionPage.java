@@ -8,7 +8,7 @@ import basicTool.WaitTool;
 
 public class BusinessVersionPage extends AbstractPCPage {
 
-    @FindBy(css = "[href='#/news']")
+    @FindBy(css = "[href='news.html']")
     private WebElement newsLabel;
 
     protected BusinessVersionPage(WebDriver driver) {

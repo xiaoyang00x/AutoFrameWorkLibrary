@@ -4,6 +4,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -131,6 +132,53 @@ public class AbstractPCPage implements AbstractPage {
         switchFrame(element);
         element.clear();
         element.sendKeys(new CharSequence[] { content });
+    }
+
+    /**
+     * 
+     * @param element
+     * 
+     *            move to element
+     * 
+     * @return
+     * 
+     *         after page
+     * 
+     * @throws Exception
+     */
+    protected <W extends AbstractPCPage> W moveToElement(WebElement element) throws Exception {
+        new Actions(driver).moveToElement(element).build().perform();
+        return (W) this;
+    }
+
+    /**
+     * 
+     * @param element
+     * 
+     *            move to element and click
+     * @return
+     * 
+     *         after page
+     * @throws Exception
+     */
+    protected <W extends AbstractPCPage> W moveToAndClickElement(WebElement element) throws Exception {
+        (new Actions(driver)).moveToElement(element).click().perform();
+        return (W) this;
+    }
+
+    /**
+     * 
+     * @param element
+     * 
+     *            click element and hold on
+     * @return
+     * 
+     *         after page
+     * @throws Exception
+     */
+    protected <W extends AbstractPCPage> W clickAndHold(WebElement element) throws Exception {
+        (new Actions(driver)).clickAndHold(element).build().perform();
+        return (W) this;
     }
 
 }
