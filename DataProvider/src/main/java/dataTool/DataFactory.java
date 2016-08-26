@@ -1,4 +1,4 @@
-package DataTool;
+package dataTool;
 
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -12,7 +12,7 @@ public class DataFactory {
         try {
             String objectClassName = objectClass.getName();
             if (null != objectClassName) {
-                objectClassName = objectClassName.replace(".", "/").replace("DataBean", "Yaml");
+                objectClassName = objectClassName.replace(".", "/").replace("dataBean", "yaml");
             }
             String path = objectClassName + ".yaml";
             InputStream inStream = ClassLoader.getSystemResourceAsStream(path);

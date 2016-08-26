@@ -1,4 +1,4 @@
-package DataBean;
+package dataBean.pc.opromoter;
 
 public class OpromoterBean {
 	private String promoterName;

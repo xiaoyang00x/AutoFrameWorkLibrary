@@ -1,8 +1,0 @@
---- !DataBean.Home.Mytest
-age: 25
-name: yangyu
-sex: male
-homePageBean: !DataBean.Home.HomePageBean
-  age: 24
-  name: zhangran
-  sex: famale

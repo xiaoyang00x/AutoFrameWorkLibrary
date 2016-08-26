@@ -13,9 +13,12 @@ public class FristSwipePage extends AbstractAppPage {
     @FindBy(xpath = "//UIAApplication/UIAWindow/UIAScrollView/UIAButton")
     public WebElement runButton;
 
+    @FindBy(xpath = "//UIAApplication/UIAWindow/UIAPageIndicator")
+    public WebElement nextSwipeLabel;
+
     public FristSwipePage(AppiumDriver driver) {
         super(driver);
-        WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(runButton), DefaultWaitElementTime4Page);
+        WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(nextSwipeLabel), DefaultWaitElementTime4Page);
     }
 
     public LoginPage finishSwipe() throws Exception {

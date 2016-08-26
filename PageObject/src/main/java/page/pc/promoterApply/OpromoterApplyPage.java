@@ -8,8 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import DataBean.OpromoterBean;
 import basicTool.WaitTool;
+import dataBean.pc.opromoter.OpromoterBean;
 import page.pc.AbstractPCPage;
 
 public class OpromoterApplyPage extends AbstractPCPage {
@@ -59,12 +59,12 @@ public class OpromoterApplyPage extends AbstractPCPage {
 
     public <expectPage extends AbstractPCPage> expectPage fillOpromoterInformation(OpromoterBean opromoter,
             Boolean passOrBlock) throws Exception {
-//        if (StringUtils.isNoneEmpty(opromoter.getPromoterName())) {
-//            if (opromoter.getPromotionDirection() == 0)
-//                click(personRadioButton, promoterNameTextFiled);
-//            else
-//                click(companyRadioButton, promoterNameTextFiled);
-//        }
+        // if (StringUtils.isNoneEmpty(opromoter.getPromoterName())) {
+        // if (opromoter.getPromotionDirection() == 0)
+        // click(personRadioButton, promoterNameTextFiled);
+        // else
+        // click(companyRadioButton, promoterNameTextFiled);
+        // }
         if (StringUtils.isNoneEmpty(opromoter.getPromoterName())) {
             setInputText(promoterNameTextFiled, opromoter.getPromoterName());
         }

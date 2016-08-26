@@ -2,7 +2,6 @@ package page.app;
 
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,7 +13,7 @@ import io.appium.java_client.AppiumDriver;
 import page.AbstractPage;
 
 public class AbstractAppPage implements AbstractPage {
-    protected AppiumDriver driver;
+    protected AppiumDriver appiumDriver;
     public static final int DefaultWaitElementTime4Page = 60;
 
     /**
@@ -28,9 +27,9 @@ public class AbstractAppPage implements AbstractPage {
      * 
      */
 
-    protected AbstractAppPage(AppiumDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+    protected AbstractAppPage(AppiumDriver appiumDriver) {
+        this.appiumDriver = appiumDriver;
+        PageFactory.initElements(appiumDriver, this);
     }
 
     /**
@@ -42,30 +41,30 @@ public class AbstractAppPage implements AbstractPage {
      */
     public void swipe(int type, int times) {
 
-        int widht = driver.manage().window().getSize().width;
-        int height = driver.manage().window().getSize().height;
+        int widht = appiumDriver.manage().window().getSize().width;
+        int height = appiumDriver.manage().window().getSize().height;
 
         switch (type) {
         case 1:
 
             for (int i = 0; i < times; i++) {
-                WebReporter.log(driver, true, true, true);
-                driver.swipe(widht / 2, height / 2, widht / 2, height, 2);
+                WebReporter.log(appiumDriver, true, true, true);
+                appiumDriver.swipe(widht / 2, height / 2, widht / 2, height, 2);
             }
             break;
 
         case 2:
 
             for (int i = 0; i < times; i++) {
-                WebReporter.log(driver, true, true, true);
-                driver.swipe(widht / 2, height, widht / 2, height / 2, 2);
+                WebReporter.log(appiumDriver, true, true, true);
+                appiumDriver.swipe(widht / 2, height, widht / 2, height / 2, 2);
             }
             break;
         case 3:
 
             for (int i = 0; i < times; i++) {
-                WebReporter.log(driver, true, true, true);
-                driver.swipe(widht / 2, height / 2, widht, height / 2, 2);
+                WebReporter.log(appiumDriver, true, true, true);
+                appiumDriver.swipe(widht / 2, height / 2, widht, height / 2, 2);
             }
 
             break;
@@ -73,8 +72,8 @@ public class AbstractAppPage implements AbstractPage {
         case 4:
 
             for (int i = 0; i < times; i++) {
-                WebReporter.log(driver, true, true, true);
-                driver.swipe(widht, height / 2, widht / 2, height / 2, 2);
+                WebReporter.log(appiumDriver, true, true, true);
+                appiumDriver.swipe(widht, height / 2, widht / 2, height / 2, 2);
             }
             break;
 
@@ -107,9 +106,9 @@ public class AbstractAppPage implements AbstractPage {
      * @throws Exception
      */
     protected <W extends AbstractAppPage> W click(WebElement element, Class<W> nextPageClass) throws Exception {
-        WebReporter.log(driver, true, true, true);
+        WebReporter.log(appiumDriver, true, true, true);
         click(element);
-        return nextPageClass.getDeclaredConstructor(WebDriver.class).newInstance(this.driver);
+        return nextPageClass.getDeclaredConstructor(AppiumDriver.class).newInstance(this.appiumDriver);
     }
 
     /**
@@ -123,9 +122,9 @@ public class AbstractAppPage implements AbstractPage {
      * @throws Exception
      */
     protected WebElement click(WebElement element, WebElement expectedElement) throws Exception {
-        WebReporter.log(driver, true, true, true);
+        WebReporter.log(appiumDriver, true, true, true);
         click(element);
-        return ((WebElement) WaitTool.waitFor(this.driver, ExpectedConditions.visibilityOf(expectedElement),
+        return ((WebElement) WaitTool.waitFor(this.appiumDriver, ExpectedConditions.visibilityOf(expectedElement),
                 WaitTool.getDefaultWait4Page()));
     }
 
