@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import basicTool.WaitTool;
 import page.pc.AbstractPCPage;
 import page.pc.BusinessVersionPage;
+import page.pc.NewListPage;
 
 public class PCHomePage extends AbstractPCPage {
 
@@ -52,6 +53,11 @@ public class PCHomePage extends AbstractPCPage {
     @FindBy(css = ".downloads>.btn-margin>.buttons-tip .android-download-btn")
     private WebElement sysDownloadButton_androidButton;
     
+    @FindBy(css = "#part3-news .news-list-item.item2")
+    private WebElement tempPart3Area;
+    
+    @FindBy(css =".more-news-list .custom-button")
+    private WebElement readMoreNewsLink;
     
     
     public PCHomePage(WebDriver driver) {
@@ -111,6 +117,16 @@ public class PCHomePage extends AbstractPCPage {
     
     public PCHomePage moveToDownloadNowByAndroid() throws Exception {
         return clickAndHold(sysDownloadButton_androidButton);
+    }
+    
+    
+    public PCHomePage moveToTempPart3() throws Exception{
+        return moveToElement(tempPart3Area);
+    }
+    
+    public NewListPage readMoreNews() throws Exception{
+        moveToTempPart3();
+        return click(readMoreNewsLink, NewListPage.class);
     }
 
 }
