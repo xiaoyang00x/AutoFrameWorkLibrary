@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import basicTool.WaitTool;
+import basicTool.config.ConfigUtil;
 import io.appium.java_client.AppiumDriver;
 import page.app.AbstractAppPage;
 
@@ -22,7 +23,7 @@ public class FristSwipePage extends AbstractAppPage {
     }
 
     public LoginPage finishSwipe() throws Exception {
-        swipe(4, 2);
+        swipe(4, Integer.parseInt(ConfigUtil.getConfigUtil().getConfigFileContent("swipeTimes")));
         return click(runButton, LoginPage.class);
     }
 
