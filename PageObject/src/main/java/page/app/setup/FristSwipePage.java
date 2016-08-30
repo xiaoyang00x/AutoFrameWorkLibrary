@@ -10,10 +10,10 @@ import page.app.AbstractAppPage;
 
 public class FristSwipePage extends AbstractAppPage {
 
-    @FindBy(xpath = "//UIAApplication/UIAWindow/UIAScrollView/UIAButton")
+    @FindBy(xpath = "//UIAApplication/UIAWindow/UIAScrollView/UIAButton|//android.widget.Button")
     public WebElement runButton;
 
-    @FindBy(xpath = "//UIAApplication/UIAWindow/UIAPageIndicator")
+    @FindBy(xpath = "//UIAApplication/UIAWindow/UIAPageIndicator|//android.widget.RelativeLayout/android.widget.LinearLayout")
     public WebElement nextSwipeLabel;
 
     public FristSwipePage(AppiumDriver driver) {

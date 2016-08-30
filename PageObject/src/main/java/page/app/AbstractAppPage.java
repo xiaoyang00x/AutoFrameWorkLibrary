@@ -49,7 +49,7 @@ public class AbstractAppPage implements AbstractPage {
 
             for (int i = 0; i < times; i++) {
                 WebReporter.log(appiumDriver, true, true, true);
-                appiumDriver.swipe(widht / 2, height / 2, widht / 2, height, 2);
+                appiumDriver.swipe(widht / 2, 1, widht / 2, height - 1, 300);
             }
             break;
 
@@ -57,14 +57,14 @@ public class AbstractAppPage implements AbstractPage {
 
             for (int i = 0; i < times; i++) {
                 WebReporter.log(appiumDriver, true, true, true);
-                appiumDriver.swipe(widht / 2, height, widht / 2, height / 2, 2);
+                appiumDriver.swipe(widht / 2, height - 1, widht / 2, 1, 300);
             }
             break;
         case 3:
 
             for (int i = 0; i < times; i++) {
                 WebReporter.log(appiumDriver, true, true, true);
-                appiumDriver.swipe(widht / 2, height / 2, widht, height / 2, 2);
+                appiumDriver.swipe(1, height / 2, widht - 1, height / 2, 300);
             }
 
             break;
@@ -73,7 +73,7 @@ public class AbstractAppPage implements AbstractPage {
 
             for (int i = 0; i < times; i++) {
                 WebReporter.log(appiumDriver, true, true, true);
-                appiumDriver.swipe(widht, height / 2, widht / 2, height / 2, 2);
+                appiumDriver.swipe(widht - 1, height / 2, 1, height / 2, 300);
             }
             break;
 

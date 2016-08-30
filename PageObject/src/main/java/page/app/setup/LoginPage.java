@@ -12,16 +12,16 @@ import page.app.borrowAndLend.BorrowAndLendPage;
 
 public class LoginPage extends AbstractAppPage {
 
-    @FindBy(xpath = "//UIAApplication/UIAWindow/UIAButton[@name='登录']")
+    @FindBy(xpath = "//UIAApplication/UIAWindow/UIAButton[@name='登录']|//android.widget.Button[@text='登录']")
     private WebElement loginButton;
 
-    @FindBy(xpath = "//UIAApplication/UIAWindow/UIAButton[@name='注册']")
+    @FindBy(xpath = "//UIAApplication/UIAWindow/UIAButton[@name='注册']|//android.widget.Button[@text='注册']")
     private WebElement registerButton;
 
-    @FindBy(xpath = "//UIATextField[@value='请输入手机号']")
+    @FindBy(xpath = "//UIATextField[@value='请输入手机号']|//android.widget.EditText[@text='请输入您的手机号']")
     private WebElement userNameTextField;
 
-    @FindBy(xpath = "//UIASecureTextField[@value='请输入借贷宝登录密码']")
+    @FindBy(xpath = "//UIASecureTextField[@value='请输入借贷宝登录密码']|//android.widget.LinearLayout[@index='3']/android.widget.EditText")
     private WebElement passWordTextField;
 
     public LoginPage(AppiumDriver driver) {
