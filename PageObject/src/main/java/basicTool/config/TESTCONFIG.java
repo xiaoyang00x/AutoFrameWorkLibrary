@@ -22,12 +22,15 @@ public enum TESTCONFIG {
     SAFARIVERSION("safariVersion"),
     DEFAULTURL("defaultURL"),
     PAYMENTURL("paymentURL"),
+    RESOLUTION("resolution"),
+    CHROMEDRIVERMAC("chromeDriverPathMac"),
     // ******Phone*******
     SWIPETIMES("swipeTimes"),
-    PHONEPLATFORM("phonePlatform"),
     DEVICENAME("deviceName"),
     APPLACTIONLOCATION("applactionLocation"),
-    APPIUMDRIVERURL("appiumDriverURL");
+    APPIUMDRIVERURL("appiumDriverURL"),
+    PHONEPLATFORM("phonePlatform");
+    
 
     String value;
 
