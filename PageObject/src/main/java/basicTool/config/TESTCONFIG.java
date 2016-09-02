@@ -10,16 +10,24 @@ import java.util.List;
  *
  */
 public enum TESTCONFIG {
-    ISREMOTEDRIVER("isRemoteDriver"),
+    // Common
+    DEVICETYPE("deviceType"),
+    TESTNAME("testName"),
+    // ******PC******
+    ISROMOTEFRIVER("isRemoteDriver"),
+    REMOTEDRIVERURL("remoteDriverURL"),
     BROSWERTYPE("broswerType"),
     CHROMEDRIVERPATH("chromeDriverPath"),
     INTERNETEXPLORERDRIVERPATH("internetExplorerDriverPath"),
     SAFARIVERSION("safariVersion"),
     DEFAULTURL("defaultURL"),
-    TESTNAME("testName"),
-    REMOTEDRIVER("remoteDriverURL"),
     PAYMENTURL("paymentURL"),
-    PHONEPLATFORM("phonePlatform");
+    // ******Phone*******
+    SWIPETIMES("swipeTimes"),
+    PHONEPLATFORM("phonePlatform"),
+    DEVICENAME("deviceName"),
+    APPLACTIONLOCATION("applactionLocation"),
+    APPIUMDRIVERURL("appiumDriverURL");
 
     String value;
 
