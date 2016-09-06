@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 import basicTool.WaitTool;
 import page.pc.AbstractPCPage;
-import page.pc.BusinessVersionPage;
+import page.pc.businessVersionPage.BusinessVersionPage;
 import page.pc.newListPage.NewListPage;
 
 public class PCHomePage extends AbstractPCPage {
