@@ -19,6 +19,22 @@
 		<module>DataProvider</module>
 	</modules>
 
+	<dependencies>
+		<dependency>
+			<groupId>com.Common</groupId>
+			<artifactId>ConfigUtil</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.Common</groupId>
+			<artifactId>LogFactory</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+	</dependencies>
+
+
 
 	<build>
 		<plugins>

@@ -1,5 +1,6 @@
 package page.pc.payment;
 
+import org.ConfigUtil.ConfigUtil;
 import org.json.JSONObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import basicTool.WaitTool;
-import basicTool.config.ConfigUtil;
 import basicTool.qRCode.PaymentLoginScanQRCodeUtils;
 import page.pc.AbstractPCPage;
 

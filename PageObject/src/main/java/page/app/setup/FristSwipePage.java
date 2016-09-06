@@ -1,11 +1,11 @@
 package page.app.setup;
 
+import org.ConfigUtil.ConfigUtil;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import basicTool.WaitTool;
-import basicTool.config.ConfigUtil;
 import io.appium.java_client.AppiumDriver;
 import page.app.AbstractAppPage;
 

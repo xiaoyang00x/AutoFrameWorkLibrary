@@ -10,9 +10,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.LogFactory.LogFactory;
 import org.apache.log4j.Logger;
-
-import factory.LogFactory;
 
 public class ReflectionUtils {
     private static Logger logger = LogFactory.getLogger(ReflectionUtils.class);
