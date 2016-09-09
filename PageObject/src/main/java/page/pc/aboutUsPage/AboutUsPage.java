@@ -1,18 +1,22 @@
 package page.pc.aboutUsPage;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import page.pc.AbstractPCPage;
+import com.customize.reporter.WebReporter;
+
 import basicTool.WaitTool;
+import basicTool.window.WindowsUtil;
+import page.pc.AbstractPCPage;
 
 public class AboutUsPage extends AbstractPCPage {
 
     @FindBy(css = ".article-list")
     private WebElement jieDaiBaoImage;
 
-    @FindBy(css = "a[class='pc-about-more']")
+    @FindBy(css = "a[href='http://www.hotjob.cn/wt/rrxjdb/web/index']")
     private WebElement joinUsLink;
 
     @FindBy(css = "a[class='promoterApply']")
@@ -24,10 +28,28 @@ public class AboutUsPage extends AbstractPCPage {
     }
 
     public JDBRecruitPage clickJoinUsLink() throws Exception {
-        return click(joinUsLink, JDBRecruitPage.class);
+
+        WebReporter.log(driver, driver.getTitle(), true, true);
+
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+
+        jse.executeScript("document.getElementsByClassName('pc-about-more')[0].click()");
+
+        WindowsUtil.getInstance(driver).switchWindow();
+
+        return new JDBRecruitPage(driver);
     }
 
     public JDBRecruitPage clickJoinExtensionTeamLink() throws Exception {
-        return click(joinExtensionTeamLink, JDBRecruitPage.class);
+        WebReporter.log(driver, driver.getTitle(), true, true);
+
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+
+        jse.executeScript("document.getElementsByClassName('promoterApply')[0]");
+
+        WindowsUtil.getInstance(driver).switchWindow();
+
+        return new JDBRecruitPage(driver);
+
     }
 }

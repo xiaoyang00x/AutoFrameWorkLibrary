@@ -9,7 +9,7 @@ import page.pc.AbstractPCPage;
 
 public class JDBRecruitPage extends AbstractPCPage {
 
-    @FindBy(css = ".index_search_div")
+    @FindBy(css = "#positionNameV")
     WebElement workSeach;
 
     public JDBRecruitPage(WebDriver driver) {
