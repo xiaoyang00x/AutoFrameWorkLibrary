@@ -69,7 +69,7 @@ public class OpromoterApplyPage extends AbstractPCPage {
             setInputText(promoterNameTextFiled, opromoter.getPromoterName());
         }
         if (StringUtils.isNoneEmpty(opromoter.getIdCardNo())) {
-            setInputText(IdCardNoTextFiled, opromoter.getIdCardNo());
+			setInputText(IdCardNoTextFiled, opromoter.getIdCardNo());
         }
         if (StringUtils.isNoneEmpty(opromoter.getTelePhoneNo())) {
             setInputText(telePhoneNoTextFiled, opromoter.getTelePhoneNo());
