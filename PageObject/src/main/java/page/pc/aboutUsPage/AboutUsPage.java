@@ -45,7 +45,7 @@ public class AboutUsPage extends AbstractPCPage {
 
         JavascriptExecutor jse = (JavascriptExecutor) driver;
 
-        jse.executeScript("document.getElementsByClassName('promoterApply')[0]");
+        jse.executeScript("document.getElementsByClassName('promoterApply')[0].click()");
 
         WindowsUtil.getInstance(driver).switchWindow();
 
