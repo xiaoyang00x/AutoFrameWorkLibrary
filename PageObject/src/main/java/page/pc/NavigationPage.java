@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import basicTool.WaitTool;
 import page.pc.aboutUsPage.AboutUsPage;
 import page.pc.homePage.PCHomePage;
+import page.pc.newListPage.NewListPage;
 import page.pc.payment.PaymentLoginPage;
 import page.pc.promoterApply.OpromoterApplyPage;
 
