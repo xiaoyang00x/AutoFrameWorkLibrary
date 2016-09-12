@@ -7,7 +7,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import basicTool.WaitTool;
 import page.pc.aboutUsPage.AboutUsPage;
+<<<<<<< Updated upstream
 import page.pc.businessVersionPage.BusinessVersionPage;
+=======
+import page.pc.functionDetailPage.FunctionDetailPage;
+>>>>>>> Stashed changes
 import page.pc.homePage.PCHomePage;
 import page.pc.newListPage.NewListPage;
 import page.pc.payment.PaymentLoginPage;
