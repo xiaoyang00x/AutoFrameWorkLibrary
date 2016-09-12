@@ -11,28 +11,28 @@ public class BusinessVersionPage extends AbstractPCPage {
 
     @FindBy(css = "[href='news.html']")
     private WebElement newsLabel;
-    
+
     @FindBy(css = ".media.banner-block .home-btn.btn-blue")
     private WebElement signupButtonOne;
-    
+
     @FindBy(css = ".f4")
     private WebElement loginLink;
-    
-    @FindBy(css = ".home-btn.btn-margin")
+
+    @FindBy(css = "a[href='help-page.html#融资']")
     private WebElement knowMoreButton;
-    
-    public CompanySignUpPage clickSignUpOne() throws Exception{
-    	return click(signupButtonOne, CompanySignUpPage.class);
+
+    public CompanySignUpPage clickSignUpOne() throws Exception {
+        return click(signupButtonOne, CompanySignUpPage.class);
     }
-    
-    public CompanyLoginPage clickLoginLink() throws Exception{
-    	return click(loginLink, CompanyLoginPage.class);
+
+    public CompanyLoginPage clickLoginLink() throws Exception {
+        return click(loginLink, CompanyLoginPage.class);
     }
-    
-    public financingLabelPage clickKnowMoreButton() throws Exception{
-    	return click(knowMoreButton, financingLabelPage.class);
+
+    public financingLabelPage clickKnowMoreButton() throws Exception {
+        return click(knowMoreButton, financingLabelPage.class);
     }
-    
+
     public BusinessVersionPage(WebDriver driver) {
         super(driver);
         WaitTool.waitFor(driver, WaitTool.DEFAULT_WAIT_4_ELEMENT, newsLabel);
