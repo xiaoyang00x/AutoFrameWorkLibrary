@@ -33,7 +33,8 @@ public class LoginPage extends AbstractAppPage {
         click(loginButton, userNameTextField);
         setInputText(userNameTextField, userBean.getUserName());
         setInputText(passWordTextField, userBean.getPassWord());
-        return click(loginButton, BorrowAndLendPage.class);
+        ControlDirectoriesPage controlDirectoriesPage = click(loginButton, ControlDirectoriesPage.class);
+        return controlDirectoriesPage.clickstartMatchOnBorrowAndLendPage();
     }
 
 }

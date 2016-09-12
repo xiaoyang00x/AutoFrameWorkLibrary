@@ -11,15 +11,15 @@ import page.app.borrowAndLend.BorrowAndLendPage;
 
 public class ControlDirectoriesPage extends AbstractAppPage {
 
-    @FindBy(xpath = "//UIAApplication/UIAWindow/UIAButton[@name='开始匹配']")
+    @FindBy(xpath = "//UIAApplication/UIAWindow/UIAButton[@name='开始匹配']|//android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[@text='我知道了']")
     private WebElement startMatchButton;
 
-    protected ControlDirectoriesPage(AppiumDriver appiumDriver) {
+    public ControlDirectoriesPage(AppiumDriver appiumDriver) {
         super(appiumDriver);
         WaitTool.waitFor(appiumDriver, ExpectedConditions.visibilityOf(startMatchButton), DefaultWaitElementTime4Page);
     }
 
-    public BorrowAndLendPage clickstartMatch() throws Exception {
+    public BorrowAndLendPage clickstartMatchOnBorrowAndLendPage() throws Exception {
         return click(startMatchButton, BorrowAndLendPage.class);
     }
 
