@@ -1,5 +1,7 @@
 package page.pc;
 
+import java.util.List;
+
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -179,6 +181,45 @@ public class AbstractPCPage implements AbstractPage {
     protected <W extends AbstractPCPage> W clickAndHold(WebElement element) throws Exception {
         (new Actions(driver)).clickAndHold(element).build().perform();
         return (W) this;
+    }
+
+    /**
+     * 
+     * @param name
+     *            will click element's name
+     * @param elementList
+     *            have the same css element list that you want to click
+     * @return want to get element
+     * @throws Exception
+     *             no have element
+     */
+    protected WebElement getWebElementByName(String name, List<WebElement> elementList) throws Exception {
+        for (WebElement a : elementList) {
+            if (a.getText().trim().equals(name))
+                return a;
+        }
+
+        throw new Exception("No such element in this List");
+    }
+
+    /**
+     * 
+     * @param name
+     *            will click element's name
+     * @param elementList
+     *            have the same css element list that you want to click
+     * @return want to get element's index
+     * @throws Exception
+     *             no have element
+     */
+    protected int getWebElementIndexByName(String name, List<WebElement> elementList) throws Exception {
+
+        for (int i = 0; i < elementList.size(); i++) {
+            if (elementList.get(i).getText().trim().equals(name))
+                return i;
+        }
+
+        throw new Exception("No such element in this List");
     }
 
 }
