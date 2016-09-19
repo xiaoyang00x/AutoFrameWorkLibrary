@@ -10,7 +10,7 @@ import page.app.AbstractAppPage;
 
 public class BorrowAndLendPage extends AbstractAppPage {
 
-    @FindBy(xpath = "//UIAStaticText[@name='借贷']")
+    @FindBy(xpath = "//UIAStaticText[@name='借贷']|//android.widget.TextView[@text='借钱']")
     private WebElement borrowTitleLable;
 
     public BorrowAndLendPage(AppiumDriver driver) {
