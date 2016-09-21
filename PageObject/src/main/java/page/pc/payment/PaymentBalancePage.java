@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.customize.reporter.WebReporter;
 
@@ -220,10 +221,14 @@ public class PaymentBalancePage extends AbstractPCPage {
         click(choiceBankCardConfirmRechargeButton);
         WindowsUtil.getInstance(driver).switchWindow();
         if (rechargePageWaitElement == ABCRechargeLabel) {
+            new WebDriverWait(driver, 10).until(ExpectedConditions.alertIsPresent());
             driver.switchTo().alert().accept();
+            new WebDriverWait(driver, 10).until(ExpectedConditions.alertIsPresent());
             driver.switchTo().alert().accept();
-        } else if (rechargePageWaitElement == SPDBRechargeLabel)
+        } else if (rechargePageWaitElement == SPDBRechargeLabel) {
+            new WebDriverWait(driver, 10).until(ExpectedConditions.alertIsPresent());
             driver.switchTo().alert().accept();
+        }
         WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(rechargePageWaitElement), 60);
         WebReporter.log(driver, driver.getTitle(), true, true);
         WindowsUtil.getInstance(driver).switchBackToPreviousWindow();
