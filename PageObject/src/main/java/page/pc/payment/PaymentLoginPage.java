@@ -1,6 +1,5 @@
 package page.pc.payment;
 
-import org.ConfigUtil.ConfigUtil;
 import org.json.JSONObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -32,24 +31,16 @@ public class PaymentLoginPage extends AbstractPCPage {
         return (String) jsonObj.get("content");
     }
 
-    public PaymentBalancePage scanQrCodeByIOS() {
-        login.setIOSRequestParams(getTokenFromQrCode());
+    public PaymentBalancePage scanQrCodeByNoBankCard() {
+        login.setNoBindBankCardRequestParams(getTokenFromQrCode());
         login.sendPostRequest();
         return new PaymentBalancePage(driver);
     }
 
-    public PaymentBalancePage scanQrCodeByANDRIOD() {
-        login.setAndriodRequestParams(getTokenFromQrCode());
+    public PaymentBalancePage scanQrCode() {
+        login.setBindBankCardRequestParams(getTokenFromQrCode());
         login.sendPostRequest();
         return new PaymentBalancePage(driver);
-    }
-
-    public PaymentBalancePage loginPaymentPage(String loginDevice) throws Exception {
-        System.out.println(ConfigUtil.getConfigUtil().getConfigFileContent("phonePlatform"));
-        if ("IOS".equals(loginDevice))
-            return scanQrCodeByIOS();
-        else
-            return scanQrCodeByANDRIOD();
     }
 
 }
