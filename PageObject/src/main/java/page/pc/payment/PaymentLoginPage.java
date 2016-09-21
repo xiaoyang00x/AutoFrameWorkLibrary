@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import com.customize.reporter.WebReporter;
+
 import basicTool.WaitTool;
 import basicTool.qRCode.PaymentLoginScanQRCodeUtils;
 import page.pc.AbstractPCPage;
@@ -33,12 +35,14 @@ public class PaymentLoginPage extends AbstractPCPage {
 
     public PaymentBalancePage scanQrCodeByNoBankCard() {
         login.setNoBindBankCardRequestParams(getTokenFromQrCode());
+        WebReporter.log(driver, driver.getTitle(), true, true);
         login.sendPostRequest();
         return new PaymentBalancePage(driver);
     }
 
     public PaymentBalancePage scanQrCode() {
         login.setBindBankCardRequestParams(getTokenFromQrCode());
+        WebReporter.log(driver, driver.getTitle(), true, true);
         login.sendPostRequest();
         return new PaymentBalancePage(driver);
     }
