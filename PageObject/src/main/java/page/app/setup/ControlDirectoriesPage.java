@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import basicTool.WaitTool;
 import io.appium.java_client.AppiumDriver;
 import page.app.AbstractAppPage;
-import page.app.borrowAndLend.BorrowAndLendPage;
+import page.app.navigation.NavigationPage;
 
 public class ControlDirectoriesPage extends AbstractAppPage {
 
@@ -19,8 +19,8 @@ public class ControlDirectoriesPage extends AbstractAppPage {
         WaitTool.waitFor(appiumDriver, ExpectedConditions.visibilityOf(startMatchButton), DefaultWaitElementTime4Page);
     }
 
-    public BorrowAndLendPage clickstartMatchOnBorrowAndLendPage() throws Exception {
-        return click(startMatchButton, BorrowAndLendPage.class);
+    public NavigationPage clickstartMatchOnBorrowAndLendPage() throws Exception {
+        return click(startMatchButton, NavigationPage.class);
     }
 
 }

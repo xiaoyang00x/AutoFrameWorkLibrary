@@ -49,7 +49,7 @@ public class PaymentLoginScanQRCodeUtils {
         setRequestParameters("appKey", "fb371c48e9a9b2a1174ed729ae888513"); // 统一的客户端校验标示: 前端hardcode固定值
         setRequestParameters("memberID", "600072846655062293"); // 借贷宝用户唯一ID
         setRequestParameters("token", QRCode);
-        setRequestParameters("udid", "00bd966d0b085e971336cd7cfb90c080606ecedf"); // 设备唯一ID
+        setRequestParameters("udid", "d2aaef63c96264a4097891cd211fe4100f2c792f"); // 设备唯一ID
     }
 
     public void setNoBindBankCardRequestParams(String QRCode) {

@@ -8,7 +8,7 @@ import basicTool.WaitTool;
 import dataBean.app.login.UserBean;
 import io.appium.java_client.AppiumDriver;
 import page.app.AbstractAppPage;
-import page.app.borrowAndLend.BorrowAndLendPage;
+import page.app.navigation.NavigationPage;
 
 public class LoginPage extends AbstractAppPage {
 
@@ -29,7 +29,7 @@ public class LoginPage extends AbstractAppPage {
         WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(loginButton), DefaultWaitElementTime4Page);
     }
 
-    public BorrowAndLendPage login(UserBean userBean) throws Exception {
+    public NavigationPage login(UserBean userBean) throws Exception {
         click(loginButton, userNameTextField);
         setInputText(userNameTextField, userBean.getUserName());
         setInputText(passWordTextField, userBean.getPassWord());
