@@ -10,11 +10,14 @@ import page.app.AbstractAppPage;
 
 public class DiscoverPage extends AbstractAppPage {
 
-    @FindBy(xpath = "//android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[@text='发现']")
+    @FindBy(xpath = "//android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[@text='发现']|//UIAStaticText[@name='发现']")
     private WebElement discoverLabel;
 
-    @FindBy(xpath = "//android.widget.TextView[@text='投资有道']")
-    private WebElement MoneyJournalButton;
+    @FindBy(xpath = "//android.widget.TextView[@text='投资有道']|//UIAStaticText[@name='投资有道']")
+    private WebElement moneyJournalButton;
+
+    @FindBy(xpath = "//UIATableCell[@name='活动']")
+    private WebElement activityButton;
 
     public DiscoverPage(AppiumDriver appiumDriver) {
         super(appiumDriver);
@@ -22,7 +25,11 @@ public class DiscoverPage extends AbstractAppPage {
     }
 
     public MoneyJournalPage clickMoneyJournalButton() throws Exception {
-        return click(MoneyJournalButton, MoneyJournalPage.class);
+        return click(moneyJournalButton, MoneyJournalPage.class);
+    }
+
+    public ActivityPage clickActivityButton() throws Exception {
+        return click(activityButton, ActivityPage.class);
     }
 
 }

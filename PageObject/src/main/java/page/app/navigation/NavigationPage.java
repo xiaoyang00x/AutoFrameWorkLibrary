@@ -11,16 +11,16 @@ import page.app.discover.DiscoverPage;
 
 public class NavigationPage extends AbstractAppPage {
 
-    @FindBy(xpath = "//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[@text='借贷']")
+    @FindBy(xpath = "//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[@text='借贷']|//UIAButton[@name='借贷']")
     private WebElement borrowAndLendButton;
 
-    @FindBy(xpath = "//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[@text='好友']")
+    @FindBy(xpath = "//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[@text='好友']|//UIAButton[@name='好友']")
     private WebElement friendButton;
 
-    @FindBy(xpath = "//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[@text='发现']")
+    @FindBy(xpath = "//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[@text='发现']|//UIAButton[@name='发现']")
     private WebElement discoverButton;
 
-    @FindBy(xpath = "//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[@text='钱包']")
+    @FindBy(xpath = "//android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[@text='钱包']|//UIAButton[@name='钱包']")
     private WebElement walletButton;
 
     public NavigationPage(AppiumDriver appiumDriver) {

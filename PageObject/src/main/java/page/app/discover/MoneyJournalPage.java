@@ -10,7 +10,7 @@ import page.app.AbstractAppPage;
 
 public class MoneyJournalPage extends AbstractAppPage {
 
-    @FindBy(xpath = "//android.view.View[@content-desc='全部头条攻略理财']")
+    @FindBy(xpath = "//android.view.View[@content-desc='全部头条攻略理财']|//UIAStaticText[@name='全部']")
     private WebElement pageLabel;
 
     public MoneyJournalPage(AppiumDriver appiumDriver) {
