@@ -8,6 +8,7 @@ import basicTool.WaitTool;
 import io.appium.java_client.AppiumDriver;
 import page.app.AbstractAppPage;
 import page.app.discover.DiscoverPage;
+import page.app.wallet.WalletPage;
 
 public class NavigationPage extends AbstractAppPage {
 
@@ -31,6 +32,10 @@ public class NavigationPage extends AbstractAppPage {
 
     public DiscoverPage navigationToDiscover() throws Exception {
         return click(discoverButton, DiscoverPage.class);
+    }
+
+    public WalletPage navigationToWallet() throws Exception {
+        return click(walletButton, WalletPage.class);
     }
 
 }
