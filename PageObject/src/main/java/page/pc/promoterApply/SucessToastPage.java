@@ -9,7 +9,7 @@ import basicTool.WaitTool;
 import page.pc.AbstractPCPage;
 
 public class SucessToastPage extends AbstractPCPage {
-    @FindBy(css = ".blue_toast")
+    @FindBy(css = "p.p-mask-title")
     private WebElement sucessToastLabel;
 
     public SucessToastPage(WebDriver driver) {

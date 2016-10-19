@@ -1,93 +1,88 @@
 package dataBean.pc.opromoter;
 
-public class OpromoterBean {
-	private String promoterName;
-	private String IdCardNo;
-	private String telePhoneNo;
-	private String email;
-	private String province;
-	private String city;
-	private String cooperSource;
-	private int promotionDirection; //0代表个人版，1代表企业版
+import dataBean.IDataBean;
 
-	public OpromoterBean() {
+public class OpromoterBean implements IDataBean {
+    private String id;
+    private String promoterName;
+    private String IdCardNo;
+    private String telePhoneNo;
+    private String email;
+    private String province;
+    private String city;
+    private String cooperSource;
+    private int promotionDirection; // 0代表个人版，1代表企业版
 
-	}
+    public String getId() {
+        return id;
+    }
 
-	public String getPromoterName() {
-		return promoterName;
-	}
+    public void setId(String id) {
+        this.id = id;
+    }
 
-	public void setPromoterName(String promoterName) {
-		this.promoterName = promoterName;
-	}
+    public String getPromoterName() {
+        return promoterName;
+    }
 
-	public String getIdCardNo() {
-		return IdCardNo;
-	}
+    public void setPromoterName(String promoterName) {
+        this.promoterName = promoterName;
+    }
 
-	public void setIdCardNo(String idCardNo) {
-		IdCardNo = idCardNo;
-	}
+    public String getIdCardNo() {
+        return IdCardNo;
+    }
 
-	public String getTelePhoneNo() {
-		return telePhoneNo;
-	}
+    public void setIdCardNo(String idCardNo) {
+        IdCardNo = idCardNo;
+    }
 
-	public void setTelePhoneNo(String telePhoneNo) {
-		this.telePhoneNo = telePhoneNo;
-	}
+    public String getTelePhoneNo() {
+        return telePhoneNo;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public void setTelePhoneNo(String telePhoneNo) {
+        this.telePhoneNo = telePhoneNo;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public String getEmail() {
+        return email;
+    }
 
-	public String getProvince() {
-		return province;
-	}
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-	public void setProvince(String province) {
-		this.province = province;
-	}
+    public String getProvince() {
+        return province;
+    }
 
-	public String getCity() {
-		return city;
-	}
+    public void setProvince(String province) {
+        this.province = province;
+    }
 
-	public void setCity(String city) {
-		this.city = city;
-	}
+    public String getCity() {
+        return city;
+    }
 
-	public String getCooperSource() {
-		return cooperSource;
-	}
+    public void setCity(String city) {
+        this.city = city;
+    }
 
-	public void setCooperSource(String cooperSource) {
-		this.cooperSource = cooperSource;
-	}
+    public String getCooperSource() {
+        return cooperSource;
+    }
 
-	public int getPromotionDirection() {
-		return promotionDirection;
-	}
+    public void setCooperSource(String cooperSource) {
+        this.cooperSource = cooperSource;
+    }
 
-	public void setPromotionDirection(int promotionDirection) {
-		this.promotionDirection = promotionDirection;
-	}
+    public int getPromotionDirection() {
+        return promotionDirection;
+    }
 
-	public OpromoterBean(String promoterName, String idCardNo,
-			String telePhoneNo, String email, String province, String city,
-			String cooperSource) {
-		super();
-		this.promoterName = promoterName;
-		IdCardNo = idCardNo;
-		this.telePhoneNo = telePhoneNo;
-		this.email = email;
-		this.province = province;
-		this.city = city;
-		this.cooperSource = cooperSource;
-	}
+    public void setPromotionDirection(int promotionDirection) {
+        this.promotionDirection = promotionDirection;
+    }
+
 }

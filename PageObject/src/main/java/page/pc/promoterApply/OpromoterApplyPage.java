@@ -1,8 +1,7 @@
 package page.pc.promoterApply;
 
-import java.util.List;
-
 import org.apache.commons.lang3.StringUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,63 +12,47 @@ import dataBean.pc.opromoter.OpromoterBean;
 import page.pc.AbstractPCPage;
 
 public class OpromoterApplyPage extends AbstractPCPage {
-    @FindBy(css = "#check i[id='0']")
-    private WebElement personRadioButton;
 
-    @FindBy(css = "#check i[id='1']")
-    private WebElement companyRadioButton;
-
-    @FindBy(css = "#promoterName")
+    @FindBy(css = "input[name='name']")
     private WebElement promoterNameTextFiled;
 
-    @FindBy(css = "#IdCardNo")
+    @FindBy(css = "input[name='idNo']")
     private WebElement IdCardNoTextFiled;
 
-    @FindBy(css = "#telePhoneNo")
+    @FindBy(css = "input[name='telNO']")
     private WebElement telePhoneNoTextFiled;
 
-    @FindBy(css = "#email")
+    @FindBy(css = "input[name='email']")
     private WebElement emailTextFiled;
 
-    @FindBy(css = "#province")
+    @FindBy(css = "input[name='province']")
     private WebElement provinceTextFiled;
 
-    @FindBy(css = ".provinceContainer:not([style*='display: none']) .provinceA")
-    private List<WebElement> provinceSelectList;
-
-    @FindBy(css = "#city")
+    @FindBy(css = "input[name='city']")
     private WebElement cityTextFiled;
 
-    @FindBy(css = "#cooperSource")
+    @FindBy(css = "textarea[name='coSource']")
     private WebElement cooperSourceTextFiled;
 
-    @FindBy(css = ".submit")
+    @FindBy(css = ".p-submit")
     private WebElement submitButton;
 
-    @FindBy(css = "a[href*='person']")
-    private WebElement personOpromoterLink;
-
-    @FindBy(css = "a[href*='company']")
-    private WebElement companyOpromoterLink;
+    @FindBy(css = "a[href='/contact/']")
+    private WebElement viewContactLink;
 
     public OpromoterApplyPage(WebDriver driver) {
         super(driver);
-        WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(companyOpromoterLink), 60);
+        WaitTool.waitFor(driver, ExpectedConditions.visibilityOf(submitButton), 60);
     }
 
     public <expectPage extends AbstractPCPage> expectPage fillOpromoterInformation(OpromoterBean opromoter,
             Boolean passOrBlock) throws Exception {
-        // if (StringUtils.isNoneEmpty(opromoter.getPromoterName())) {
-        // if (opromoter.getPromotionDirection() == 0)
-        // click(personRadioButton, promoterNameTextFiled);
-        // else
-        // click(companyRadioButton, promoterNameTextFiled);
-        // }
+
         if (StringUtils.isNoneEmpty(opromoter.getPromoterName())) {
             setInputText(promoterNameTextFiled, opromoter.getPromoterName());
         }
         if (StringUtils.isNoneEmpty(opromoter.getIdCardNo())) {
-			setInputText(IdCardNoTextFiled, opromoter.getIdCardNo());
+            setInputText(IdCardNoTextFiled, opromoter.getIdCardNo());
         }
         if (StringUtils.isNoneEmpty(opromoter.getTelePhoneNo())) {
             setInputText(telePhoneNoTextFiled, opromoter.getTelePhoneNo());
@@ -78,6 +61,8 @@ public class OpromoterApplyPage extends AbstractPCPage {
             setInputText(emailTextFiled, opromoter.getEmail());
         }
         if (StringUtils.isNoneEmpty(opromoter.getProvince())) {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("document.getElementsByTagName('input')[4].readOnly=false");
             setInputText(provinceTextFiled, opromoter.getProvince());
             emailTextFiled.click();
         }
@@ -102,12 +87,8 @@ public class OpromoterApplyPage extends AbstractPCPage {
         return click(submitButton, OpromoterApplyPage.class);
     }
 
-    public CompanyOpromoterPage clickPersonOpromoterLink() throws Exception {
-        return click(personOpromoterLink, CompanyOpromoterPage.class);
-    }
-
-    public CompanyOpromoterPage clickCompanyOpromoterLink() throws Exception {
-        return click(companyOpromoterLink, CompanyOpromoterPage.class);
+    public ExtensionPage clickViewContactLink() throws Exception {
+        return click(viewContactLink, ExtensionPage.class);
     }
 
 }

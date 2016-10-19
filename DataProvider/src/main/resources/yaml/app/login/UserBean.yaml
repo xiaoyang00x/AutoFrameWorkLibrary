@@ -1,3 +1,8 @@
 --- !dataBean.app.login.UserBean
-userName: 
-passWord: 
+id: 'default'
+userName: 13120141631
+passWord: 'qwerty'
+--- !dataBean.app.login.UserBean
+id: 'special'
+userName: yangyu1
+passWord: 'qwerty2'

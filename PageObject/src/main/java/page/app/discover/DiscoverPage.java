@@ -19,6 +19,9 @@ public class DiscoverPage extends AbstractAppPage {
     @FindBy(xpath = "//UIATableCell[@name='活动']")
     private WebElement activityButton;
 
+    @FindBy(xpath = "//android.widget.TextView[@text='人人催']")
+    private WebElement rrcButton;
+
     public DiscoverPage(AppiumDriver appiumDriver) {
         super(appiumDriver);
         WaitTool.waitFor(appiumDriver, ExpectedConditions.visibilityOf(discoverLabel), DefaultWaitElementTime4Page);

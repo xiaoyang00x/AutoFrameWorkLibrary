@@ -1,8 +1,19 @@
 package dataBean.app.login;
 
-public class UserBean {
+import dataBean.IDataBean;
+
+public class UserBean implements IDataBean {
+    private String id;
     private String userName;
     private String passWord;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getUserName() {
         return userName;
