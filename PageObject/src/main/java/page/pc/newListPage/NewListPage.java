@@ -11,10 +11,10 @@ import page.pc.AbstractPCPage;
 
 public class NewListPage extends AbstractPCPage {
 
-    @FindBy(css = "img[src='images/news_words.png']")
+    @FindBy(css = "h2.cat-line-v.cat-title")
     private WebElement newListPageIMG;
 
-    @FindBy(css = "a[class='cat']")
+    @FindBy(css = "a.cat-line-v")
     private List<WebElement> newList;
 
     public NewListPage(WebDriver driver) {
@@ -28,6 +28,10 @@ public class NewListPage extends AbstractPCPage {
 
     public NewListPage clickProductNewsList() throws Exception {
         return click(getWebElementByName("产品新闻", newList), NewListPage.class);
+    }
+
+    public NewListPage clickUserNewsList() throws Exception {
+        return click(getWebElementByName("用户故事", newList), NewListPage.class);
     }
 
 }

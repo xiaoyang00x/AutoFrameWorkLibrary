@@ -11,10 +11,10 @@ import page.pc.AbstractPCPage;
 
 public class FunctionDetailPage extends AbstractPCPage {
 
-    @FindBy(css = "[href='/functionDetail.html']")
+    @FindBy(css = "h2.cat-line-v.func-line.cat-title")
     private WebElement functionDetailListField;
 
-    @FindBy(css = "#category-list span")
+    @FindBy(css = "a.cat-line-v.func-line")
     private List<WebElement> functionLinkList;
 
     public FunctionDetailPage(WebDriver driver) {

@@ -13,7 +13,7 @@ import page.pc.AbstractPCPage;
 
 public class AboutUsPage extends AbstractPCPage {
 
-    @FindBy(css = ".article-list")
+    @FindBy(css = "img[alt='借贷宝']")
     private WebElement jieDaiBaoImage;
 
     @FindBy(css = "a[href='http://www.hotjob.cn/wt/rrxjdb/web/index']")
@@ -33,7 +33,7 @@ public class AboutUsPage extends AbstractPCPage {
 
         JavascriptExecutor jse = (JavascriptExecutor) driver;
 
-        jse.executeScript("document.getElementsByClassName('pc-about-more')[0].click()");
+        jse.executeScript("document.getElementsByTagName('a')[7].click()");
 
         WindowsUtil.getInstance(driver).switchWindow();
 
@@ -45,7 +45,7 @@ public class AboutUsPage extends AbstractPCPage {
 
         JavascriptExecutor jse = (JavascriptExecutor) driver;
 
-        jse.executeScript("document.getElementsByClassName('promoterApply')[0].click()");
+        jse.executeScript("document.getElementsByTagName('a')[8].click()");
 
         WindowsUtil.getInstance(driver).switchWindow();
 
