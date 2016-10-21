@@ -16,25 +16,25 @@ import page.pc.promoterApply.OpromoterApplyPage;
 
 public class NavigationPage extends AbstractPCPage {
 
-    @FindBy(css = "#common-header li a[href='/pcIndex.html']")
+    @FindBy(css = "a[title='首页']")
     private WebElement HomePageLink;
 
-    @FindBy(css = "#common-header li a[href='https://chongzhi.jiedaibao.com']")
+    @FindBy(css = "a[title='在线充值']")
     private WebElement PayPageLink;
 
-    @FindBy(css = "#common-header li a[href='/functionDetail.html']")
+    @FindBy(css = "a[title='功能介绍']")
     private WebElement FunctionDetaillLink;
 
-    @FindBy(css = "[href='https://qiye.jiedaibao.com/']")
+    @FindBy(css = "a[title='企业版']")
     private WebElement BusinessVersionLink;
 
-    @FindBy(css = "[href='/pcNewsList.html']")
+    @FindBy(css = "a[title='信息动态']")
     private WebElement NewListLink;
 
-    @FindBy(css = "[href='/partials/aboutUs/promoterApply.html']")
+    @FindBy(css = "a[title='推广合作']")
     private WebElement promoterApplyLink;
 
-    @FindBy(css = "[href='/pcAbout.html']")
+    @FindBy(css = "a[title='关于我们']")
     private WebElement aboutUsLink;
 
     public NavigationPage(WebDriver driver) {
