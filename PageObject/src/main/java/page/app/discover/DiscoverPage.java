@@ -18,11 +18,8 @@ public class DiscoverPage extends AbstractAppPage {
 
     @FindBy(xpath = "//UIATableCell[@name='活动']")
     private WebElement activityButton;
-    
-    @FindBy(xpath = "//android.widget.TextView[@text='人人催']")
-    private WebElement rrcButton;
 
-    @FindBy(xpath = "//android.widget.TextView[@text='人人催']")
+    @FindBy(xpath = "//android.widget.TextView[@text='人人催']|//UIATableCell[@name='人人催']")
     private WebElement rrcButton;
 
     public DiscoverPage(AppiumDriver appiumDriver) {
@@ -37,9 +34,9 @@ public class DiscoverPage extends AbstractAppPage {
     public ActivityPage clickActivityButton() throws Exception {
         return click(activityButton, ActivityPage.class);
     }
-    
+
     public RrcEntrancePage clickRrcButton() throws Exception {
-    	return click(rrcButton , RrcEntrancePage.class);
+        return click(rrcButton, RrcEntrancePage.class);
     }
 
 }

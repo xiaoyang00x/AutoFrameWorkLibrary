@@ -8,13 +8,13 @@ import basicTool.WaitTool;
 import io.appium.java_client.AppiumDriver;
 import page.app.AbstractAppPage;
 
-public class DidHistoryPage extends AbstractAppPage{
-	@FindBy(xpath = "//android.widget.TextView[@text='出价记录']")
+public class DidHistoryPage extends AbstractAppPage {
+    @FindBy(xpath = "//android.widget.TextView[@text='出价记录']|//UIAStaticText[@name='出价记录']")
     private WebElement bidHistoryLabel;
 
-	public DidHistoryPage(AppiumDriver appiumDriver) {
-		super(appiumDriver);
-		WaitTool.waitFor(appiumDriver, ExpectedConditions.visibilityOf(bidHistoryLabel), DefaultWaitElementTime4Page);
-	}
+    public DidHistoryPage(AppiumDriver appiumDriver) {
+        super(appiumDriver);
+        WaitTool.waitFor(appiumDriver, ExpectedConditions.visibilityOf(bidHistoryLabel), DefaultWaitElementTime4Page);
+    }
 
 }

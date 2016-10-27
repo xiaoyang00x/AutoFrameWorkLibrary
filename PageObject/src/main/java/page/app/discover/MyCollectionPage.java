@@ -8,14 +8,15 @@ import basicTool.WaitTool;
 import io.appium.java_client.AppiumDriver;
 import page.app.AbstractAppPage;
 
-public class MyCollectionPage extends AbstractAppPage{
-	
-	@FindBy(xpath = "//android.view.View[@content-desc='personMenu']")
+public class MyCollectionPage extends AbstractAppPage {
+
+    @FindBy(xpath = "//android.view.View[@content-desc='personMenu']|//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAWebView[1]")
     private WebElement myInformationLabel;
 
-	public MyCollectionPage(AppiumDriver appiumDriver) {
-		super(appiumDriver);
-		WaitTool.waitFor(appiumDriver, ExpectedConditions.visibilityOf(myInformationLabel), DefaultWaitElementTime4Page);
-	}
+    public MyCollectionPage(AppiumDriver appiumDriver) {
+        super(appiumDriver);
+        WaitTool.waitFor(appiumDriver, ExpectedConditions.visibilityOf(myInformationLabel),
+                DefaultWaitElementTime4Page);
+    }
 
 }

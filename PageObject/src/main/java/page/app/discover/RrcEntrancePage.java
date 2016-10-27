@@ -13,13 +13,11 @@ import page.app.AbstractAppPage;
 
 public class RrcEntrancePage extends AbstractAppPage {
 
-    @FindBy(xpath = "//android.widget.TextView[@text='逾期债权']")
+    @FindBy(xpath = "//android.widget.TextView[@text='逾期债权']|//UIANavigationBar/UIAStaticText[@name='逾期债权']")
     private WebElement overdueLabel;
 
-    @FindBy(xpath = "//android.widget.LinearLayout[3]/android.widget.ImageView[1]")
+    @FindBy(xpath = "//android.widget.LinearLayout[3]/android.widget.ImageView[1]|//UIAApplication[1]/UIAWindow[1]/UIANavigationBar[1]/UIAButton[3]")
     private WebElement findOverdueTab;
-    
-    
 
     public RrcEntrancePage(AppiumDriver appiumDriver) {
         super(appiumDriver);
@@ -40,4 +38,3 @@ public class RrcEntrancePage extends AbstractAppPage {
         return click(findOverdueTab, FindOverduePage.class);
     }
 }
-	

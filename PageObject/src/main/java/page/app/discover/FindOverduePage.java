@@ -13,16 +13,16 @@ import page.app.AbstractAppPage;
 
 public class FindOverduePage extends AbstractAppPage {
 
-    @FindBy(xpath = "//android.widget.TextView[@text='查老赖']")
+    @FindBy(xpath = "//android.widget.TextView[@text='查老赖']|//UIAStaticText[@name='查老赖']")
     private WebElement findOverdueLabel;
 
-    @FindBy(xpath = "//android.widget.EditText[@content-desc='输入手机号/身份证号查询']")
+    @FindBy(xpath = "//android.widget.EditText[@content-desc='输入手机号/身份证号查询']|//UIATextField[@value='输入手机号/身份证号查询']")
     private WebElement inputText;
 
-    @FindBy(xpath = "//android.widget.Button[@content-desc='查询']")
+    @FindBy(xpath = "//android.widget.Button[@content-desc='查询']|//UIAButton[@name='查询']")
     private WebElement searchButton;
 
-    @FindBy(xpath = "//android.view.View[@content-desc='用户未注册或不存在超过45天未偿还的逾期记录']")
+    @FindBy(xpath = "//android.view.View[@content-desc='用户未注册或不存在超过45天未偿还的逾期记录']|//UIAStaticText[@name='用户未注册或不存在超过45天未偿还的逾期记录']")
     private WebElement textView;
 
     public FindOverduePage(AppiumDriver appiumDriver) {
