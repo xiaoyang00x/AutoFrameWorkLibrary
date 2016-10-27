@@ -15,6 +15,9 @@ public class WalletPage extends AbstractAppPage {
 
     @FindBy(xpath = "//UIATableCell[3]/UIAButton[1]|//android.widget.TextView[@text='余额生息']")
     private WebElement tradeCaptialButton;
+    
+    @FindBy(xpath = "//android.widget.RelativeLayout[1]/android.view.View[1]")
+    private WebElement photoButton;
 
     public WalletPage(AppiumDriver appiumDriver) {
         super(appiumDriver);
@@ -25,5 +28,10 @@ public class WalletPage extends AbstractAppPage {
     public TradeCaptialPage NavigationToTradeCaptialPage() throws Exception {
         return click(tradeCaptialButton, TradeCaptialPage.class);
     }
-
+    
+    public PersonalInformationPage ToPersonalInformatinPage() throws Exception {
+        return click(photoButton, PersonalInformationPage.class);
+    }
+    
+    
 }
