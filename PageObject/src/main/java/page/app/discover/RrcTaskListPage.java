@@ -24,8 +24,7 @@ public class RrcTaskListPage extends AbstractAppPage {
 
     public RrcTaskListPage(AppiumDriver appiumDriver) {
         super(appiumDriver);
-        WaitTool.waitFor(appiumDriver, ExpectedConditions.visibilityOfAllElements(taskLabel),
-                DefaultWaitElementTime4Page);
+        WaitTool.waitFor(appiumDriver, ExpectedConditions.visibilityOf(taskLabel.get(0)), DefaultWaitElementTime4Page);
     }
 
     public DebtDetailPage ToDebtDetailPage() throws Exception {
