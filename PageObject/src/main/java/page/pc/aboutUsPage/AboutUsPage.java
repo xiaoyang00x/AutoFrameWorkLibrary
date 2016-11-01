@@ -18,7 +18,7 @@ public class AboutUsPage extends AbstractPCPage {
 
     @FindBy(css = "a[href='http://www.hotjob.cn/wt/rrxjdb/web/index']")
     private WebElement joinUsLink;
-
+    
     @FindBy(css = "a[class='promoterApply']")
     private WebElement joinExtensionTeamLink;
 
@@ -30,7 +30,7 @@ public class AboutUsPage extends AbstractPCPage {
     public JDBRecruitPage clickJoinUsLink() throws Exception {
 
         WebReporter.log(driver, driver.getTitle(), true, true);
-
+        
         JavascriptExecutor jse = (JavascriptExecutor) driver;
 
         jse.executeScript("document.getElementsByTagName('a')[7].click()");
@@ -44,7 +44,7 @@ public class AboutUsPage extends AbstractPCPage {
         WebReporter.log(driver, driver.getTitle(), true, true);
 
         JavascriptExecutor jse = (JavascriptExecutor) driver;
-
+        
         jse.executeScript("document.getElementsByTagName('a')[8].click()");
 
         WindowsUtil.getInstance(driver).switchWindow();
