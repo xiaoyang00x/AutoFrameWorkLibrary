@@ -22,8 +22,9 @@ public class RrcTaskListPage extends AbstractAppPage {
     @FindBy(xpath = "//UIAStaticText[@name='我的催收']")
     private WebElement mineLabel;
 
-    public RrcTaskListPage(AppiumDriver appiumDriver) {
+    public RrcTaskListPage(AppiumDriver appiumDriver) throws InterruptedException {
         super(appiumDriver);
+        Thread.sleep(5000);
         WaitTool.waitFor(appiumDriver, ExpectedConditions.visibilityOf(taskLabel.get(0)), DefaultWaitElementTime4Page);
     }
 

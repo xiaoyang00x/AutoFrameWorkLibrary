@@ -16,7 +16,7 @@ public class DiscoverPage extends AbstractAppPage {
     @FindBy(xpath = "//android.widget.TextView[@text='投资有道']|//UIAStaticText[@name='投资有道']")
     private WebElement moneyJournalButton;
 
-    @FindBy(xpath = "//UIATableCell[@name='活动']")
+    @FindBy(xpath = "//UIATableCell[@name='活动']|//android.widget.TextView[@text='活动']")
     private WebElement activityButton;
 
     @FindBy(xpath = "//android.widget.TextView[@text='人人催']|//UIATableCell[@name='人人催']")
