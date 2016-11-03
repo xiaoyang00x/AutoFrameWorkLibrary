@@ -12,7 +12,7 @@ import page.app.navigation.NavigationPage;
 
 public class LoginPage extends AbstractAppPage {
 
-    @FindBy(xpath = "//UIAApplication/UIAWindow/UIAButton[@name='登录']|//android.widget.Button[@text='登录']")
+    @FindBy(xpath = "//UIAApplication/UIAWindow/UIAButton[@name='登录']|//android.widget.Button[@text='登录']|//android.widget.RelativeLayout/android.widget.TextView[@text='登录']")
     private WebElement loginButton;
 
     @FindBy(xpath = "//UIAApplication/UIAWindow/UIAButton[@name='注册']|//android.widget.Button[@text='注册']")
