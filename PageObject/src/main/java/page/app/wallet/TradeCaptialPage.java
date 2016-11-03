@@ -16,6 +16,10 @@ public class TradeCaptialPage extends AbstractAppPage {
     public TradeCaptialPage(AppiumDriver appiumDriver) {
         super(appiumDriver);
         WaitTool.waitFor(appiumDriver, ExpectedConditions.visibilityOf(tradeCaptialLabel), DefaultWaitElementTime4Page);
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+        }
     }
 
 }
