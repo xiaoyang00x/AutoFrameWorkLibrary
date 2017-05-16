@@ -5,3 +5,5 @@ PageObject/.gitignore
 .project
 .settings/
 PageObject/target/
+.idea/
+*.iml

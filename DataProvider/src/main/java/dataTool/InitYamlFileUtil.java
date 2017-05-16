@@ -3,10 +3,11 @@ package dataTool;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.util.Date;
 
 import org.ho.yaml.Yaml;
 
-import dataBean.app.login.UserBean;
+import dataBean.dubbo.productSys.mytestBean;
 
 public class InitYamlFileUtil {
 
@@ -24,10 +25,14 @@ public class InitYamlFileUtil {
         }
     }
 
-    public static void main(String[] args) {
-        UserBean u = new UserBean();
-        u.setUserName("13295412345");
-        u.setPassWord("qqqqqq");
+    public static void main(String[] args) throws Exception {
+        mytestBean u = new mytestBean();
+        u.setId("mytest");
+        u.setName("13295412345");
+        u.setAge(17);
+        u.setBrithday(new Date());
+        mytestBean u2 = DataFactory.getObject(mytestBean.class, "mytest");
+        System.out.println(u2.getId());
         initYamlFile(u);
     }
 
