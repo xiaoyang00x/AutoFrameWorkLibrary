@@ -1,5 +1,11 @@
 --- !dataBean.dubbo.productSys.mytestBean
+age: 28
+brithday: !java.util.Date "1495104288154"
+id: test123
+name: "13295422111"
+
+--- !dataBean.dubbo.productSys.mytestBean
 age: 17
-brithday: !java.util.Date "1494902053083"
-id: mytest
+brithday: !java.util.Date "1495104288154"
+id: test456
 name: "13295412345"

@@ -11,7 +11,7 @@ public class mytestBean implements IDataBean {
     
     private String name;
 
-    private int age;
+    private Integer age;
 
     private Date brithday;
 
@@ -31,11 +31,11 @@ public class mytestBean implements IDataBean {
         this.name = name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 

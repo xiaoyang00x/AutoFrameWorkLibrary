@@ -25,15 +25,18 @@ public class InitYamlFileUtil {
         }
     }
 
+    
+    
     public static void main(String[] args) throws Exception {
         mytestBean u = new mytestBean();
         u.setId("mytest");
         u.setName("13295412345");
-        u.setAge(17);
+        u.setAge(19);
         u.setBrithday(new Date());
-        mytestBean u2 = DataFactory.getObject(mytestBean.class, "mytest");
-        System.out.println(u2.getId());
+       // mytestBean u2 = DataFactory.getObject(mytestBean.class, "mytest");
+       // System.out.println(u2.getId());
         initYamlFile(u);
+        System.out.println(u.getId());
     }
 
 }

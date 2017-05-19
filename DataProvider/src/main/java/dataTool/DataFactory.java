@@ -1,13 +1,14 @@
 package dataTool;
 
-import java.io.FileNotFoundException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-
+import dataBean.IDataBean;
 import org.ho.yaml.Yaml;
 
-import dataBean.IDataBean;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DataFactory {
 
@@ -58,5 +59,6 @@ public class DataFactory {
         throw new Exception("No data by use id in this yaml file!!!!");
 
     }
+
 
 }
