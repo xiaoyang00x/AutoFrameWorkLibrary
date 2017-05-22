@@ -1,0 +1,7 @@
+--- !dataBean.dubbo.productSys.MyUserCreditRelationQueryDto
+buyerUid: "1321321"
+id: default
+orderSeqNo: "1233321"
+productCode: "321321"
+productType: 1
+projectCode: "332"

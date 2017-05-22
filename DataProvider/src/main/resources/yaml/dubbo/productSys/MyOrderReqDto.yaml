@@ -1,0 +1,12 @@
+--- !dataBean.dubbo.productSys.MyOrderReqDto
+buyerUid: "4323214324"
+channelCode: gfsfs
+couponInterestRate: !java.lang.Double 1234.0
+id: "3123432"
+orderSeqNo: "43214321"
+productCode: "123"
+productInterestRate: !java.lang.Double 1234.0
+productType: 2
+tradeAmount: !java.lang.Double 432432.0
+tradePrice: !java.lang.Double 1000.0
+tradeTime: !java.util.Date "1495438721395"

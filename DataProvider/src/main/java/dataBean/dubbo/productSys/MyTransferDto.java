@@ -5,7 +5,10 @@ import java.io.Serializable;
 /**
  * Created by alex on 2017/5/19.
  */
-public class TransferDto implements Serializable {
+public class MyTransferDto implements Serializable {
+
+    private String id;
+
     /**
      * 转让前债权所在产品编号
      */
@@ -41,6 +44,15 @@ public class TransferDto implements Serializable {
 
     public void setTransferProfit(Double transferProfit) {
         this.transferProfit = transferProfit;
+    }
+
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     @Override

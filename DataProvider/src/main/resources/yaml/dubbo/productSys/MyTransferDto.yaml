@@ -1,0 +1,5 @@
+--- !dataBean.dubbo.productSys.MyTransferDto
+id: "1231321"
+productCode: "132321"
+transferAmount: !java.lang.Double 15.0
+transferProfit: !java.lang.Double 14.0

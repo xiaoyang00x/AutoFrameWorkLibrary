@@ -11,13 +11,17 @@ import java.util.List;
 /**
  * Created by alex on 2017/5/19.
  */
-public class ProductQueryDto extends PageQuery {
+public class MyProductQueryDto extends PageQuery {
 
-    public ProductQueryDto(){
+    public MyProductQueryDto(){
         super();
         this.setPageIndex(1);
         this.setPageSize(10);
     }
+
+    private String id;
+
+
 
     /**
      * 产品编号
@@ -269,6 +273,15 @@ public class ProductQueryDto extends PageQuery {
 
     public void setLimitMinInvestAmount(Double limitMinInvestAmount) {
         this.limitMinInvestAmount = limitMinInvestAmount;
+    }
+
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     @Override

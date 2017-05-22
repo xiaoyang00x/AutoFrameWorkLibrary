@@ -5,7 +5,10 @@ import com.miaoqian.framework.domain.PageQuery;
 /**
  * Created by alex on 2017/5/19.
  */
-public class UserCreditRelationQueryDto extends PageQuery {
+public class MyUserCreditRelationQueryDto extends PageQuery {
+
+
+    private String id;
 
     /**
      * 购买者Id
@@ -67,6 +70,14 @@ public class UserCreditRelationQueryDto extends PageQuery {
 
     public void setOrderSeqNo(String orderSeqNo) {
         this.orderSeqNo = orderSeqNo;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     @Override

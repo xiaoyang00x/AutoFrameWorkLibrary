@@ -5,7 +5,9 @@ import com.miaoqian.framework.domain.PageQuery;
 /**
  * Created by alex on 2017/5/19.
  */
-public class UserCreditRepayQueryDto extends PageQuery {
+public class MyUserCreditRepayQueryDto extends PageQuery {
+
+    private String id ;
 
     /**
      * 购买者Id
@@ -27,6 +29,15 @@ public class UserCreditRepayQueryDto extends PageQuery {
      * 认购交易单号
      */
     private String orderSeqNo;
+
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getBuyerUid() {
         return buyerUid;

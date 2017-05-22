@@ -8,9 +8,9 @@ import java.util.List;
 
 import org.ho.yaml.Yaml;
 
-import com.miaoqian.prod.api.dto.request.OrderQueryDto;
+import com.miaoqian.prod.api.dto.request.ProjectRelateSubParamDto;
 
-import dataBean.dubbo.productSys.MyOrderQueryDto;
+import dataBean.dubbo.productSys.MyProjectRelateSubParamDto;
 
 public class InitYamlFileUtil {
 
@@ -35,19 +35,24 @@ public class InitYamlFileUtil {
         a.add(1);
         a.add(2);
         a.add(3);
-        MyOrderQueryDto m1 = new MyOrderQueryDto();
-        m1.setId("123");
-        m1.setProductTypeList(a);
-        m1.setTransferStatus(1);
-        m1.setStatus(1);
-        m1.setProductCode("1");
-        m1.setOrderSeqNo("12345677");
-        m1.setIsSettled(0);
-        m1.setBuyerUid("432143214321");
-        initYamlFile(m1);
-        
-        OrderQueryDto m2 = DataFactory.tansferData(m1, OrderQueryDto.class);
-        System.out.println(m2.toString());
+        List b = new ArrayList<String>();
+        b.add("a");
+        b.add("b");
+        b.add("c");
+        List <ProjectRelateSubParamDto> c = new ArrayList<ProjectRelateSubParamDto>();
+        c.add(new ProjectRelateSubParamDto());
+        c.add(new ProjectRelateSubParamDto());
+        c.add(new ProjectRelateSubParamDto());
+
+
+        MyProjectRelateSubParamDto m2 = new MyProjectRelateSubParamDto();
+        m2.setId("default");
+        m2.setProjectCode("2313");
+        m2.setOccupyAmount(15.00);
+
+        initYamlFile(m2);
+        ProjectRelateSubParamDto m3 = DataFactory.tansferData(m2, ProjectRelateSubParamDto.class);
+        System.out.println(m3.toString());
         
     }
 

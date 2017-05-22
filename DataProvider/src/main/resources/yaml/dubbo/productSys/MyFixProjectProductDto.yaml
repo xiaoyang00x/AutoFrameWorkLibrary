@@ -1,0 +1,11 @@
+--- !dataBean.dubbo.productSys.MyFixProjectProductDto
+borrowerId: "543543534"
+canTransfer: &1 2
+id: default
+investType: *1
+minKeepTrans: *1
+originSeqNo: "3232432"
+previousCode: "3221321"
+previousSeqNo: "432432"
+projectCode: dsadsa
+targetUid: "3213"

@@ -1,0 +1,5 @@
+--- !dataBean.dubbo.productSys.MyTransferProductQueryDto
+id: default
+orderSeqNo: "1233321"
+transferMaxDate: !java.util.Date "1495444384575"
+transferMinDate: !java.util.Date "1495444384575"

@@ -5,8 +5,10 @@ import java.io.Serializable;
 /**
  * Created by alex on 2017/5/19.
  */
-public class ProductTransferDto implements Serializable {
+public class MyProductTransferDto implements Serializable {
 
+
+    private String id;
     /**
      * 由业务方生成一个transferNo, 防止同一个transferNo重复调用
      * 可以不传,如果不传,则不做重复验证
@@ -65,6 +67,15 @@ public class ProductTransferDto implements Serializable {
 
     public void setTransferNo(String transferNo) {
         this.transferNo = transferNo;
+    }
+
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     @Override

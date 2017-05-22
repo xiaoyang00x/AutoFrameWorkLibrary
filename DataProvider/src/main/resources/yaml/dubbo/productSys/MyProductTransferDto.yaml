@@ -1,0 +1,7 @@
+--- !dataBean.dubbo.productSys.MyProductTransferDto
+id: default
+orderSeqNo: "431431"
+transferCreditAmount: !java.lang.Double 10.0
+transferNo: "12321321"
+transferPrice: !java.lang.Double 12.0
+transferUid: "1111222333"

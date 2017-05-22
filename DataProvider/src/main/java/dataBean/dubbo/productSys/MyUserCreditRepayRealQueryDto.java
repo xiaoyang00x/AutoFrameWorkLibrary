@@ -5,7 +5,9 @@ import java.util.Date;
 /**
  * Created by alex on 2017/5/19.
  */
-public class UserCreditRepayRealQueryDto extends UserCreditRepayQueryDto {
+public class MyUserCreditRepayRealQueryDto extends MyUserCreditRepayQueryDto {
+
+    private String id ;
     /**
      * 产品类型
      * @see com.miaoqian.prod.api.enums
@@ -56,5 +58,16 @@ public class UserCreditRepayRealQueryDto extends UserCreditRepayQueryDto {
 
     public void setRepayResult(Integer repayResult) {
         this.repayResult = repayResult;
+    }
+
+
+    @Override
+    public String getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(String id) {
+        this.id = id;
     }
 }

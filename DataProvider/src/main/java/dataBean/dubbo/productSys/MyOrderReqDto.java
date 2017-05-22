@@ -6,7 +6,9 @@ import java.util.Date;
 /**
  * Created by alex on 2017/5/19.
  */
-public class OrderReqDto implements Serializable {
+public class MyOrderReqDto implements Serializable {
+
+    private String id;
 
     /**
      * 认购交易编号
@@ -138,6 +140,14 @@ public class OrderReqDto implements Serializable {
 
     public void setTradeTime(Date tradeTime) {
         this.tradeTime = tradeTime;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     @Override

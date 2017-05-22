@@ -5,7 +5,9 @@ import java.io.Serializable;
 /**
  * Created by alex on 2017/5/19.
  */
-public class RedemReqDto implements Serializable {
+public class MyRedemReqDto implements Serializable {
+
+    private String id;
 
     /**
      * 赎回用户Id
@@ -62,6 +64,14 @@ public class RedemReqDto implements Serializable {
 
     public void setRedemFee(Double redemFee) {
         this.redemFee = redemFee;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     @Override

@@ -7,8 +7,9 @@ import java.util.Date;
 /**
  * Created by alex on 2017/5/19.
  */
-public class TransferProductQueryDto extends com.miaoqian.prod.api.dto.request.ProductQueryDto {
+public class MyTransferProductQueryDto extends com.miaoqian.prod.api.dto.request.ProductQueryDto {
 
+    private String id;
 
 
     /**
@@ -26,7 +27,7 @@ public class TransferProductQueryDto extends com.miaoqian.prod.api.dto.request.P
      */
     private String orderSeqNo;
 
-    public TransferProductQueryDto(){
+    public MyTransferProductQueryDto(){
         super();
         this.setPageIndex(1);
         this.setPageSize(10);
@@ -54,5 +55,13 @@ public class TransferProductQueryDto extends com.miaoqian.prod.api.dto.request.P
 
     public void setOrderSeqNo(String orderSeqNo) {
         this.orderSeqNo = orderSeqNo;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

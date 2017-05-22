@@ -1,0 +1,26 @@
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+bidTypes: 
+  - a
+  - b
+  - c
+channelCode: "1321"
+excludeBidType: haha
+id: test
+investType: &2 1
+isTarget: *2
+isTransfer: &3 2
+limitMinInvestAmount: !java.lang.Double 11.0
+maxExpireDate: !java.util.Date "1495442537359"
+maxYearRate: !java.lang.Double 11.0
+minExpireDate: !java.util.Date "1495442537359"
+minYearRate: !java.lang.Double 12.0
+orderByField: !com.miaoqian.prod.api.enums.ProdOrderByField END_TIME
+orderByType: !com.miaoqian.prod.api.enums.OrderByType ASC
+productCode: "1"
+productTypeList: &11 
+  - *2
+  - *3
+  - 3
+pubUserId: aaa
+repayType: meiqian
+statusList: *11
