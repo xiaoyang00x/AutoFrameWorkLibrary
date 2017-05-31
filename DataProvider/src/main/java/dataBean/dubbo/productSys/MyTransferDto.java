@@ -1,11 +1,13 @@
 package dataBean.dubbo.productSys;
 
+import dataBean.IDataBean;
+
 import java.io.Serializable;
 
 /**
  * Created by alex on 2017/5/19.
  */
-public class MyTransferDto implements Serializable {
+public class MyTransferDto implements Serializable , IDataBean {
 
     private String id;
 

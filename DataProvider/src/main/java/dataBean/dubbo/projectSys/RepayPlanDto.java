@@ -1,13 +1,17 @@
 package dataBean.dubbo.projectSys;
 
+import dataBean.IDataBean;
+
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by alex on 2017/5/19.
  */
-public class RepayPlanDto implements Serializable, Comparable<RepayPlanDto> {
+public class RepayPlanDto implements Serializable, Comparable<RepayPlanDto>, IDataBean {
     private static final long serialVersionUID = 7130327687587314281L;
+
+    private String id;
 
     /**
      * 项目编码
@@ -140,6 +144,14 @@ public class RepayPlanDto implements Serializable, Comparable<RepayPlanDto> {
 
     public void setPrepaymentAmount(Double prepaymentAmount) {
         this.prepaymentAmount = prepaymentAmount;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     @Override

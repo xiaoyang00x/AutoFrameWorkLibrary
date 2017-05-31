@@ -1,13 +1,18 @@
 package dataBean.dubbo.projectSys;
 
+import dataBean.IDataBean;
+
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by alex on 2017/5/19.
  */
-public class LimitControlDto implements Serializable {
+public class LimitControlDto implements Serializable , IDataBean {
     private static final long serialVersionUID = -4064512181068651615L;
+
+    private String id;
+
     /**
      * 项目编码
      */
@@ -96,4 +101,11 @@ public class LimitControlDto implements Serializable {
     }
 
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 }

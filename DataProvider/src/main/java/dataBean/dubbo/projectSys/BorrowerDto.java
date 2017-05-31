@@ -1,12 +1,16 @@
 package dataBean.dubbo.projectSys;
 
+import dataBean.IDataBean;
+
 import java.io.Serializable;
 
 /**
  * Created by alex on 2017/5/19.
  */
-public class BorrowerDto implements Serializable {
+public class BorrowerDto implements Serializable , IDataBean {
     private static final long serialVersionUID = -584796011309237457L;
+
+    private String id;
     /**
      * 借款人ID
      */
@@ -190,4 +194,11 @@ public class BorrowerDto implements Serializable {
         this.email = email == null ? null : email.trim();
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 }

@@ -1,12 +1,16 @@
 package dataBean.dubbo.projectSys;
 
+import dataBean.IDataBean;
+
 import java.io.Serializable;
 
 /**
  * Created by alex on 2017/5/19.
  */
-public class ProjectMaterialDto implements Serializable {
+public class ProjectMaterialDto implements Serializable , IDataBean{
     private static final long serialVersionUID = 1600659570322903632L;
+
+    private String id;
 
     /**
      * 风控业务编号
@@ -107,6 +111,14 @@ public class ProjectMaterialDto implements Serializable {
 
     public void setIsPublished(Integer isPublished) {
         this.isPublished = isPublished;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     @Override

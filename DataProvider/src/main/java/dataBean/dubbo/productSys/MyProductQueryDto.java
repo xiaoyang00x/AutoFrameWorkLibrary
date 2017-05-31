@@ -3,6 +3,7 @@ package dataBean.dubbo.productSys;
 import com.miaoqian.framework.domain.PageQuery;
 import com.miaoqian.prod.api.enums.OrderByType;
 import com.miaoqian.prod.api.enums.ProdOrderByField;
+import dataBean.IDataBean;
 
 import java.util.Date;
 import java.util.List;
@@ -11,7 +12,7 @@ import java.util.List;
 /**
  * Created by alex on 2017/5/19.
  */
-public class MyProductQueryDto extends PageQuery {
+public class MyProductQueryDto extends PageQuery implements IDataBean {
 
     public MyProductQueryDto(){
         super();

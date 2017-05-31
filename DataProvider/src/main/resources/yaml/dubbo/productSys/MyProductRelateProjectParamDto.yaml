@@ -1,5 +1,6 @@
 --- !dataBean.dubbo.productSys.MyProductRelateProjectParamDto
 id: default
+productCode: "431431"
 relateList: 
   - !com.miaoqian.prod.api.dto.request.ProjectRelateSubParamDto {}
   - !com.miaoqian.prod.api.dto.request.ProjectRelateSubParamDto {}

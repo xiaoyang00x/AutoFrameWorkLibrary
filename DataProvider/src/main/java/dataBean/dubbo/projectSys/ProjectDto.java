@@ -1,13 +1,17 @@
 package dataBean.dubbo.projectSys;
 
+import dataBean.IDataBean;
+
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by alex on 2017/5/19.
  */
-public class ProjectDto implements Serializable {
+public class ProjectDto implements Serializable , IDataBean{
     private static final long serialVersionUID = 3891208550881287359L;
+
+    private String id;
 
     /**
      * 项目名称
@@ -499,6 +503,14 @@ public class ProjectDto implements Serializable {
 
     public void setRiskAuditor(String riskAuditor) {
         this.riskAuditor = riskAuditor;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     @Override

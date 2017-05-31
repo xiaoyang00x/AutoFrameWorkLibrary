@@ -1,11 +1,14 @@
 package dataBean.dubbo.projectSys;
 
 import com.miaoqian.framework.domain.PageQuery;
+import dataBean.IDataBean;
 
 /**
  * Created by alex on 2017/5/19.
  */
-public class RepayRealQueryDto extends PageQuery {
+public class RepayRealQueryDto extends PageQuery implements IDataBean {
+
+    private String id;
 
     private String borrowerId;
 
@@ -45,5 +48,13 @@ public class RepayRealQueryDto extends PageQuery {
 
     public void setRepayNo(String repayNo) {
         this.repayNo = repayNo;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

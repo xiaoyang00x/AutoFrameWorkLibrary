@@ -1,13 +1,14 @@
 package dataBean.dubbo.productSys;
 
 import com.miaoqian.prod.api.dto.request.ProductDto;
+import dataBean.IDataBean;
 
 import java.util.List;
 
 /**
  * Created by alex on 2017/5/22.
  */
-public class MyCurrentProductDto extends ProductDto {
+public class MyCurrentProductDto extends ProductDto implements IDataBean{
 
     private String id;
 

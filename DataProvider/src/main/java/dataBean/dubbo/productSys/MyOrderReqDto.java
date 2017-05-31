@@ -1,12 +1,14 @@
 package dataBean.dubbo.productSys;
 
+import dataBean.IDataBean;
+
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by alex on 2017/5/19.
  */
-public class MyOrderReqDto implements Serializable {
+public class MyOrderReqDto implements Serializable , IDataBean {
 
     private String id;
 

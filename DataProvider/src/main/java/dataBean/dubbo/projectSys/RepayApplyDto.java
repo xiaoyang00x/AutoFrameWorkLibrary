@@ -1,13 +1,16 @@
 package dataBean.dubbo.projectSys;
 
+import dataBean.IDataBean;
+
 import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by alex on 2017/5/19.
  */
-public class RepayApplyDto implements Serializable {
+public class RepayApplyDto implements Serializable , IDataBean{
 
+    private String id;
     /**
      * 借款人Id
      */
@@ -124,5 +127,13 @@ public class RepayApplyDto implements Serializable {
 
     public void setRepayInterest(Double repayInterest) {
         this.repayInterest = repayInterest;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

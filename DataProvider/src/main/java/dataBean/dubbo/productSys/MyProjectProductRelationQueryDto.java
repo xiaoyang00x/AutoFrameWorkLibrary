@@ -1,11 +1,12 @@
 package dataBean.dubbo.productSys;
 
 import com.miaoqian.framework.domain.PageQuery;
+import dataBean.IDataBean;
 
 /**
  * Created by alex on 2017/5/19.
  */
-public class MyProjectProductRelationQueryDto extends PageQuery {
+public class MyProjectProductRelationQueryDto extends PageQuery implements IDataBean {
 
     private String id;
 

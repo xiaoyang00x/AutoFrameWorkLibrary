@@ -2,13 +2,14 @@ package dataBean.dubbo.productSys;
 
 import com.miaoqian.prod.api.dto.request.ProductOperateParamDto;
 import com.miaoqian.prod.api.dto.request.ProjectRelateSubParamDto;
+import dataBean.IDataBean;
 
 import java.util.List;
 
 /**
  * Created by alex on 2017/5/22.
  */
-public class MyProductRelateProjectParamDto extends ProductOperateParamDto {
+public class MyProductRelateProjectParamDto extends ProductOperateParamDto implements IDataBean{
 
     private String id;
 

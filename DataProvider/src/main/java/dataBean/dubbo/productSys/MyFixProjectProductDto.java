@@ -1,8 +1,9 @@
 package dataBean.dubbo.productSys;
 
 import com.miaoqian.prod.api.dto.request.ProductDto;
+import dataBean.IDataBean;
 
-public class MyFixProjectProductDto extends ProductDto {
+public class MyFixProjectProductDto extends ProductDto implements IDataBean{
 
     private String id;
 
@@ -61,9 +62,9 @@ public class MyFixProjectProductDto extends ProductDto {
         this.minKeepTrans = minKeepTrans;
     }
 
-    public Integer getCanTransfer() {
-        return canTransfer;
-    }
+//    public Integer getCanTransfer() {
+//        return canTransfer;
+//    }
 
     public void setCanTransfer(Integer canTransfer) {
         this.canTransfer = canTransfer;

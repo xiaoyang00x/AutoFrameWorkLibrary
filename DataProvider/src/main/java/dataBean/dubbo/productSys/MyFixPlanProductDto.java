@@ -3,8 +3,9 @@ package dataBean.dubbo.productSys;
 import java.util.List;
 
 import com.miaoqian.prod.api.dto.request.ProductDto;
+import dataBean.IDataBean;
 
-public class MyFixPlanProductDto extends ProductDto {
+public class MyFixPlanProductDto extends ProductDto implements IDataBean {
     
     private String id;
 

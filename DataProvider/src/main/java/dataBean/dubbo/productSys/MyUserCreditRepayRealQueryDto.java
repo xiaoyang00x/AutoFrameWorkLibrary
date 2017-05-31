@@ -1,11 +1,13 @@
 package dataBean.dubbo.productSys;
 
+import dataBean.IDataBean;
+
 import java.util.Date;
 
 /**
  * Created by alex on 2017/5/19.
  */
-public class MyUserCreditRepayRealQueryDto extends MyUserCreditRepayQueryDto {
+public class MyUserCreditRepayRealQueryDto extends MyUserCreditRepayQueryDto implements IDataBean {
 
     private String id ;
     /**

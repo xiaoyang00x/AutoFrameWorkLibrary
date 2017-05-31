@@ -1,11 +1,13 @@
 package dataBean.dubbo.productSys;
 
+import dataBean.IDataBean;
+
 import java.io.Serializable;
 
 /**
  * Created by alex on 2017/5/22.
  */
-public class MyProductOperateParamDto implements Serializable {
+public class MyProductOperateParamDto implements Serializable , IDataBean {
     private String id ;
 
     private String productCode;

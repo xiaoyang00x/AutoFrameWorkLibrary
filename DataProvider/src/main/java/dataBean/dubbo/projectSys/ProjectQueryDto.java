@@ -3,15 +3,16 @@ package dataBean.dubbo.projectSys;
 import com.google.common.base.MoreObjects;
 import com.google.common.collect.Lists;
 import com.miaoqian.framework.domain.PageQuery;
+import dataBean.IDataBean;
 
 import java.util.List;
 
 /**
  * Created by alex on 2017/5/19.
  */
-public class ProjectQueryDto extends PageQuery {
+public class ProjectQueryDto extends PageQuery implements IDataBean{
 
-
+    private String id;
     //    private String projectCode;
     private String workNo;
 
@@ -115,6 +116,14 @@ public class ProjectQueryDto extends PageQuery {
 
     public void setStatusList(List<Integer> statusList) {
         this.statusList = statusList;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     @Override
