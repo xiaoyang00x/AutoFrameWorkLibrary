@@ -181,10 +181,7 @@ public class MyProductDto implements Serializable , IDataBean{
      */
     private Date expireDate;
 
-    /**
-     * 支持的促销，不填
-     */
-    private List<String> promotionList;
+
 
     /**
      * 产品还款方式 ，不填
@@ -555,14 +552,6 @@ public class MyProductDto implements Serializable , IDataBean{
         this.unitAmount = unitAmount;
     }
 
-    public List<String> getPromotionList() {
-        return promotionList;
-    }
-
-    public void setPromotionList(List<String> promotionList) {
-        this.promotionList = promotionList;
-    }
-
     public Integer getInvestType() {
         return investType;
     }
@@ -666,7 +655,6 @@ public class MyProductDto implements Serializable , IDataBean{
                 ", addInterestRate=" + addInterestRate +
                 ", investType=" + investType +
                 ", expireDate=" + expireDate +
-                ", promotionList=" + promotionList +
                 ", repayType='" + repayType + '\'' +
                 ", investedCount=" + investedCount +
                 ", productRate=" + productRate +

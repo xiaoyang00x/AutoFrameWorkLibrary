@@ -5,13 +5,13 @@ import dataBean.IDataBean;
 import java.io.Serializable;
 
 /**
- * Created by alex on 2017/5/19.
+ * Created by alex on 2017/6/1.
  */
-public class ProjectMaterialDto implements Serializable , IDataBean{
-    private static final long serialVersionUID = 1600659570322903632L;
+public class MyProjectMaterialDto  implements Serializable , IDataBean{
 
     private String id;
 
+    private static final long serialVersionUID = -5075787991048834889L;
     /**
      * 风控业务编号
      */
@@ -42,10 +42,14 @@ public class ProjectMaterialDto implements Serializable , IDataBean{
     private String url;
     /**
      * 披露状态：1-已经披露 0-未披露
-     * @see com.miaoqian.bid.api.common.enums.LogicType
+     *
      *
      */
     private Integer isPublished;
+
+    private Integer order_seq;
+
+    private String remark;
 
 
     public String getWorkNo() {
@@ -113,6 +117,23 @@ public class ProjectMaterialDto implements Serializable , IDataBean{
         this.isPublished = isPublished;
     }
 
+    public Integer getOrder_seq() {
+        return order_seq;
+    }
+
+    public void setOrder_seq(Integer order_seq) {
+        this.order_seq = order_seq;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
+    @Override
     public String getId() {
         return id;
     }
@@ -123,16 +144,17 @@ public class ProjectMaterialDto implements Serializable , IDataBean{
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("ProjectMaterialDto{");
-        sb.append("workNo='").append(workNo).append('\'');
-        sb.append(", projectCode='").append(projectCode).append('\'');
-        sb.append(", materialId='").append(materialId).append('\'');
-        sb.append(", categoryCode='").append(categoryCode).append('\'');
-        sb.append(", fileName='").append(fileName).append('\'');
-        sb.append(", fileNameCode='").append(fileNameCode).append('\'');
-        sb.append(", url='").append(url).append('\'');
-        sb.append(", isPublished=").append(isPublished);
-        sb.append('}');
-        return sb.toString();
+        return "ProjectMaterialDto{" +
+                "workNo='" + workNo + '\'' +
+                ", projectCode='" + projectCode + '\'' +
+                ", materialId='" + materialId + '\'' +
+                ", categoryCode='" + categoryCode + '\'' +
+                ", fileName='" + fileName + '\'' +
+                ", fileNameCode='" + fileNameCode + '\'' +
+                ", url='" + url + '\'' +
+                ", isPublished=" + isPublished +
+                ", order_seq=" + order_seq +
+                ", remark='" + remark + '\'' +
+                '}';
     }
 }

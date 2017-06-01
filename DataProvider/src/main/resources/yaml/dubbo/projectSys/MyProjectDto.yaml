@@ -1,0 +1,1531 @@
+#--------------------
+# 默认情况下
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: default
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 默认的测试数据描述
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 来一套测试数据吧
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 杨宇测试默认
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+#--------------------
+# 测试没有项目名称 ProjectName
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noProjectName
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 默认的测试数据描述
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 来一套测试数据吧
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+#--------------------
+# 测试没有项目编码 ProjectCode
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noProjectCode
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 默认的测试数据描述
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 来一套测试数据吧
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 测试没有项目编码
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+#--------------------
+# 没有项目类型noProjectType
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noProjectType
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有项目类型noProjectType
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有项目类型noProjectType
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有项目类型noProjectType
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+#--------------------
+# 测试项目类型:01-金交所 02-普通 03-债权转让 99-其他 +1越界
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: projectType
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction:  测试项目类型:01-金交所 02-普通 03-债权转让 99-其他 +1越界
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 测试项目类型:01-金交所 02-普通 03-债权转让 99-其他 +1越界
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 测试项目类型
+projectType: "01"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+#--------------------
+# 没有标的金额
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noBidAmount
+auditStatus: "01"
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有标的金额
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有标的金额
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有标的金额
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+
+#--------------------
+# 标的金额为负数
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noBidAmount
+auditStatus: "01"
+bidAmount: !java.lang.Double -1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有标的金额
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有标的金额
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有标的金额
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+#--------------------
+# 没有年华利率noYearRate
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noYearRate
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有年华利率noYearRate
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有年华利率noYearRate
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有年华利率noYearRate
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+interestMode: 0
+
+
+#--------------------
+# 年华利率为负数
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: fuYearRate
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 年华利率为负数
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 年华利率为负数
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 年华利率为负数
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double -11.0
+interestMode: 0
+
+#--------------------
+# 募集开始时间为空
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noBidStartTime
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 募集开始时间为空
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 募集开始时间为空
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 募集开始时间为空
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+#--------------------
+# 募集结束时间为空
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noBidEndTime
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 募集结束时间为空
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 募集结束时间为空
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 募集结束时间为空
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+#--------------------
+# 募集结束日大于募集开始日
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: endMoreEnd
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 募集结束日大于募集开始日
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 募集结束日大于募集开始日
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 募集结束日大于募集开始日
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+#--------------------
+# 贷款期限为空 loanPeriod
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noLoanPeriod
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 贷款期限为空
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 贷款期限为空
+loanMode: 2
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 贷款期限为空
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+#--------------------
+# 贷款期限为空为负数 loanPeriod
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: fuLoanPeriod
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 贷款期限为空为负数
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 贷款期限为空为负数
+loanMode: 2
+loanPeriod: -90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 贷款期限为空为负数
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+#--------------------
+# 还款周期为空 repaymentUnit
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noRepaymentUnit
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 还款周期为空
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 还款周期为空
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 还款周期为空
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+#--------------------
+# 测试还款周期 Y年，M月，D日 +越界
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: testRepaymentUnit
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 测试还款周期
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 测试还款周期
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 测试还款周期
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+#--------------------
+# 还款方式为空
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noRepayType
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 还款方式为空
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 还款方式为空
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 还款方式为空
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+#--------------------
+# 测试还款方式 repayType;//还款方式:01- 一次还本付息 02-等额本金 03-等额本息 04-按期付息到期还本 99-其他 +1越界
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: testRepayType
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 测试还款方式
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 测试还款方式
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 测试还款方式
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+#--------------------
+# 没有业务种类 noBusinessType
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noBusinessType
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有业务种类
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有业务种类
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有业务种类
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+#--------------------
+# 业务种类测试 业务品种:01-房贷类 02-车贷类 03-收益权转让类 04-信用贷款类 05-股票配资类 06-银行承兑汇票 07-商业承兑汇票 08-消费贷款类 09-供应链类 99-其他 +1 越界 testBusinessType
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: testBusinessType
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 业务种类测试
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 业务种类测试
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 业务种类测试
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+#--------------------
+# 没有借款人id noBorrowerId
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noBorrowerId
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有借款人id
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有借款人id
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有借款人id
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+#--------------------
+# 没有审核状态
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noAuditStatus
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有审核状态
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有审核状态
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有审核状态
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+#--------------------
+# 测试审核状态   ????现在还不知道 auditStatus！
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: testAuditStatus
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 测试审核状态
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 测试审核状态
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 测试审核状态
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+#--------------------
+# 没有项目状态 noStatus
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noStatus
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有项目状态
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有项目状态
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有项目状态
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+#--------------------
+# 测试项目状态 UN_COMMIT(1, "新建"),WAIT_COMMIT(2, "审批中"),COMMITTED(3, "登记中"),WAIT_FINANCING(4, "待融资"),CANCLEING(5, "撤销中"),FINANCING(6, "融资中"),INTERESTING(7, "计息中"),OVER(8, "已完结"); +1越界
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: testStatus
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 默认的测试数据描述
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 来一套测试数据吧
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 杨宇测试默认
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+
+
+#--------------------
+# 没有存管登记状态noDepositoryRegisterStatus
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noDepositoryRegisterStatus
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有存管登记状态
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有存管登记状态
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有存管登记状态
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+#--------------------
+# 测试存管登记状态 depositoryRegisterStatus 存管登记状态，01未登记，02登记成功，03登记失败，04撤销中，05撤销失败，06撤销成功
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: testDepositoryRegisterStatus
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 测试存管登记状态
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 测试存管登记状态
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 测试存管登记状态
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+#--------------------
+# 没有借款用途 noLoanUse
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noLoanUse
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有借款用途
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有借款用途
+loanMode: 2
+loanPeriod: 90
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有借款用途
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+#--------------------
+# 借款用途测试 testLoanUse   ????状态不清楚
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: testLoanUse
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 默认的测试数据描述
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 来一套测试数据吧
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 杨宇测试默认
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+#--------------------
+# 没有计划第一期还款时间
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noRepayStartDate
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有计划第一期还款时间
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有计划第一期还款时间
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有计划第一期还款时间
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+
+#--------------------
+# 没有计划最后一期还款时间 noRepayFinishDate
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noRepayFinishDate
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有计划最后一期还款时间
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有计划最后一期还款时间
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有计划最后一期还款时间
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+#--------------------
+# 计划第一期还款时间大于计划最后一期还款时间
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: repayStartMoreEnd
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 计划第一期还款时间大于计划最后一期还款时间
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 计划第一期还款时间大于计划最后一期还款时间
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 计划第一期还款时间大于计划最后一期还款时间
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1506838779000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1514787579000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+interestMode: 0
+
+
+
+#--------------------
+# 没有到期计算规则 noMaturityCalculationRule
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noMaturityCalculationRule
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有到期计算规则
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有到期计算规则
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有到期计算规则
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+
+
+#--------------------
+# 测试到期计算规则???????? maturityCalculationRule
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: testMaturityCalculationRule
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 测试到期计算规则
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 测试到期计算规则
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 测试到期计算规则
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+
+
+
+#--------------------
+# 没有起息日 noInterestDate
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noInterestDate
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+introduction: 没有起息日
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有起息日
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有起息日
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+
+
+#--------------------
+# 起息日小于募捐开始时间
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: interestDateLessStart
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1500481979000"
+introduction: 起息日小于募捐开始时间
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 起息日小于募捐开始时间
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 起息日小于募捐开始时间
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+
+
+
+#--------------------
+# 单利复利？
+#--------------------
+
+
+
+#--------------------
+# 没有履行保证金 noVouchAmount
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noVouchAmount
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有履行保证金
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 没有履行保证金
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有履行保证金
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+yearRate: !java.lang.Double 11.0
+
+
+
+
+#--------------------
+# 没有违约金利率 noLiquidatedDamagesRate
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: noLiquidatedDamagesRate
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 没有违约金利率
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+loanDesc: 没有违约金利率
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 没有违约金利率
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+
+
+
+#--------------------
+# 负违约金利率
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: fuLiquidatedDamagesRate
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 负违约金利率
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double -11.0
+loanDesc: 负违约金利率
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 负违约金利率
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0
+
+
+
+
+#--------------------
+# copy
+#--------------------
+--- !dataBean.dubbo.projectSys.MyProjectDto
+id: copy
+auditStatus: "01"
+bidAmount: !java.lang.Double 1000000.0
+bidEndTime: !java.util.Date "1504160379000"
+bidStartTime: !java.util.Date "1501481979000"
+borrowerId: yangyulaiceshi
+businessType: "01"
+depositoryRegisterStatus: "01"
+frozenAmount: !java.lang.Double 100000.0
+interestDate: !java.util.Date "1567318779000"
+introduction: 默认的测试数据描述
+investedAmount: !java.lang.Double 800000.0
+lateYearRate: !java.lang.Double 13.0
+liquidatedDamagesRate: !java.lang.Double 11.0
+loanDesc: 来一套测试数据吧
+loanMode: 2
+loanPeriod: 90
+loanUse: 投资
+maturityCalculationRule: 3
+operateIP: 10.0.1.167
+projectCode: "random"
+projectName: 杨宇测试默认
+projectType: "02"
+repayAmount: !java.lang.Double 500000.0
+repayFinishDate: !java.util.Date "1514787579000"
+repaySource: 哪里
+repayStartDate: !java.util.Date "1506838779000"
+repayType: "04"
+repaymentUnit: M
+status: 1
+vouchAmount: !java.lang.Double 50000.0
+yearRate: !java.lang.Double 11.0

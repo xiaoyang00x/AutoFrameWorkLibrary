@@ -1,0 +1,172 @@
+#-------------------------
+# default
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyPublisherDto
+id: default
+contactsPerson: 杨宇
+creator: 杨宇
+fax: "1234567890123"
+legalPerson: 杨宇
+officeSpace: 秒钱公司
+phone: "13295422111"
+postcode: "10010"
+projectCode: random
+publisherName: 杨宇测试
+registrationPlace: 秒钱公司
+
+
+
+#-------------------------
+# noProjectCode
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyPublisherDto
+id: noProjectCode
+contactsPerson: 杨宇
+creator: 杨宇
+fax: "1234567890123"
+legalPerson: 杨宇
+officeSpace: noProjectCode
+phone: "13295422111"
+postcode: "10010"
+publisherName: 杨宇测试
+registrationPlace: 秒钱公司
+
+
+
+#-------------------------
+# noPublisherName
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyPublisherDto
+id: noPublisherName
+contactsPerson: 杨宇
+creator: 杨宇
+fax: "1234567890123"
+legalPerson: 杨宇
+officeSpace: 秒钱公司
+phone: "13295422111"
+postcode: "10010"
+projectCode: random
+registrationPlace: 秒钱公司
+
+
+
+#-------------------------
+# noLegalPerson
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyPublisherDto
+id: noLegalPerson
+contactsPerson: 杨宇
+creator: 杨宇
+fax: "1234567890123"
+legalPerson: 杨宇
+officeSpace: noLegalPerson
+phone: "13295422111"
+postcode: "10010"
+projectCode: random
+publisherName: 杨宇测试
+registrationPlace: 秒钱公司
+
+
+
+#-------------------------
+# noRegistrationPlace
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyPublisherDto
+id: noRegistrationPlace
+contactsPerson: 杨宇
+creator: 杨宇
+fax: "1234567890123"
+legalPerson: 杨宇
+officeSpace: noRegistrationPlace
+phone: "13295422111"
+postcode: "10010"
+projectCode: random
+publisherName: 杨宇测试
+registrationPlace: 秒钱公司
+
+
+
+#-------------------------
+# noOfficeSpace
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyPublisherDto
+id: noOfficeSpace
+contactsPerson: 杨宇
+creator: 杨宇
+fax: "1234567890123"
+legalPerson: 杨宇
+phone: "13295422111"
+postcode: "10010"
+projectCode: random
+publisherName: 杨宇测试
+registrationPlace: noOfficeSpace
+
+
+#-------------------------
+# noContactsPerson
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyPublisherDto
+id: noContactsPerson
+contactsPerson: 杨宇
+creator: 杨宇
+fax: "1234567890123"
+legalPerson: 杨宇
+officeSpace: noContactsPerson
+phone: "13295422111"
+postcode: "10010"
+projectCode: random
+publisherName: 杨宇测试
+registrationPlace: 秒钱公司
+
+
+#-------------------------
+# noPhone
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyPublisherDto
+id: noPhone
+contactsPerson: 杨宇
+creator: 杨宇
+fax: "1234567890123"
+legalPerson: 杨宇
+officeSpace: noPhone
+postcode: "10010"
+projectCode: random
+publisherName: 杨宇测试
+registrationPlace: 秒钱公司
+
+
+#-------------------------
+# noCreator
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyPublisherDto
+id: noCreator
+contactsPerson: 杨宇
+fax: "1234567890123"
+legalPerson: 杨宇
+officeSpace: noCreator
+phone: "13295422111"
+postcode: "10010"
+projectCode: random
+publisherName: 杨宇测试
+registrationPlace: 秒钱公司
+
+
+
+
+
+
+#-------------------------
+# copy
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyPublisherDto
+id: default
+contactsPerson: 杨宇
+creator: 杨宇
+fax: "1234567890123"
+legalPerson: 杨宇
+officeSpace: 秒钱公司
+phone: "13295422111"
+postcode: "10010"
+projectCode: random
+publisherName: 杨宇测试
+registrationPlace: 秒钱公司

@@ -21,7 +21,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: yangyutest
 productTag: "yang|yu"
 productTerm: 90
@@ -60,7 +60,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: yangyutest
 productTag: "yang|yu"
 productTerm: 90
@@ -99,7 +99,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 测试发布人Id不填写
 productTag: "yang|yu"
 productTerm: 90
@@ -138,7 +138,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 测试发布人类型不填写
 productTag: "yang|yu"
 productTerm: 90
@@ -178,7 +178,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 测试投标开始时间不填写
 productTag: "yang|yu"
 productTerm: 90
@@ -215,7 +215,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 没有投标结束时间测试
 productTag: "yang|yu"
 productTerm: 90
@@ -256,7 +256,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 开始时间大于结束时间
 productTag: "yang|yu"
 productTerm: 90
@@ -297,7 +297,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 开始时间等于结束时间
 productTag: "yang|yu"
 productTerm: 90
@@ -340,7 +340,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 不填写产品类型
 productTag: "yang|yu"
 productTerm: 90
@@ -379,7 +379,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 产品类型的各个形态定期项目
 productTag: "yang|yu"
 productTerm: 90
@@ -420,7 +420,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 没有产品的状态
 productTag: "yang|yu"
 productTerm: 90
@@ -461,7 +461,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 产品的状态创建
 productTag: "yang|yu"
 productTerm: 90
@@ -501,7 +501,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 没有适用渠道测试
 productTag: "yang|yu"
 productTerm: 90
@@ -542,7 +542,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 适用渠道测试APP
 productTag: "yang|yu"
 productTerm: 90
@@ -582,7 +582,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 没有标的类型测试
 productTag: "yang|yu"
 productTerm: 90
@@ -622,7 +622,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 标的类型测试PTB
 productTag: "yang|yu"
 productTerm: 90
@@ -663,7 +663,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 没有标的总额
 productTag: "yang|yu"
 productTerm: 90
@@ -704,7 +704,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 没有填创建时间
 productTag: "yang|yu"
 productTerm: 90
@@ -719,14 +719,6 @@ targetCustomerId: ""
 templateCode: yangyuceshiyongde
 unitAmount: !java.lang.Double 100000.0
 yearRate: !java.lang.Double 8.0
-
-
-
-
-
-
-
-
 
 #--------------------
 #创建时间大于投标开始时间
@@ -751,7 +743,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: 创建时间大于投标开始时间
 productTag: "yang|yu"
 productTerm: 90
@@ -767,16 +759,94 @@ templateCode: yangyuceshiyongde
 unitAmount: !java.lang.Double 100000.0
 yearRate: !java.lang.Double 8.0
 
+#--------------------
+#开启定向投资人id 多个使用“|” 分割 * isTarget为1时，必填
+#--------------------
+--- !dataBean.dubbo.productSys.MyProductDto
+id: useIsTarget
+addInterestRate: !java.lang.Double 0.0
+bidAmount: !java.lang.Double 500000.0
+bidType: PTB
+channelCode: APP
+createTime: !java.util.Date "1501062481000"
+description: 开启定向投资人id 多个使用“|” 分割 * isTarget为1时，必填
+displayWeight: 3
+endTime: !java.util.Date "1506505681000"
+frozenAmount: !java.lang.Double 50000.0
+fullTime: !java.util.Date "1504259281000"
+interestAccrualMode: BMB
+investedAmount: !java.lang.Double 350000.0
+ipAddress: 10.0.1.167
+marketMakerId: ceshi
+maxInvestAmount: !java.lang.Double 200000.0
+maxRate: !java.lang.Double 12.0
+minInvestAmount: !java.lang.Double 100.0
+operateRemark: shayisi
+productCode: random
+productName: 测试IsTarget
+productTag: "yang|yu"
+productTerm: 90
+productType: &13 1
+pubUserId: yangyu
+pubUserType: *13
+remainAmount: !java.lang.Double 150000.0
+repayStatus: 0
+startTime: !java.util.Date "1501148881000"
+status: *13
+isTarget: 1
+targetCustomerId: "杨宇|成龙|潘辉"
+templateCode: yangyuceshiyongde
+unitAmount: !java.lang.Double 100000.0
+yearRate: !java.lang.Double 8.0
 
 
 
+
+#--------------------
+#productTerm 产品的期限天数,定期计划，定期项目必填；秒钱宝不填  productType 1（定期项目），2（定期计划），3（秒钱宝），99（其他）
+#--------------------
+--- !dataBean.dubbo.productSys.MyProductDto
+id: testProductTerm
+addInterestRate: !java.lang.Double 0.0
+bidAmount: !java.lang.Double 500000.0
+bidType: PTB
+channelCode: APP
+createTime: !java.util.Date "1501062481000"
+description: productTerm产品的期限天数定期计划定期项目必填秒钱宝不填
+displayWeight: 3
+endTime: !java.util.Date "1506505681000"
+frozenAmount: !java.lang.Double 50000.0
+fullTime: !java.util.Date "1504259281000"
+interestAccrualMode: BMB
+investedAmount: !java.lang.Double 350000.0
+ipAddress: 10.0.1.167
+marketMakerId: ceshi
+maxInvestAmount: !java.lang.Double 200000.0
+maxRate: !java.lang.Double 12.0
+minInvestAmount: !java.lang.Double 100.0
+operateRemark: shayisi
+productCode: random
+productName: 测试productTerm
+productTag: "yang|yu"
+productTerm: 90
+productType: &13 1
+pubUserId: yangyu
+pubUserType: *13
+remainAmount: !java.lang.Double 150000.0
+repayStatus: 0
+startTime: !java.util.Date "1501148881000"
+status: *13
+targetCustomerId: ""
+templateCode: yangyuceshiyongde
+unitAmount: !java.lang.Double 100000.0
+yearRate: !java.lang.Double 8.0
 
 
 #--------------------
 #默认情况下
 #--------------------
 --- !dataBean.dubbo.productSys.MyProductDto
-id: default
+id: copy
 addInterestRate: !java.lang.Double 0.0
 bidAmount: !java.lang.Double 500000.0
 bidType: PTB
@@ -795,7 +865,7 @@ maxInvestAmount: !java.lang.Double 200000.0
 maxRate: !java.lang.Double 12.0
 minInvestAmount: !java.lang.Double 100.0
 operateRemark: shayisi
-productCode: meishayong
+productCode: random
 productName: yangyutest
 productTag: "yang|yu"
 productTerm: 90

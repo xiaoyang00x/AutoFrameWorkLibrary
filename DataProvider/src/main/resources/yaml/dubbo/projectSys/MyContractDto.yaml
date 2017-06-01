@@ -1,0 +1,173 @@
+#-----------------------
+#default
+#-----------------------
+--- !dataBean.dubbo.projectSys.MyContractDto
+id: default
+contractEndDate: !java.util.Date "1504024379000"
+contractName: 合同名字叫测试
+contractStartDate: !java.util.Date "1438187579000"
+debtor: 债务方
+originalContractCode: random
+originalCreditor: 原债务方
+projectCode: random
+residualAmount: !java.lang.Double 10000.0
+
+
+
+
+#-----------------------
+#noprojectCode
+#-----------------------
+--- !dataBean.dubbo.projectSys.MyContractDto
+id: noprojectCode
+contractEndDate: !java.util.Date "1504024379000"
+contractName: noprojectCode
+contractStartDate: !java.util.Date "1438187579000"
+debtor: 债务方
+originalContractCode: random
+originalCreditor: 原债务方
+residualAmount: !java.lang.Double 10000.0
+
+
+
+
+#-----------------------
+#noContractName
+#-----------------------
+--- !dataBean.dubbo.projectSys.MyContractDto
+id: noprojectCode
+contractEndDate: !java.util.Date "1504024379000"
+contractStartDate: !java.util.Date "1438187579000"
+debtor: 债务方
+originalContractCode: random
+originalCreditor: 原债务方
+projectCode: random
+residualAmount: !java.lang.Double 10000.0
+
+
+
+
+#-----------------------
+#noOriginalContractCode
+#-----------------------
+--- !dataBean.dubbo.projectSys.MyContractDto
+id: noOriginalContractCode
+contractEndDate: !java.util.Date "1504024379000"
+contractName: noOriginalContractCode
+contractStartDate: !java.util.Date "1438187579000"
+debtor: 债务方
+originalCreditor: 原债务方
+projectCode: random
+residualAmount: !java.lang.Double 10000.0
+
+
+
+
+#-----------------------
+#noResidualAmount
+#-----------------------
+--- !dataBean.dubbo.projectSys.MyContractDto
+id: noResidualAmount
+contractEndDate: !java.util.Date "1504024379000"
+contractName: noResidualAmount
+contractStartDate: !java.util.Date "1438187579000"
+debtor: 债务方
+originalContractCode: random
+originalCreditor: 原债务方
+projectCode: random
+
+
+
+#-----------------------
+#noContractStartDate
+#-----------------------
+--- !dataBean.dubbo.projectSys.MyContractDto
+id: noContractStartDate
+contractEndDate: !java.util.Date "1504024379000"
+contractName: noContractStartDate
+debtor: 债务方
+originalContractCode: random
+originalCreditor: 原债务方
+projectCode: random
+residualAmount: !java.lang.Double 10000.0
+
+
+#-----------------------
+#noContractEndDate
+#-----------------------
+--- !dataBean.dubbo.projectSys.MyContractDto
+id: noContractEndDate
+contractName: noContractEndDate
+contractStartDate: !java.util.Date "1438187579000"
+debtor: 债务方
+originalContractCode: random
+originalCreditor: 原债务方
+projectCode: random
+residualAmount: !java.lang.Double 10000.0
+
+
+
+#-----------------------
+#endLessStart
+#-----------------------
+--- !dataBean.dubbo.projectSys.MyContractDto
+id: endLessStart
+contractEndDate: !java.util.Date "1438187579000"
+contractName: endLessStart
+contractStartDate: !java.util.Date "1504024379000"
+debtor: 债务方
+originalContractCode: random
+originalCreditor: 原债务方
+projectCode: random
+residualAmount: !java.lang.Double 10000.0
+
+
+
+
+#-----------------------
+#noOriginalCreditor
+#-----------------------
+--- !dataBean.dubbo.projectSys.MyContractDto
+id: noOriginalCreditor
+contractEndDate: !java.util.Date "1504024379000"
+contractName: noOriginalCreditor
+contractStartDate: !java.util.Date "1438187579000"
+debtor: 债务方
+originalContractCode: random
+projectCode: random
+residualAmount: !java.lang.Double 10000.0
+
+
+
+
+#-----------------------
+#noDebtor
+#-----------------------
+--- !dataBean.dubbo.projectSys.MyContractDto
+id: noDebtor
+contractEndDate: !java.util.Date "1504024379000"
+contractName: noDebtor
+contractStartDate: !java.util.Date "1438187579000"
+originalContractCode: random
+originalCreditor: 原债务方
+projectCode: random
+residualAmount: !java.lang.Double 10000.0
+
+
+
+
+
+
+#-----------------------
+#copy
+#-----------------------
+--- !dataBean.dubbo.projectSys.MyContractDto
+id: copy
+contractEndDate: !java.util.Date "1504024379000"
+contractName: 合同名字叫测试
+contractStartDate: !java.util.Date "1438187579000"
+debtor: 债务方
+originalContractCode: random
+originalCreditor: 原债务方
+projectCode: random
+residualAmount: !java.lang.Double 10000.0

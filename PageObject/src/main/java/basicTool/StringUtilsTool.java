@@ -2,6 +2,8 @@ package basicTool;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.Random;
+
 public class StringUtilsTool extends StringUtils {
 	
 	public static boolean isNotEmpty(CharSequence cs) {
@@ -25,4 +27,5 @@ public class StringUtilsTool extends StringUtils {
         }
         return stringBuffer.toString();
 	}
+
 }

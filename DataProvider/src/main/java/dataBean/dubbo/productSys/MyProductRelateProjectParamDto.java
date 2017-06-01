@@ -13,19 +13,10 @@ public class MyProductRelateProjectParamDto extends ProductOperateParamDto imple
 
     private String id;
 
-    private String productCode;
-
+    /**
+     * 产品项目关联的记录
+     */
     private List<ProjectRelateSubParamDto> relateList;
-
-    @Override
-    public String getProductCode() {
-        return productCode;
-    }
-
-    @Override
-    public void setProductCode(String productCode) {
-        this.productCode = productCode;
-    }
 
     public List<ProjectRelateSubParamDto> getRelateList() {
         return relateList;
@@ -35,6 +26,7 @@ public class MyProductRelateProjectParamDto extends ProductOperateParamDto imple
         this.relateList = relateList;
     }
 
+    @Override
     public String getId() {
         return id;
     }
@@ -46,9 +38,10 @@ public class MyProductRelateProjectParamDto extends ProductOperateParamDto imple
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("ProductRelateProjectParam{");
-        sb.append("productCode='").append(productCode).append('\'');
+        sb.append("productCode='").append(this.getProductCode()).append('\'');
         sb.append(", relateList=").append(relateList);
         sb.append('}');
         return sb.toString();
     }
 }
+
