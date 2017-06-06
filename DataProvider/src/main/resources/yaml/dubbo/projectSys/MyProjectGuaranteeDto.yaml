@@ -4,10 +4,12 @@
 --- !dataBean.dubbo.projectSys.MyProjectGuaranteeDto
 id: default
 guaranteeInfo: 测试测试
-guaranteeMethod: 个人
+guaranteeMethod: "01"
 guaranteeName: 杨宇
 idCard: "230804199105270932"
 projectCode: random
+guaranteeId: random
+dataStatus: 　1
 
 #-------------
 #noProjectCode
@@ -15,10 +17,11 @@ projectCode: random
 --- !dataBean.dubbo.projectSys.MyProjectGuaranteeDto
 id: noProjectCode
 guaranteeInfo: 测试测试
-guaranteeMethod: 个人
+guaranteeMethod: "01"
 guaranteeName: 杨宇
 idCard: "230804199105270932"
-
+guaranteeId: random
+dataStatus: 　1
 
 
 #-------------
@@ -32,7 +35,8 @@ guaranteeInfo: 测试测试
 guaranteeName: 杨宇
 idCard: "230804199105270932"
 projectCode: random
-
+guaranteeId: random
+dataStatus: 　1
 
 
 
@@ -41,11 +45,12 @@ projectCode: random
 #-------------
 --- !dataBean.dubbo.projectSys.MyProjectGuaranteeDto
 id: noGuaranteeInfo
-guaranteeMethod: 个人
+guaranteeMethod: "01"
 guaranteeName: 杨宇
 idCard: "230804199105270932"
 projectCode: random
-
+guaranteeId: random
+dataStatus: 　1
 
 #-------------
 #noGuaranteeName
@@ -53,10 +58,11 @@ projectCode: random
 --- !dataBean.dubbo.projectSys.MyProjectGuaranteeDto
 id: noGuaranteeName
 guaranteeInfo: 测试测试
-guaranteeMethod: 个人
+guaranteeMethod: "01"
 idCard: "230804199105270932"
 projectCode: random
-
+guaranteeId: random
+dataStatus: 　1
 
 
 #-------------
@@ -65,10 +71,11 @@ projectCode: random
 --- !dataBean.dubbo.projectSys.MyProjectGuaranteeDto
 id: noEnterpriseId
 guaranteeInfo: 测试测试
-guaranteeMethod: 企业
+guaranteeMethod: "02"
 guaranteeName: 杨宇测试股份有限公司
 projectCode: random
-
+guaranteeId: random
+dataStatus: 　1
 
 #-------------
 #noIdCard
@@ -76,10 +83,11 @@ projectCode: random
 --- !dataBean.dubbo.projectSys.MyProjectGuaranteeDto
 id: noIdCard
 guaranteeInfo: 测试测试
-guaranteeMethod: 个人
+guaranteeMethod: "01"
 guaranteeName: 杨宇
 projectCode: random
-
+guaranteeId: "01"
+dataStatus: 　1
 
 
 #-------------
@@ -89,10 +97,24 @@ projectCode: random
 id: companyTest
 enterpriseId: "134543151352"
 guaranteeInfo: 测试测试
-guaranteeMethod: 企业
+guaranteeMethod: "02"
 guaranteeName: 杨宇测试股份有限公司
 projectCode: random
+guaranteeId: random
+dataStatus: 　1
 
+#-------------
+#noDataStatus
+#-------------
+--- !dataBean.dubbo.projectSys.MyProjectGuaranteeDto
+id: noDataStatus
+enterpriseId: ""
+guaranteeInfo: 测试测试
+guaranteeMethod: "01"
+guaranteeName: 杨宇
+idCard: "230804199105270932"
+projectCode: random
+guaranteeId: random
 
 #-------------
 #copy
@@ -101,7 +123,9 @@ projectCode: random
 id: copy
 enterpriseId: ""
 guaranteeInfo: 测试测试
-guaranteeMethod: 个人
+guaranteeMethod: "01"
 guaranteeName: 杨宇
 idCard: "230804199105270932"
 projectCode: random
+guaranteeId: random
+dataStatus: 　1

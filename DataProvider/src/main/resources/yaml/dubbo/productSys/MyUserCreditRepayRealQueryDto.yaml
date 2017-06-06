@@ -1,6 +1,0 @@
---- !dataBean.dubbo.productSys.MyUserCreditRepayRealQueryDto
-id: default
-maxRepayDate: !java.util.Date "1495445543835"
-minRepayDate: !java.util.Date "1495445543835"
-productType: 2
-repayResult: 1

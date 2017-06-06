@@ -46,6 +46,43 @@ public class MyContractDto implements Serializable , IDataBean{
      */
     private String debtor;
 
+    /**
+     * //创建者
+     */
+    private String crateName;
+    /**
+     * 合同业务主键
+     */
+    private String contractId;
+    /**
+     * //删除状态1-正常,0-已删除
+     */
+    private Integer dataStatus;
+
+
+    public String getCrateName() {
+        return crateName;
+    }
+
+    public void setCrateName(String crateName) {
+        this.crateName = crateName;
+    }
+
+    public String getContractId() {
+        return contractId;
+    }
+
+    public void setContractId(String contractId) {
+        this.contractId = contractId;
+    }
+
+    public Integer getDataStatus() {
+        return dataStatus;
+    }
+
+    public void setDataStatus(Integer dataStatus) {
+        this.dataStatus = dataStatus;
+    }
 
     public static long getSerialVersionUID() {
         return serialVersionUID;

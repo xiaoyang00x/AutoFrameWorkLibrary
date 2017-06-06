@@ -6,12 +6,7 @@ import java.io.FileOutputStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import dataBean.dubbo.projectSys.MyPublisherDto;
 import org.ho.yaml.Yaml;
-
-import dataBean.dubbo.projectSys.MyContractDto;
-
 
 public class InitYamlFileUtil {
 
@@ -20,7 +15,7 @@ public class InitYamlFileUtil {
         if (null != className) {
             className = className.replace(".", "/").replace("dataBean", "yaml");
         }
-        File dumpFile = new File("src/main/resources/" + className + ".yaml");
+        File dumpFile = new File("/Users/alex/code/H5AutoFrameWorkLibrary/DataProvider/src/main/resources/" + className + ".yaml");
         try {
             FileOutputStream fileOut = new FileOutputStream(dumpFile);
             Yaml.dump(object, fileOut);
@@ -29,19 +24,10 @@ public class InitYamlFileUtil {
         }
     }
 
-
     public static Date tansforDate(String time) throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = sdf.parse(time);
         return date;
-    }
-
-
-    public static void main(String[] args) throws Exception {
-
-
-        InitYamlFileUtil.initYamlFile(null);
-
     }
 
 }

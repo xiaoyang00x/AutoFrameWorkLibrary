@@ -37,6 +37,30 @@ public class MyProjectGuaranteeDto implements Serializable, IDataBean {
      */
     private String idCard;
 
+    /**
+     * 担保方式id
+     */
+    private String guaranteeId;
+    /**
+     * 删除状态
+     */
+    private Integer dataStatus;
+
+    public String getGuaranteeId() {
+        return guaranteeId;
+    }
+
+    public void setGuaranteeId(String guaranteeId) {
+        this.guaranteeId = guaranteeId;
+    }
+
+    public Integer getDataStatus() {
+        return dataStatus;
+    }
+
+    public void setDataStatus(Integer dataStatus) {
+        this.dataStatus = dataStatus;
+    }
 
     public String getProjectCode() {
         return projectCode;

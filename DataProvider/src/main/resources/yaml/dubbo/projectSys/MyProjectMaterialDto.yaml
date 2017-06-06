@@ -1,0 +1,70 @@
+#----------------------
+#默认
+#----------------------
+--- !dataBean.dubbo.projectSys.MyProjectMaterialDto
+id: default
+fileName: random
+materialId: random
+projectCode: random
+url: www.baidu.com1
+remarks: test
+
+
+#----------------------
+#noFileName
+#----------------------
+--- !dataBean.dubbo.projectSys.MyProjectMaterialDto
+id: noFileName
+materialId: random
+projectCode: random
+url: www.baidu.com1
+remarks: test
+
+
+
+#----------------------
+#noURL
+#----------------------
+--- !dataBean.dubbo.projectSys.MyProjectMaterialDto
+id: copy
+fileName: random
+materialId: random
+projectCode: random
+remarks: test
+
+
+
+#----------------------
+#noMaterialId
+#----------------------
+--- !dataBean.dubbo.projectSys.MyProjectMaterialDto
+id: noMaterialId
+fileName: random
+projectCode: random
+url: www.baidu.com1
+remarks: test
+
+
+#----------------------
+#noProjectCode
+#----------------------
+--- !dataBean.dubbo.projectSys.MyProjectMaterialDto
+id: noProjectCode
+fileName: random
+materialId: random
+url: www.baidu.com1
+remarks: test
+
+
+
+
+#----------------------
+#copy
+#----------------------
+--- !dataBean.dubbo.projectSys.MyProjectMaterialDto
+id: copy
+fileName: random
+materialId: random
+projectCode: random
+url: www.baidu.com1
+remarks: test

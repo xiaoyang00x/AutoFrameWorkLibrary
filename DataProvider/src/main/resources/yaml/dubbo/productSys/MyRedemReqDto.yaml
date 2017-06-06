@@ -1,6 +1,0 @@
---- !dataBean.dubbo.productSys.MyRedemReqDto
-id: "default"
-redemFee: !java.lang.Double 15.0
-redemSeqNo: "1232132"
-redemUid: "12321321"
-tradeAmount: !java.lang.Double 10.0

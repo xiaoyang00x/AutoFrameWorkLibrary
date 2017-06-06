@@ -54,6 +54,32 @@ public class MyPublisherDto implements Serializable , IDataBean{
     private String creator;
 
 
+    /**
+     * //发行人id
+     */
+    private String publisherId;
+    /**
+     * //删除状态1-正常，0-删除
+     */
+    private Integer  dataStatus;
+
+
+    public String getPublisherId() {
+        return publisherId;
+    }
+
+    public void setPublisherId(String publisherId) {
+        this.publisherId = publisherId;
+    }
+
+    public Integer getDataStatus() {
+        return dataStatus;
+    }
+
+    public void setDataStatus(Integer dataStatus) {
+        this.dataStatus = dataStatus;
+    }
+
     public static long getSerialVersionUID() {
         return serialVersionUID;
     }

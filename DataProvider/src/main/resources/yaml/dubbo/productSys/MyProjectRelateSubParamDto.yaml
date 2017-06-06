@@ -1,4 +1,0 @@
---- !dataBean.dubbo.productSys.MyProjectRelateSubParamDto
-id: default
-occupyAmount: !java.lang.Double 15.0
-projectCode: "2313"

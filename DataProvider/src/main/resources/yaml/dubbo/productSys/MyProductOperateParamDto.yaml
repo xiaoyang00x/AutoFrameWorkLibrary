@@ -1,6 +1,0 @@
---- !dataBean.dubbo.productSys.MyProductOperateParamDto
-id: default
-operateType: adsa
-operateUserId: "213213"
-productCode: "12321"
-remark: fdsfds

@@ -11,8 +11,9 @@ originalContractCode: random
 originalCreditor: 原债务方
 projectCode: random
 residualAmount: !java.lang.Double 10000.0
-
-
+createName: 杨宇
+contractId: random
+dataStatus: 1
 
 
 #-----------------------
@@ -27,7 +28,9 @@ debtor: 债务方
 originalContractCode: random
 originalCreditor: 原债务方
 residualAmount: !java.lang.Double 10000.0
-
+createName: 杨宇
+contractId: random
+dataStatus: 1
 
 
 
@@ -43,7 +46,9 @@ originalContractCode: random
 originalCreditor: 原债务方
 projectCode: random
 residualAmount: !java.lang.Double 10000.0
-
+createName: 杨宇
+contractId: random
+dataStatus: 1
 
 
 
@@ -59,7 +64,9 @@ debtor: 债务方
 originalCreditor: 原债务方
 projectCode: random
 residualAmount: !java.lang.Double 10000.0
-
+createName: 杨宇
+contractId: random
+dataStatus: 1
 
 
 
@@ -75,7 +82,9 @@ debtor: 债务方
 originalContractCode: random
 originalCreditor: 原债务方
 projectCode: random
-
+createName: 杨宇
+contractId: random
+dataStatus: 1
 
 
 #-----------------------
@@ -90,7 +99,9 @@ originalContractCode: random
 originalCreditor: 原债务方
 projectCode: random
 residualAmount: !java.lang.Double 10000.0
-
+createName: 杨宇
+contractId: random
+dataStatus: 1
 
 #-----------------------
 #noContractEndDate
@@ -104,7 +115,9 @@ originalContractCode: random
 originalCreditor: 原债务方
 projectCode: random
 residualAmount: !java.lang.Double 10000.0
-
+createName: 杨宇
+contractId: random
+dataStatus: 1
 
 
 #-----------------------
@@ -120,7 +133,9 @@ originalContractCode: random
 originalCreditor: 原债务方
 projectCode: random
 residualAmount: !java.lang.Double 10000.0
-
+createName: 杨宇
+contractId: random
+dataStatus: 1
 
 
 
@@ -136,7 +151,9 @@ debtor: 债务方
 originalContractCode: random
 projectCode: random
 residualAmount: !java.lang.Double 10000.0
-
+createName: 杨宇
+contractId: random
+dataStatus: 1
 
 
 
@@ -152,22 +169,58 @@ originalContractCode: random
 originalCreditor: 原债务方
 projectCode: random
 residualAmount: !java.lang.Double 10000.0
-
-
-
-
+createName: 杨宇
+contractId: random
+dataStatus: 1
 
 
 #-----------------------
-#copy
+#noCreateName
 #-----------------------
 --- !dataBean.dubbo.projectSys.MyContractDto
-id: copy
+id: noCreateName
 contractEndDate: !java.util.Date "1504024379000"
-contractName: 合同名字叫测试
+contractName: noCreateName
 contractStartDate: !java.util.Date "1438187579000"
 debtor: 债务方
 originalContractCode: random
 originalCreditor: 原债务方
 projectCode: random
 residualAmount: !java.lang.Double 10000.0
+contractId: random
+dataStatus: 1
+
+
+#-----------------------
+#noContractId
+#-----------------------
+--- !dataBean.dubbo.projectSys.MyContractDto
+id: noContractId
+contractEndDate: !java.util.Date "1504024379000"
+contractName: noContractId
+contractStartDate: !java.util.Date "1438187579000"
+debtor: 债务方
+originalContractCode: random
+originalCreditor: 原债务方
+projectCode: random
+residualAmount: !java.lang.Double 10000.0
+createName: 杨宇
+dataStatus: 1
+
+
+
+#-----------------------
+#noDataStatus
+#-----------------------
+--- !dataBean.dubbo.projectSys.MyContractDto
+id: noDataStatus
+contractEndDate: !java.util.Date "1504024379000"
+contractName: noDataStatus
+contractStartDate: !java.util.Date "1438187579000"
+debtor: 债务方
+originalContractCode: random
+originalCreditor: 原债务方
+projectCode: random
+residualAmount: !java.lang.Double 10000.0
+createName: 杨宇
+contractId: random

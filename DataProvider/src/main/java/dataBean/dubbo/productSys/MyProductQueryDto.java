@@ -5,14 +5,14 @@ import com.miaoqian.prod.api.enums.OrderByType;
 import com.miaoqian.prod.api.enums.ProdOrderByField;
 import dataBean.IDataBean;
 
-import java.util.Date;
 import java.util.List;
 
-
 /**
- * Created by alex on 2017/5/19.
+ * Created by alex on 2017/6/2.
  */
-public class MyProductQueryDto extends PageQuery implements IDataBean {
+public class MyProductQueryDto extends PageQuery implements IDataBean{
+
+    private String id;
 
     public MyProductQueryDto(){
         super();
@@ -20,14 +20,15 @@ public class MyProductQueryDto extends PageQuery implements IDataBean {
         this.setPageSize(10);
     }
 
-    private String id;
-
-
-
     /**
      * 产品编号
      */
     private String productCode;
+
+    /**
+     * 产品名称
+     */
+    private String productName;
 
     /**
      * 使用渠道
@@ -37,11 +38,12 @@ public class MyProductQueryDto extends PageQuery implements IDataBean {
 
     /**
      * 状态
+     * @see com.miaoqian.prod.api.enums.ProductStatus
      */
     private List<Integer> statusList;
 
     /**
-     * 产品类型  秒钱宝 定期计划 定期项目
+     * 产品类型 3 秒钱宝 2 定期计划 1 定期项目
      * @see com.miaoqian.prod.api.enums.ProductType
      */
     private List<Integer> productTypeList;
@@ -83,14 +85,14 @@ public class MyProductQueryDto extends PageQuery implements IDataBean {
     private Double maxYearRate;
 
     /**
-     * 最小过期日期, 和 maxExpireDate 同时传,支持期限范围查询
+     * 最小期限
      */
-    private Date minExpireDate;
+    private Integer minProductTerm;
 
     /**
-     * 最大过期日期
+     * 最大期限
      */
-    private Date maxExpireDate;
+    private Integer maxProductTerm;
 
     /**
      * 还款方式
@@ -119,17 +121,19 @@ public class MyProductQueryDto extends PageQuery implements IDataBean {
      */
     private Double limitMinInvestAmount;
 
-    /**
-     * 产品状态
-     */
-    private String productStatus;
 
-    public String getProductStatus() {
-        return productStatus;
+
+    /**
+     * 产品的显示权重
+     */
+    private List<Integer> displayWeightList;
+
+    public List<Integer> getDisplayWeightList() {
+        return displayWeightList;
     }
 
-    public void setProductStatus(String productStatus) {
-        this.productStatus = productStatus;
+    public void setDisplayWeightList(List<Integer> displayWeightList) {
+        this.displayWeightList = displayWeightList;
     }
 
     public List<String> getBidTypes() {
@@ -236,20 +240,20 @@ public class MyProductQueryDto extends PageQuery implements IDataBean {
         this.maxYearRate = maxYearRate;
     }
 
-    public Date getMinExpireDate() {
-        return minExpireDate;
+    public Integer getMinProductTerm() {
+        return minProductTerm;
     }
 
-    public void setMinExpireDate(Date minExpireDate) {
-        this.minExpireDate = minExpireDate;
+    public void setMinProductTerm(Integer minProductTerm) {
+        this.minProductTerm = minProductTerm;
     }
 
-    public Date getMaxExpireDate() {
-        return maxExpireDate;
+    public Integer getMaxProductTerm() {
+        return maxProductTerm;
     }
 
-    public void setMaxExpireDate(Date maxExpireDate) {
-        this.maxExpireDate = maxExpireDate;
+    public void setMaxProductTerm(Integer maxProductTerm) {
+        this.maxProductTerm = maxProductTerm;
     }
 
     public String getRepayType() {
@@ -276,7 +280,16 @@ public class MyProductQueryDto extends PageQuery implements IDataBean {
         this.limitMinInvestAmount = limitMinInvestAmount;
     }
 
+    public String getProductName() {
+        return productName;
+    }
 
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+
+    @Override
     public String getId() {
         return id;
     }
@@ -284,6 +297,7 @@ public class MyProductQueryDto extends PageQuery implements IDataBean {
     public void setId(String id) {
         this.id = id;
     }
+
 
     @Override
     public String toString() {
@@ -299,8 +313,8 @@ public class MyProductQueryDto extends PageQuery implements IDataBean {
         sb.append(", isTransfer=").append(isTransfer);
         sb.append(", minYearRate=").append(minYearRate);
         sb.append(", maxYearRate=").append(maxYearRate);
-        sb.append(", minExpireDate=").append(minExpireDate);
-        sb.append(", maxExpireDate=").append(maxExpireDate);
+        sb.append(", minExpireDate=").append(minProductTerm);
+        sb.append(", maxExpireDate=").append(maxProductTerm);
         sb.append(", repayType='").append(repayType).append('\'');
         sb.append(", bidTypes=").append(bidTypes);
         sb.append(", excludeBidType='").append(excludeBidType).append('\'');

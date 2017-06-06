@@ -1,26 +1,232 @@
+#----------------------------------
+#默认情况下
+#----------------------------------
 --- !dataBean.dubbo.productSys.MyProductQueryDto
-bidTypes: 
-  - a
-  - b
-  - c
-channelCode: "1321"
-excludeBidType: haha
-id: test
-investType: &2 1
-isTarget: *2
-isTransfer: &3 2
-limitMinInvestAmount: !java.lang.Double 11.0
-maxExpireDate: !java.util.Date "1495442537359"
-maxYearRate: !java.lang.Double 11.0
-minExpireDate: !java.util.Date "1495442537359"
-minYearRate: !java.lang.Double 12.0
-orderByField: !com.miaoqian.prod.api.enums.ProdOrderByField END_TIME
+id: default
+bidTypes:
+  - PTB
+  - XSB1
+excludeBidType: PTB
+channelCode: "APP"
+investType: 1
+limitMinInvestAmount: !java.lang.Double 10000.0
+maxProductTerm: 360
+maxYearRate: !java.lang.Double 5.0
+minProductTerm: 30
+minYearRate: !java.lang.Double 15.0
+orderByField: !com.miaoqian.prod.api.enums.ProdOrderByField START_TIME
 orderByType: !com.miaoqian.prod.api.enums.OrderByType ASC
-productCode: "1"
-productTypeList: &11 
-  - *2
-  - *3
-  - 3
-pubUserId: aaa
-repayType: meiqian
-statusList: *11
+productCode: random
+productName: random
+productTypeList: 
+  - 1
+  - 2
+pubUserId: random
+repayType: "01"
+statusList: 
+  - 1
+  - 2
+
+#----------------------------------
+#bidtypes
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: bidtypes
+bidTypes:
+  - PTB
+  - XSB1
+
+
+#----------------------------------
+#excludeBidType
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: excludeBidType
+excludeBidType: PTB
+
+
+
+
+
+#----------------------------------
+#channelCode
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: channelCode
+channelCode: "APP"
+
+
+#----------------------------------
+#investType
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: investType
+investType: 1
+
+
+#----------------------------------
+#limitMinInvestAmount
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: copy
+limitMinInvestAmount: !java.lang.Double 10000.0
+
+#----------------------------------
+#maxProductTerm
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: maxProductTerm
+maxProductTerm: 360
+
+
+#----------------------------------
+#maxYearRate
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: maxYearRate
+maxYearRate: !java.lang.Double 5.0
+
+
+
+#----------------------------------
+#minProductTerm
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: minProductTerm
+minProductTerm: 30
+
+
+#----------------------------------
+#minYearRate
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: minYearRate
+minYearRate: !java.lang.Double 15.0
+
+#----------------------------------
+#minMaxProductTerm
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: minMaxProductTerm
+maxProductTerm: 360
+minProductTerm: 30
+
+
+
+
+#----------------------------------
+#minMaxYearRate
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: minMaxYearRate
+maxYearRate: !java.lang.Double 5.0
+minYearRate: !java.lang.Double 15.0
+
+#----------------------------------
+#orderByField
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: orderByField
+orderByField: !com.miaoqian.prod.api.enums.ProdOrderByField START_TIME
+
+#----------------------------------
+#orderByType
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: orderByType
+orderByType: !com.miaoqian.prod.api.enums.OrderByType ASC
+
+
+
+#----------------------------------
+#productCode
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: productCode
+productCode: random
+
+
+
+
+
+
+#----------------------------------
+#productName
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: productName
+productName: random
+
+
+#----------------------------------
+#productTypeList
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: productTypeList
+productTypeList:
+  - 1
+  - 2
+
+
+#----------------------------------
+#pubUserId
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: pubUserId
+pubUserId: random
+
+
+#----------------------------------
+#repayType
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: repayType
+repayType: "01"
+
+
+
+
+#----------------------------------
+#statusList
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: statusList
+statusList:
+  - 1
+  - 2
+
+
+
+
+
+#----------------------------------
+#copy
+#----------------------------------
+--- !dataBean.dubbo.productSys.MyProductQueryDto
+id: copy
+bidTypes:
+  - PTB
+  - XSB1
+excludeBidType: PTB
+channelCode: "APP"
+investType: 1
+limitMinInvestAmount: !java.lang.Double 10000.0
+maxProductTerm: 360
+maxYearRate: !java.lang.Double 5.0
+minProductTerm: 30
+minYearRate: !java.lang.Double 15.0
+orderByField: !com.miaoqian.prod.api.enums.ProdOrderByField START_TIME
+orderByType: !com.miaoqian.prod.api.enums.OrderByType ASC
+productCode: random
+productName: random
+productTypeList:
+  - 1
+  - 2
+pubUserId: random
+repayType: "01"
+statusList:
+  - 1
+  - 2
+
+
+

@@ -13,8 +13,8 @@ postcode: "10010"
 projectCode: random
 publisherName: 杨宇测试
 registrationPlace: 秒钱公司
-
-
+publisherId: random
+dataStatus: 1
 
 #-------------------------
 # noProjectCode
@@ -30,7 +30,8 @@ phone: "13295422111"
 postcode: "10010"
 publisherName: 杨宇测试
 registrationPlace: 秒钱公司
-
+publisherId: random
+dataStatus: 1
 
 
 #-------------------------
@@ -47,7 +48,8 @@ phone: "13295422111"
 postcode: "10010"
 projectCode: random
 registrationPlace: 秒钱公司
-
+publisherId: random
+dataStatus: 1
 
 
 #-------------------------
@@ -65,7 +67,8 @@ postcode: "10010"
 projectCode: random
 publisherName: 杨宇测试
 registrationPlace: 秒钱公司
-
+publisherId: random
+dataStatus: 1
 
 
 #-------------------------
@@ -83,7 +86,8 @@ postcode: "10010"
 projectCode: random
 publisherName: 杨宇测试
 registrationPlace: 秒钱公司
-
+publisherId: random
+dataStatus: 1
 
 
 #-------------------------
@@ -100,7 +104,8 @@ postcode: "10010"
 projectCode: random
 publisherName: 杨宇测试
 registrationPlace: noOfficeSpace
-
+publisherId: random
+dataStatus: 1
 
 #-------------------------
 # noContactsPerson
@@ -117,7 +122,8 @@ postcode: "10010"
 projectCode: random
 publisherName: 杨宇测试
 registrationPlace: 秒钱公司
-
+publisherId: random
+dataStatus: 1
 
 #-------------------------
 # noPhone
@@ -133,7 +139,8 @@ postcode: "10010"
 projectCode: random
 publisherName: 杨宇测试
 registrationPlace: 秒钱公司
-
+publisherId: random
+dataStatus: 1
 
 #-------------------------
 # noCreator
@@ -149,11 +156,42 @@ postcode: "10010"
 projectCode: random
 publisherName: 杨宇测试
 registrationPlace: 秒钱公司
+publisherId: random
+dataStatus: 1
 
+#-------------------------
+# noPublisherId
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyPublisherDto
+id: noPublisherId
+contactsPerson: 杨宇
+creator: 杨宇
+fax: "1234567890123"
+legalPerson: 杨宇
+officeSpace: 秒钱公司
+phone: "13295422111"
+postcode: "10010"
+projectCode: random
+publisherName: 杨宇测试
+registrationPlace: 秒钱公司
+dataStatus: 1
 
-
-
-
+#-------------------------
+# noDataStatus
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyPublisherDto
+id: noDataStatus
+contactsPerson: 杨宇
+creator: 杨宇
+fax: "1234567890123"
+legalPerson: 杨宇
+officeSpace: 秒钱公司
+phone: "13295422111"
+postcode: "10010"
+projectCode: random
+publisherName: 杨宇测试
+registrationPlace: 秒钱公司
+publisherId: random
 
 #-------------------------
 # copy
@@ -170,3 +208,5 @@ postcode: "10010"
 projectCode: random
 publisherName: 杨宇测试
 registrationPlace: 秒钱公司
+publisherId: random
+dataStatus: 1

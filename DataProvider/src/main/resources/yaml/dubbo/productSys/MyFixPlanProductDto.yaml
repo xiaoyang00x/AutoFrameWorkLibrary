@@ -1,7 +1,0 @@
---- !dataBean.dubbo.productSys.MyFixPlanProductDto
-id: default
-projectList: 
-  - a
-  - b
-  - c
-targetUid: "3211"

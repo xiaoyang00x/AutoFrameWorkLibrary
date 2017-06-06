@@ -1,0 +1,190 @@
+#-----------------
+#default
+#-----------------
+--- !dataBean.dubbo.productSys.MySupplyProjectParamDto
+id: default
+ipAddress: 10.0.1.167
+pubUserId: yangyutest
+pubUserType: 1
+supplyDate: !java.util.Date "1498979486000"
+supplyProjectSubParamDtoList: 
+  - !com.miaoqian.prod.api.dto.request.SupplyProjectSubParamDto
+    endDate: !java.util.Date "1499011199000"
+    productCode: random
+    projectCode: random
+    startDate: !java.util.Date "1499007599000"
+    supplyAmount: !java.lang.Double 100000.0
+  - !com.miaoqian.prod.api.dto.request.SupplyProjectSubParamDto
+    endDate: !java.util.Date "1499011199000"
+    productCode: random
+    projectCode: random
+    startDate: !java.util.Date "1499007599000"
+    supplyAmount: !java.lang.Double 20000.0
+
+
+
+
+#-----------------
+#noPubUserId
+#-----------------
+--- !dataBean.dubbo.productSys.MySupplyProjectParamDto
+id: noPubUserId
+ipAddress: 10.0.1.167
+pubUserType: 1
+supplyDate: !java.util.Date "1498979486000"
+supplyProjectSubParamDtoList:
+  - !com.miaoqian.prod.api.dto.request.SupplyProjectSubParamDto
+    endDate: !java.util.Date "1499011199000"
+    productCode: random
+    projectCode: random
+    startDate: !java.util.Date "1499007599000"
+    supplyAmount: !java.lang.Double 100000.0
+  - !com.miaoqian.prod.api.dto.request.SupplyProjectSubParamDto
+    endDate: !java.util.Date "1499011199000"
+    productCode: random
+    projectCode: random
+    startDate: !java.util.Date "1499007599000"
+    supplyAmount: !java.lang.Double 20000.0
+
+
+
+
+
+
+#-----------------
+#noPubUserType
+#-----------------
+--- !dataBean.dubbo.productSys.MySupplyProjectParamDto
+id: copy
+ipAddress: 10.0.1.167
+pubUserId: yangyutest
+supplyDate: !java.util.Date "1498979486000"
+supplyProjectSubParamDtoList:
+  - !com.miaoqian.prod.api.dto.request.SupplyProjectSubParamDto
+    endDate: !java.util.Date "1499011199000"
+    productCode: random
+    projectCode: random
+    startDate: !java.util.Date "1499007599000"
+    supplyAmount: !java.lang.Double 100000.0
+  - !com.miaoqian.prod.api.dto.request.SupplyProjectSubParamDto
+    endDate: !java.util.Date "1499011199000"
+    productCode: random
+    projectCode: random
+    startDate: !java.util.Date "1499007599000"
+    supplyAmount: !java.lang.Double 20000.0
+
+
+#-------------------------------------------------
+#pubUserType权限控制    1-内部用户  2-投资人  3-做市商户
+#-------------------------------------------------
+--- !dataBean.dubbo.productSys.MySupplyProjectParamDto
+id: testPubUserType
+ipAddress: 10.0.1.167
+pubUserId: yangyutest
+pubUserType: 1
+supplyDate: !java.util.Date "1498979486000"
+supplyProjectSubParamDtoList:
+  - !com.miaoqian.prod.api.dto.request.SupplyProjectSubParamDto
+    endDate: !java.util.Date "1499011199000"
+    productCode: random
+    projectCode: random
+    startDate: !java.util.Date "1499007599000"
+    supplyAmount: !java.lang.Double 100000.0
+  - !com.miaoqian.prod.api.dto.request.SupplyProjectSubParamDto
+    endDate: !java.util.Date "1499011199000"
+    productCode: random
+    projectCode: random
+    startDate: !java.util.Date "1499007599000"
+    supplyAmount: !java.lang.Double 20000.0
+
+
+
+
+#-----------------
+#noSupplyDate
+#-----------------
+--- !dataBean.dubbo.productSys.MySupplyProjectParamDto
+id: noSupplyDate
+ipAddress: 10.0.1.167
+pubUserId: yangyutest
+pubUserType: 1
+supplyProjectSubParamDtoList:
+  - !com.miaoqian.prod.api.dto.request.SupplyProjectSubParamDto
+    endDate: !java.util.Date "1499011199000"
+    productCode: random
+    projectCode: random
+    startDate: !java.util.Date "1499007599000"
+    supplyAmount: !java.lang.Double 100000.0
+  - !com.miaoqian.prod.api.dto.request.SupplyProjectSubParamDto
+    endDate: !java.util.Date "1499011199000"
+    productCode: random
+    projectCode: random
+    startDate: !java.util.Date "1499007599000"
+    supplyAmount: !java.lang.Double 20000.0
+
+
+#-----------------
+#noIpAddress
+#-----------------
+--- !dataBean.dubbo.productSys.MySupplyProjectParamDto
+id: noIpAddress
+ipAddress: 10.0.1.167
+pubUserId: yangyutest
+pubUserType: 1
+supplyDate: !java.util.Date "1498979486000"
+supplyProjectSubParamDtoList:
+  - !com.miaoqian.prod.api.dto.request.SupplyProjectSubParamDto
+    endDate: !java.util.Date "1499011199000"
+    productCode: random
+    projectCode: random
+    startDate: !java.util.Date "1499007599000"
+    supplyAmount: !java.lang.Double 100000.0
+  - !com.miaoqian.prod.api.dto.request.SupplyProjectSubParamDto
+    endDate: !java.util.Date "1499011199000"
+    productCode: random
+    projectCode: random
+    startDate: !java.util.Date "1499007599000"
+    supplyAmount: !java.lang.Double 20000.0
+
+
+#--------------------------------------
+#noSupplyProjectSubParamDtoList
+#--------------------------------------
+--- !dataBean.dubbo.productSys.MySupplyProjectParamDto
+id: noSupplyProjectSubParamDtoList
+ipAddress: 10.0.1.167
+pubUserId: yangyutest
+pubUserType: 1
+supplyDate: !java.util.Date "1498979486000"
+
+
+
+
+
+#-----------------
+#copy
+#-----------------
+--- !dataBean.dubbo.productSys.MySupplyProjectParamDto
+id: copy
+ipAddress: 10.0.1.167
+pubUserId: yangyutest
+pubUserType: 1
+supplyDate: !java.util.Date "1498979486000"
+supplyProjectSubParamDtoList:
+  - !com.miaoqian.prod.api.dto.request.SupplyProjectSubParamDto
+    endDate: !java.util.Date "1499011199000"
+    productCode: random
+    projectCode: random
+    startDate: !java.util.Date "1499007599000"
+    supplyAmount: !java.lang.Double 100000.0
+  - !com.miaoqian.prod.api.dto.request.SupplyProjectSubParamDto
+    endDate: !java.util.Date "1499011199000"
+    productCode: random
+    projectCode: random
+    startDate: !java.util.Date "1499007599000"
+    supplyAmount: !java.lang.Double 20000.0
+
+
+
+
+
