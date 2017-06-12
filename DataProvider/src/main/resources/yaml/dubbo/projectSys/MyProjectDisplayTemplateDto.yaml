@@ -1,0 +1,92 @@
+#-------------------------
+# 默认    创建要测一下重名
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyProjectDisplayTemplateDto
+id: default
+createName: random
+productTemplate: random
+projectCode: random
+projectTemplate: random
+templateId: random
+
+
+
+
+
+#-------------------------
+# noCreateName
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyProjectDisplayTemplateDto
+id: noCreateName
+productTemplate: random
+projectCode: random
+projectTemplate: random
+templateId: random
+
+
+
+
+#-------------------------
+# noProductTemplate
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyProjectDisplayTemplateDto
+id: noProductTemplate
+createName: random
+projectCode: random
+projectTemplate: random
+templateId: random
+
+
+
+
+#-------------------------
+# noProjectCode
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyProjectDisplayTemplateDto
+id: copy
+createName: random
+productTemplate: random
+projectTemplate: random
+templateId: random
+
+
+#-------------------------
+# noProjectTemplate
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyProjectDisplayTemplateDto
+id: copy
+createName: random
+productTemplate: random
+projectCode: random
+templateId: random
+
+
+
+#-------------------------
+# noTemplateId
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyProjectDisplayTemplateDto
+id: copy
+createName: random
+productTemplate: random
+projectCode: random
+projectTemplate: random
+
+
+
+
+
+#-------------------------
+# copy
+#-------------------------
+--- !dataBean.dubbo.projectSys.MyProjectDisplayTemplateDto
+id: copy
+createName: random
+productTemplate: random
+projectCode: random
+projectTemplate: random
+templateId: random
+
+
+
+
