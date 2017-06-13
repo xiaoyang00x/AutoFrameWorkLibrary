@@ -1,6 +1,7 @@
 package dataBean.dubbo.projectSys;
 
 import com.miaoqian.framework.domain.PageQuery;
+import com.miaoqian.proj.api.enums.OptimizationType;
 import dataBean.IDataBean;
 
 import java.util.Date;
@@ -36,18 +37,21 @@ public class MyprojectQueryDto extends PageQuery implements IDataBean {
 
     /**
      * 存管登记状态
+     *
      * @see com.miaoqian.proj.api.enums.ProjectDepositoryStatus
      */
     private List<String> rRegisterStatuss;
 
     /**
      * 还款类型集合
+     *
      * @see com.miaoqian.proj.api.enums.ProjectRepayStatus
      */
     private List<String> repayTypes;
 
     /**
      * 项目状态集合
+     *
      * @see com.miaoqian.proj.api.enums.ProjectStatus
      */
 
@@ -64,6 +68,22 @@ public class MyprojectQueryDto extends PageQuery implements IDataBean {
      * 客户名称，支持模糊查询
      */
     private String customerName;
+
+
+    /**
+     * 是否被优化过
+     *
+     * @see OptimizationType
+     */
+    private Integer isOptimization;
+
+    public Integer getIsOptimization() {
+        return isOptimization;
+    }
+
+    public void setIsOptimization(Integer isOptimization) {
+        this.isOptimization = isOptimization;
+    }
 
     public String getCustomerName() {
         return customerName;

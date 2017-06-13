@@ -85,7 +85,7 @@ public class DataFactory {
      * @return a dto obj
      * @throws Exception
      */
-    public static <T> T tansferData(Object model, Class<T> dto) throws IllegalAccessException, InstantiationException, InvocationTargetException {
+    public static <T> T transferData(Object model, Class<T> dto) throws IllegalAccessException, InstantiationException, InvocationTargetException {
         Field[] field = model.getClass().getDeclaredFields(); // 获取实体类的所有属性，返回Field数组
         Object dtoBean = dto.newInstance();
         for (int j = 0; j < field.length; j++) { // 遍历所有属性

@@ -21,7 +21,7 @@ statusList:
   - 3
 thdAuditDesc: "01"
 thdAuditStatus: "00"
-
+isOptimization: 1
 
 
 
@@ -139,8 +139,12 @@ thdAuditDesc: "01"
 id: thdAuditStatus
 thdAuditStatus: "00"
 
-
-
+#------------------
+#isOptimization
+#------------------
+--- !dataBean.dubbo.projectSys.MyprojectQueryDto
+id: isOptimization
+isOptimization: 1
 
 #------------------
 #copy
@@ -165,6 +169,7 @@ statusList:
   - 3
 thdAuditDesc: "01"
 thdAuditStatus: "00"
+isOptimization: 1
 
 
 

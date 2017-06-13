@@ -7,8 +7,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import dataBean.dubbo.projectSys.MyRepayPlanDto;
-import dataBean.dubbo.projectSys.MyRepayPlanVoDto;
 import org.ho.yaml.Yaml;
 
 public class InitYamlFileUtil {
@@ -27,7 +25,7 @@ public class InitYamlFileUtil {
         }
     }
 
-    public static Date tansforDate(String time) throws ParseException {
+    public static Date transforDate(String time) throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = sdf.parse(time);
         return date;

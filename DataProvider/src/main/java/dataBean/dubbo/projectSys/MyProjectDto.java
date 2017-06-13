@@ -8,9 +8,20 @@ import java.util.Date;
 /**
  * Created by alex on 2017/5/19.
  */
-public class MyProjectDto implements Serializable , IDataBean{
+public class MyProjectDto implements Serializable, IDataBean {
 
     private String id;
+    private Long proId;
+
+    /**
+     * 创建者名称
+     */
+
+    private String createName;
+    /**
+     * 创建者id
+     */
+    private String creatorCode;
     private static final long serialVersionUID = -8175908245201297458L;
     private String projectName;//项目名称
     private String projectCode;//项目编码
@@ -19,7 +30,7 @@ public class MyProjectDto implements Serializable , IDataBean{
     private Double yearRate;//年化利率
 
     private Date bidStartTime;//募集开始时间
-    private  Date bidEndTime;//募集结束日
+    private Date bidEndTime;//募集结束日
 
     private Integer loanPeriod;//贷款期限（天）
     private String repaymentUnit;//还款周期（Y年，M月，D日）
@@ -47,14 +58,14 @@ public class MyProjectDto implements Serializable , IDataBean{
     private Double investedAmount;
 
     /**
-     *冻结金额
+     * 冻结金额
      */
     private Double frozenAmount;
 
     /**
      * 占用金额
      */
-    private Double occupyAmount  = 0.0D;
+    private Double occupyAmount = 0.0D;
     /**
      * 借款用途
      */
@@ -72,7 +83,7 @@ public class MyProjectDto implements Serializable , IDataBean{
     private Date repayStartDate;
 
     /**
-     *计划最后一期还款时间
+     * 计划最后一期还款时间
      */
 
     private Date repayFinishDate;
@@ -85,7 +96,7 @@ public class MyProjectDto implements Serializable , IDataBean{
     private Double lateYearRate;//逾期年利率
 
     private int maturityCalculationRule;//到期计算规则
-    private  int interestMode;//0-单利，1-复利
+    private int interestMode;//0-单利，1-复利
 
     private Date interestDate;//起息日
 
@@ -359,6 +370,30 @@ public class MyProjectDto implements Serializable , IDataBean{
 
     public void setOperateIP(String operateIP) {
         this.operateIP = operateIP;
+    }
+
+    public Long getProId() {
+        return proId;
+    }
+
+    public void setProId(Long proId) {
+        this.proId = proId;
+    }
+
+    public String getCreateName() {
+        return createName;
+    }
+
+    public void setCreateName(String createName) {
+        this.createName = createName;
+    }
+
+    public String getCreatorCode() {
+        return creatorCode;
+    }
+
+    public void setCreatorCode(String creatorCode) {
+        this.creatorCode = creatorCode;
     }
 
     @Override
