@@ -1,0 +1,11 @@
+#---------------
+# 正常更新权限信息
+#---------------
+--- !dataBean.dubbo.userSys.MyUpdateAuthInfoRequestDto
+authDesc: 增加写权限
+authId: "000000000020170627161733406541"
+authNameZh: 读写
+authUrl: 啊啊啊
+id: regular
+orderby: 1
+parentId: 有

@@ -1,0 +1,11 @@
+--- !dataBean.dubbo.messageSys.MySmsInfo
+id: regular
+messageContent: 通知test！
+mobileNumbers: !java.lang.String[]
+  - "17600312344"
+  - "00000000000"
+paramList: !java.lang.String[]
+  - xxx
+  - xxx
+requestNumber: ""
+smsBizType: !com.miaoqian.sms.api.dubbo.request.SmsBizType NOTICE

@@ -1,0 +1,82 @@
+#---------------
+# 企业查询
+#---------------
+--- !dataBean.dubbo.userSys.MyUserEnterpriseInfoReqDto
+id: regular
+idNo: "4000500060"
+legalPersonName: 社会法
+name: 北京测测测
+pageNo: 1
+pageSize: 5
+responsiblePersonId: "230111199101236265"
+
+#---------------
+# 企业号错误
+#---------------
+--- !dataBean.dubbo.userSys.MyUserEnterpriseInfoReqDto
+id: noId
+idNo: ""
+legalPersonName: 社会法
+name: 北京测测测
+pageNo: 1
+pageSize: 5
+responsiblePersonId: "230111199101236265"
+
+
+#---------------
+# 法人名错误
+#---------------
+--- !dataBean.dubbo.userSys.MyUserEnterpriseInfoReqDto
+id: noLegalPersonName
+idNo: "4000500060"
+legalPersonName:
+name: 北京测测测
+pageNo: 1
+pageSize: 5
+responsiblePersonId: "230111199101236265"
+
+#---------------
+# 企业名错误
+#---------------
+--- !dataBean.dubbo.userSys.MyUserEnterpriseInfoReqDto
+id: noName
+idNo: "4000500060"
+legalPersonName: 社会法
+name: ""
+pageNo: 1
+pageSize: 5
+responsiblePersonId: "230111199101236265"
+
+#---------------
+# 页号错误
+#---------------
+--- !dataBean.dubbo.userSys.MyUserEnterpriseInfoReqDto
+id: noPageNo
+idNo: "4000500060"
+legalPersonName: 社会法
+name: 北京测测测
+pageSize: 5
+responsiblePersonId: "230111199101236265"
+
+#---------------
+# 记录条数错误
+#---------------
+--- !dataBean.dubbo.userSys.MyUserEnterpriseInfoReqDto
+id: noSize
+idNo: "4000500060"
+legalPersonName: 社会法
+pageNo: 1
+name: 北京测测测
+responsiblePersonId: "230111199101236265"
+
+#---------------
+# 责任人id错误
+#---------------
+--- !dataBean.dubbo.userSys.MyUserEnterpriseInfoReqDto
+id: noResponsiblePersonId
+idNo: "4000500060"
+legalPersonName: 社会法
+name: 北京测测测
+pageNo: 1
+pageSize: 5
+responsiblePersonId: ""

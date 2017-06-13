@@ -1,0 +1,22 @@
+#---------------
+# 正常
+#---------------
+--- !dataBean.dubbo.userSys.MySetUserStatusReqDto
+id: regular
+uid: "000000000020170612160952709678"
+userStatus: true
+
+#---------------
+# uid 异常
+#---------------
+--- !dataBean.dubbo.userSys.MySetUserStatusReqDto
+id: wrong_uid
+uid: ""
+userStatus: true
+
+#---------------
+# userStatus 异常
+#---------------
+--- !dataBean.dubbo.userSys.MySetUserStatusReqDto
+id: wrong_userStatus
+uid: "000000000020170612160952709678"

@@ -1,0 +1,76 @@
+#---------------
+# 正常注册
+#---------------
+--- !dataBean.dubbo.userSys.MyUserRegisterReqDto
+id: "regular"
+channel: "001"
+inviteId: ""
+ip: "127.0.0.1"
+mobile: "13799768563"
+password: "qwertyuioplkjhgfdsazxcvbnm123456"
+
+#---------------
+# 号码已经注册
+#---------------
+--- !dataBean.dubbo.userSys.MyUserRegisterReqDto
+id: "existMobile"
+channel: "001"
+inviteId: "dvbkbk1"
+ip: "127.0.0.1"
+mobile: "15011032705"
+password: "qwertyuioplkjhgfdsazxcvbnm123456"
+
+#---------------
+# 号码已经注册
+#---------------
+--- !dataBean.dubbo.userSys.MyUserRegisterReqDto
+id: "inviteByOthers"
+channel: "001"
+inviteId: "dvbkbk1"
+ip: "127.0.0.1"
+mobile: "17600312345"
+password: "qwertyuioplkjhgfdsazxcvbnm123456"
+
+#---------------
+# 电话号码空
+#---------------
+--- !dataBean.dubbo.userSys.MyUserRegisterReqDto
+id: "noMobile"
+channel: "001"
+inviteId: "dvbkbk1"
+ip: "127.0.0.1"
+mobile: ""
+password: "qwertyuioplkjhgfdsazxcvbnm123456"
+
+#---------------
+# 电话号码不存在
+#---------------
+--- !dataBean.dubbo.userSys.MyUserRegisterReqDto
+id: "wrongMobile"
+channel: "001"
+inviteId: "dvbkbk1"
+ip: "127.0.0.1"
+mobile: "000000"
+password: "qwertyuioplkjhgfdsazxcvbnm123456"
+
+#---------------
+# 密码空
+#---------------
+--- !dataBean.dubbo.userSys.MyUserRegisterReqDto
+id: "emptyPassword"
+channel: "001"
+inviteId: "dvbkbk1"
+ip: "127.0.0.1"
+mobile: "15011032705"
+password: ""
+
+#---------------
+# 密码长度不正确
+#---------------
+--- !dataBean.dubbo.userSys.MyUserRegisterReqDto
+id: "wrongPassword"
+channel: "001"
+inviteId: "dvbkbk1"
+ip: "127.0.0.1"
+mobile: "15011032705"
+password: "1123"

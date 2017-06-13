@@ -1,0 +1,80 @@
+#---------------
+# 正常查询
+#---------------
+--- !dataBean.dubbo.userSys.MyUserLogPasChaRecordReqDto
+beginDate: !java.util.Date "1347120000000"
+endDate: !java.util.Date "1496678400000"
+id: regular
+mobile: "11101234566"
+pageNo: 1
+pageSize: 10
+
+#---------------
+# 手机号异常
+#---------------
+--- !dataBean.dubbo.userSys.MyUserLogPasChaRecordReqDto
+beginDate: !java.util.Date "1347120000000"
+endDate: !java.util.Date "1496678400000"
+id: wrong_mobile
+mobile: "17"
+pageNo: 1
+pageSize: 10
+
+#---------------
+# 手机号空
+#---------------
+--- !dataBean.dubbo.userSys.MyUserLogPasChaRecordReqDto
+beginDate: !java.util.Date "1347120000000"
+endDate: !java.util.Date "1496678400000"
+id: no_mobile
+pageNo: 1
+pageSize: 10
+
+#---------------
+# 开始日期为空
+#---------------
+--- !dataBean.dubbo.userSys.MyUserLogPasChaRecordReqDto
+endDate: !java.util.Date "1496678400000"
+id: no_beginDate
+pageNo: 1
+pageSize: 10
+
+
+#---------------
+# 结束日期为空
+#---------------
+--- !dataBean.dubbo.userSys.MyUserLogPasChaRecordReqDto
+beginDate: !java.util.Date "1347120000000"
+id: no_EndDate
+mobile: "11101234567"
+pageNo: 1
+pageSize: 10
+
+#---------------
+# 结束日期<开始日期
+#---------------
+--- !dataBean.dubbo.userSys.MyUserLogPasChaRecordReqDto
+beginDate: !java.util.Date "1496678400000"
+endDate: !java.util.Date "1347120000000"
+id: no_EndDate
+mobile: "11101234567"
+pageNo: 1
+pageSize: 10
+
+#---------------
+# 没有日期限制
+#---------------
+--- !dataBean.dubbo.userSys.MyUserLogPasChaRecordReqDto
+beginDate: !java.util.Date "1347120000000"
+id: no_DateLimitation
+mobile: "11101234562"
+pageNo: 1
+pageSize: 10
+
+#---------------
+# 查询全部
+#---------------
+--- !dataBean.dubbo.userSys.MyUserLogPasChaRecordReqDto
+id: "all"
+pageNo: 1
+pageSize: 10

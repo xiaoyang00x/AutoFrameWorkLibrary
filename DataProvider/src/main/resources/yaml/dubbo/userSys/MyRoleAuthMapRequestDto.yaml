@@ -1,0 +1,49 @@
+#---------------
+# 正常角色绑定权限
+#---------------
+--- !dataBean.dubbo.userSys.MyRoleAuthMapRequestDto
+authId: 
+  - "000000000002017062716393510397"
+  - "000000000020170627160321741575"
+id: regular
+roleId: "000000000020170627144504687024"
+type: "band"
+
+#---------------
+# authid 空
+#---------------
+--- !dataBean.dubbo.userSys.MyRoleAuthMapRequestDto
+authId:
+id: no_authId
+roleId: "000000000020170627144504687024"
+type: "band"
+
+#---------------
+# roleid 空
+#---------------
+--- !dataBean.dubbo.userSys.MyRoleAuthMapRequestDto
+authId:
+  - "000000000002017062716393510397"
+  - "000000000020170627160321741575"
+id: no_roleId
+roleId: ""
+type: "band"
+
+#---------------
+# type 空
+#---------------
+--- !dataBean.dubbo.userSys.MyRoleAuthMapRequestDto
+authId:
+  - "000000000002017062716393510397"
+  - "000000000020170627160321741575"
+id: no_type
+roleId: "000000000020170627144504687024"
+
+#---------------
+# 正常角色解绑定权限
+#---------------
+--- !dataBean.dubbo.userSys.MyRoleAuthMapRequestDto
+id: unband
+roleId: "000000000020170627144504687024"
+type: "unband"
+

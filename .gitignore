@@ -7,3 +7,4 @@ PageObject/.gitignore
 PageObject/target/
 .idea/
 *.iml
+InitYamlFileUtil.*

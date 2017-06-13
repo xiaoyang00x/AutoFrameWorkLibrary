@@ -1,0 +1,9 @@
+--- !dataBean.dubbo.tradeSys.MyRechargeReqDto
+amount: !java.lang.Double 10.22
+channel: "001"
+id: regular
+returnUrl: www.shicaidai.com
+seqNo: test
+smsCode: "what's this ?"
+svrAuthCode: "what's this ?"
+uid: manny

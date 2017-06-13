@@ -1,0 +1,15 @@
+#---------------
+# 正常修改
+#---------------
+--- !dataBean.dubbo.userSys.MyUpdateInnerUserInfoRequestDto
+depart: 测试
+email: 222@163.com
+id: regular
+idCard: "150203199512020473"
+loginName: test01
+password: 123456
+mobile: "11107654322"
+name: 企业测试员工2
+org: 企鹅小厂股份有限公司
+qq: "111111"
+sex: male
