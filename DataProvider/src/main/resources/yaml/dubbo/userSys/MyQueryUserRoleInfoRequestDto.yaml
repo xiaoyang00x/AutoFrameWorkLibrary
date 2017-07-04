@@ -1,0 +1,53 @@
+#---------------
+# regular
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserRoleInfoRequestDto
+id: regular
+loginName: lisi
+platform: !com.miaoqian.usersvc.dubbo.api.dto.interuser.queryuserauthinfo.Platform FINANCE
+
+#---------------
+# p_promotion
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserRoleInfoRequestDto
+id: p_promotion
+loginName: lisi
+platform: !com.miaoqian.usersvc.dubbo.api.dto.interuser.queryuserauthinfo.Platform PROMOTION
+
+#---------------
+# p_user
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserRoleInfoRequestDto
+id: p_user
+loginName: lisi
+platform: !com.miaoqian.usersvc.dubbo.api.dto.interuser.queryuserauthinfo.Platform USER
+
+#---------------
+# p_project
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserRoleInfoRequestDto
+id: p_project
+loginName: lisi
+platform: !com.miaoqian.usersvc.dubbo.api.dto.interuser.queryuserauthinfo.Platform PROJECT
+
+#---------------
+# no_loginName
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserRoleInfoRequestDto
+id: no_loginName
+platform: !com.miaoqian.usersvc.dubbo.api.dto.interuser.queryuserauthinfo.Platform FINANCE
+
+#---------------
+# no_platform(should return all items)
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserRoleInfoRequestDto
+id: no_platform
+loginName: lisi
+
+#---------------
+# wrong_loginName
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserRoleInfoRequestDto
+id: wrong_loginName
+loginName: lisisss
+

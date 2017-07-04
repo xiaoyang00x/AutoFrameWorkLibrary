@@ -1,0 +1,76 @@
+#---------------
+# 正常添加
+#---------------
+--- !dataBean.dubbo.userSys.MyAuthAddRequestDto
+authDesc: 增加读写权限
+authNameEn: wr
+authNameZh: 读写
+authUrl: "xxx"
+id: regular
+orderby: 0
+parentId: 啊啊啊
+platform: 融资
+
+#---------------
+# 错误顺序
+#---------------
+--- !dataBean.dubbo.userSys.MyAuthAddRequestDto
+authDesc: 增加权限
+authNameEn: read
+authNameZh: 只读
+authUrl: "xxx"
+id: no_orderby
+parentId: meiyou
+platform: 财务
+
+#---------------
+# 错误平台标识
+#---------------
+--- !dataBean.dubbo.userSys.MyAuthAddRequestDto
+authDesc: 增加权限
+authNameEn: read
+authNameZh: 只读
+authUrl: "xxx"
+id: no_platform
+parentId: meiyou
+platform: ""
+orderby: 0
+
+#---------------
+# 错误错误权限英文名
+#---------------
+--- !dataBean.dubbo.userSys.MyAuthAddRequestDto
+authDesc: 增加权限
+authNameEn:
+authNameZh: 只读
+authUrl: "xxx"
+id: no_authNameEn
+parentId: meiyou
+platform: 财务
+orderby: 0
+
+#---------------
+# 错误权限中文名
+#---------------
+--- !dataBean.dubbo.userSys.MyAuthAddRequestDto
+authDesc: 增加权限
+authNameEn: read
+authNameZh:
+authUrl: "xxx"
+id: no_authNameZh
+parentId: meiyou
+platform: 财务
+orderby: 0
+
+#---------------
+# 错误错误权限英文名
+#---------------
+--- !dataBean.dubbo.userSys.MyAuthAddRequestDto
+authDesc: 增加权限
+authNameEn: 只读
+authNameZh: 只读
+authUrl: "xxx"
+id: wrong_authNameEn
+parentId: meiyou
+platform: 财务
+orderby: 0

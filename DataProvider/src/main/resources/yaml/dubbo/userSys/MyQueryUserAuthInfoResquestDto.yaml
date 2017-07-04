@@ -1,0 +1,60 @@
+#---------------
+# 正常查询
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserAuthInfoResquestDto
+id: regular
+platform: !com.miaoqian.usersvc.dubbo.api.dto.interuser.queryuserauthinfo.Platform FINANCE
+uid: "20"
+
+#---------------
+# p_project
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserAuthInfoResquestDto
+id: p_project
+platform: !com.miaoqian.usersvc.dubbo.api.dto.interuser.queryuserauthinfo.Platform PROJECT
+uid: "20"
+
+#---------------
+# p_promotion
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserAuthInfoResquestDto
+id: p_promotion
+platform: !com.miaoqian.usersvc.dubbo.api.dto.interuser.queryuserauthinfo.Platform PROMOTION
+uid: "20"
+
+#---------------
+# p_user
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserAuthInfoResquestDto
+id: p_user
+platform: !com.miaoqian.usersvc.dubbo.api.dto.interuser.queryuserauthinfo.Platform USER
+uid: "20"
+
+#---------------
+# no_platform
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserAuthInfoResquestDto
+id: no_platform
+uid: "20"
+
+
+#---------------
+# no_uid
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserAuthInfoResquestDto
+id: no_uid
+platform: !com.miaoqian.usersvc.dubbo.api.dto.interuser.queryuserauthinfo.Platform FINANCE
+
+#---------------
+# wrong_uid
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserAuthInfoResquestDto
+id: wrong_uid
+uid: 55
+platform: !com.miaoqian.usersvc.dubbo.api.dto.interuser.queryuserauthinfo.Platform FINANCE
+
+#---------------
+# all_empty
+#---------------
+--- !dataBean.dubbo.userSys.MyQueryUserAuthInfoResquestDto
+id: all_empty

@@ -1,0 +1,29 @@
+#---------------
+# 正常添加角色
+#---------------
+--- !dataBean.dubbo.userSys.MyRoleAddRequestDto
+id: regular
+platform: "财务"
+roleDesc: 测试2
+roleNameEn: test3
+roleNameZh: 测试王3
+
+#---------------
+# 没有角色英文名
+#---------------
+--- !dataBean.dubbo.userSys.MyRoleAddRequestDto
+id: no_roleNameEn
+platform: "风控"
+roleDesc: 测试
+roleNameEn:
+roleNameZh: 测试王
+
+#---------------
+# 没有角色中文名
+#---------------
+--- !dataBean.dubbo.userSys.MyRoleAddRequestDto
+id: no_roleNameZh
+platform: "融资"
+roleDesc: 测试
+roleNameEn: test
+roleNameZh:

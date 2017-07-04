@@ -1,0 +1,84 @@
+#---------------
+# 正常银行信息
+#---------------
+--- !dataBean.dubbo.userSys.MyBankcardDetailInfoReqDto
+id: regular
+bankCardNo: "6214123466778899"
+bankCity: 北京市
+bankCode: "12345678"
+bankName: 招商
+bankProvince: 北京
+bankSubbranch: 上地支行
+bankUnionNumber: "308100005416"
+uid: "000000000020170620135848253599"
+
+
+#---------------
+# wrong cardNo
+#---------------
+--- !dataBean.dubbo.userSys.MyBankcardDetailInfoReqDto
+id: wrong_CardNo
+bankCardNo: "6214123466778899111"
+bankCity: 北京市
+bankCode: "12345678"
+bankName: 招商
+bankProvince: 北京
+bankSubbranch: 上地支行
+bankUnionNumber: "308100005416"
+uid: "000000000020170612160952709678"
+
+#---------------
+# wrong uid
+#---------------
+--- !dataBean.dubbo.userSys.MyBankcardDetailInfoReqDto
+id: wrong_uid
+bankCardNo: "6214123466778899"
+bankCity: 北京市
+bankCode: "12345678"
+bankName: 招商
+bankProvince: 北京
+bankSubbranch: 上地支行
+bankUnionNumber: "308100005416"
+uid: "000000000020170612160952709999"
+
+#---------------
+# mismatch cardNo and uid
+#---------------
+--- !dataBean.dubbo.userSys.MyBankcardDetailInfoReqDto
+id: mismatch_cardNoAndUid
+bankCardNo: "6222988812340036"
+bankCity: 北京市
+bankCode: "11223344"
+bankName: 工行
+bankProvince: 北京
+bankSubbranch: 北土城
+bankUnionNumber: "308100005555"
+uid: "000000000020170626114927103287"
+
+#---------------
+# mismatch bankSubbranch and bankUnionNumber
+#---------------
+--- !dataBean.dubbo.userSys.MyBankcardDetailInfoReqDto
+id: mismatch_BankSubbranchAndBankUnionNumber
+bankCardNo: "6214123466778899"
+bankCity: 北京市
+bankCode: "12345678"
+bankName: 招商
+bankProvince: 北京
+bankSubbranch: 上地支行
+bankUnionNumber: "308100005418"
+uid: "000000000020170612160315595717"
+
+#---------------
+# mismatch bankName and bankNo
+#---------------
+--- !dataBean.dubbo.userSys.MyBankcardDetailInfoReqDto
+id: mismatch_BankNameAndBankNo
+bankCardNo: "6214123466778899"
+bankCity: 北京市
+bankCode: "12345678"
+bankName: 工商
+bankProvince: 北京
+bankSubbranch: 上地支行
+bankUnionNumber: "308100005418"
+uid: "000000000020170612160315595717"

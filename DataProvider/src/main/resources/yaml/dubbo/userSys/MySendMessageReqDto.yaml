@@ -1,0 +1,70 @@
+#---------------
+# 正常下发短息
+#---------------
+--- !dataBean.dubbo.userSys.MySendMessageReqDto
+id: regular
+mobile: "13799768563"
+smsJXType: !com.miaoqian.usersvc.model.enums.SmsJXTypeEnum accountOpenPlus
+uid: "000000000020170703154515204525"
+
+#---------------
+# 电话号码异常
+#---------------
+--- !dataBean.dubbo.userSys.MySendMessageReqDto
+id: wrongMobile
+mobile: ""
+smsJXType: !com.miaoqian.usersvc.model.enums.SmsJXTypeEnum accountOpenPlus
+uid: "000000000020170612160952709678"
+
+#---------------
+# smsJXType 空
+#---------------
+--- !dataBean.dubbo.userSys.MySendMessageReqDto
+id: regular
+mobile: "17600312345"
+uid: "000000000020170612160952709678"
+
+#---------------
+# smsJXType mismatch
+#---------------
+--- !dataBean.dubbo.userSys.MySendMessageReqDto
+id: regular
+mobile: "17600312345"
+smsJXType: !com.miaoqian.usersvc.model.enums.directRechargePlus
+uid: "000000000020170612160952709678"
+
+#---------------
+# uid异常
+#---------------
+--- !dataBean.dubbo.userSys.MySendMessageReqDto
+id: wrong_uid
+mobile: "11101234567"
+smsJXType: !com.miaoqian.usersvc.model.enums.SmsJXTypeEnum accountOpenPlus
+uid: ""
+
+#---------------
+# 重置交易密码
+#---------------
+--- !dataBean.dubbo.userSys.MySendMessageReqDto
+id: reset_trade_password
+mobile: "17600312345"
+smsJXType: !com.miaoqian.usersvc.model.enums.SmsJXTypeEnum passwordResetPlus
+uid: "000000000020170620135848253599"
+
+#---------------
+# 绑卡
+#---------------
+--- !dataBean.dubbo.userSys.MySendMessageReqDto
+id: bindCard
+mobile: "11101234566"
+smsJXType: !com.miaoqian.usersvc.model.enums.SmsJXTypeEnum cardBindPlus
+uid: "000000000020170628104931777174"
+
+#---------------
+# 绑卡
+#---------------
+--- !dataBean.dubbo.userSys.MySendMessageReqDto
+id: direct_recharge
+mobile: ""
+smsJXType: !com.miaoqian.usersvc.model.enums.SmsJXTypeEnum directRechargePlus
+uid: "000000000020170628104802478704"

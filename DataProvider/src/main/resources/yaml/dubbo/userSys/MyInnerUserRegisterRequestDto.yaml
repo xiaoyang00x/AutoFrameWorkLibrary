@@ -1,0 +1,47 @@
+#---------------
+# 正常注册
+#---------------
+--- !dataBean.dubbo.userSys.MyInnerUserRegisterRequestDto
+depart: 财务
+email: 111@163.com
+id: regular
+idCard: "150203199512020472"
+loginName: 测试企业户叉叉
+password: "123456"
+mobile: "11107654321"
+name: 企业测试员工1
+org: 企鹅大厂股份有限公司
+qq: "112233"
+sex: male
+
+#---------------
+# 密码异常
+#---------------
+--- !dataBean.dubbo.userSys.MyInnerUserRegisterRequestDto
+depart: 财务
+email: 111@163.com
+id: wrong_password
+idCard: "150203199512020472"
+loginName: 测试企业户叉叉
+password: ""
+mobile: "11107654321"
+name: 企业测试员工1
+org: 企鹅大厂股份有限公司
+qq: "112233"
+sex: male
+
+#---------------
+# 员工姓名异常
+#---------------
+--- !dataBean.dubbo.userSys.MyInnerUserRegisterRequestDto
+depart: 财务
+email: 111@163.com
+id: wrong_name
+idCard: "150203199512020472"
+loginName: 测试企业户叉叉
+password: "123456"
+mobile: "11107654321"
+name: ""
+org: 企鹅大厂股份有限公司
+qq: "112233"
+sex: male

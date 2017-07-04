@@ -1,0 +1,193 @@
+#---------------
+# 正常开户
+#---------------
+--- !dataBean.dubbo.userSys.MyPersonAccountRequestDto
+id: "regular"
+authCode: "676058351077789128"
+bankName: "工行"
+cardNo: "6222988812340099"
+idNo: "533527198909210238"
+idType: !com.miaoqian.usersvc.model.enums.UserIdTypeEnum ID_CARD_18
+mobile: "13799768563"
+name: "曾测试账户0"
+smsCode: "111111"
+uid: "000000000020170703154515204525"
+
+#---------------
+# 授权码异常
+#---------------
+--- !dataBean.dubbo.userSys.MyPersonAccountRequestDto
+id: "wrong_authCode"
+authCode: "111"
+bankName: "招商"
+cardNo: "6214123466778888"
+idNo: "32058219771011997X"
+idType: !com.miaoqian.usersvc.model.enums.UserIdTypeEnum ID_CARD_18
+mobile: "15011032705"
+name: "社会龙"
+smsCode: "111111"
+uid: "000000000020170612160315595717"
+
+#---------------
+# 姓名异常
+#---------------
+--- !dataBean.dubbo.userSys.MyPersonAccountRequestDto
+id: "wrong_name"
+authCode: "1795056076246523125"
+bankName: "招商"
+cardNo: "6214123466778888"
+idNo: "32058219771011997X"
+idType: !com.miaoqian.usersvc.model.enums.UserIdTypeEnum ID_CARD_18
+mobile: "15011032705"
+name: "123453465rwertwegw3egtrwfwtr3wefr3efwrqferqwrfwerwfeqrwfeqrwferqwe"
+smsCode: "111111"
+uid: "000000000020170612160315595717"
+
+#---------------
+# 手机号异常
+#---------------
+--- !dataBean.dubbo.userSys.MyPersonAccountRequestDto
+id: "wrong_mobile"
+authCode: "1795056076246523125"
+bankName: "招商"
+cardNo: "6214123466778888"
+idNo: "32058219771011997X"
+idType: !com.miaoqian.usersvc.model.enums.UserIdTypeEnum ID_CARD_18
+mobile: "123"
+name: "社会龙"
+smsCode: "111111"
+uid: "000000000020170612160315595717"
+
+#---------------
+# 手机号客户号不匹配
+#---------------
+--- !dataBean.dubbo.userSys.MyPersonAccountRequestDto
+id: "mismatch_mobile"
+authCode: "1795056076246523125"
+bankName: "招商"
+cardNo: "6214123466778888"
+idNo: "32058219771011997X"
+idType: !com.miaoqian.usersvc.model.enums.UserIdTypeEnum ID_CARD_18
+mobile: "123"
+name: "社会龙"
+smsCode: "17600312345"
+uid: "000000000020170612160315595717"
+
+#---------------
+# idType异常
+#---------------
+--- !dataBean.dubbo.userSys.MyPersonAccountRequestDto
+id: "no_idType"
+authCode: "1795056076246523125"
+bankName: "招商"
+cardNo: "6214123466778888"
+idNo: "32058219771011997X"
+mobile: "15011032705"
+name: "社会龙"
+smsCode: "111111"
+uid: "000000000020170612160315595717"
+
+#---------------
+# idNo异常
+#---------------
+--- !dataBean.dubbo.userSys.MyPersonAccountRequestDto
+id: "wrong_idNo"
+authCode: "2137812891877769427"
+bankName: "招商"
+cardNo: "6214123466778888"
+idNo: ""
+idType: !com.miaoqian.usersvc.model.enums.UserIdTypeEnum ID_CARD_18
+mobile: "15011032705"
+name: "社会龙"
+smsCode: "111111"
+uid: "000000000020170612160315595717"
+
+#---------------
+# idType与idNo 不匹配
+#---------------
+--- !dataBean.dubbo.userSys.MyPersonAccountRequestDto
+id: "mismatch_dTypeAndIdNo"
+authCode: "2137812891877769427"
+bankName: "招商"
+cardNo: "6214123466778888"
+idNo: "32058219771011997X"
+idType: !com.miaoqian.usersvc.model.enums.UserIdTypeEnum ID_CARD_15
+mobile: "15011032705"
+name: "社会龙"
+smsCode: "111111"
+uid: "000000000020170612160315595717"
+
+#---------------
+# smsCode 异常
+#---------------
+--- !dataBean.dubbo.userSys.MyPersonAccountRequestDto
+id: "wrong_smsCode"
+authCode: "2137812891877769427"
+bankName: "招商"
+cardNo: "6214123466778888"
+idNo: "32058219771011997X"
+idType: !com.miaoqian.usersvc.model.enums.UserIdTypeEnum ID_CARD_18
+mobile: "15011032705"
+name: "社会龙"
+smsCode: ""
+uid: "000000000020170612160315595717"
+
+#---------------
+# uid 异常
+#---------------
+--- !dataBean.dubbo.userSys.MyPersonAccountRequestDto
+id: "wrong_uid"
+authCode: "2137812891877769427"
+bankName: "招商"
+cardNo: "6214123466778888"
+idNo: "32058219771011997X"
+idType: !com.miaoqian.usersvc.model.enums.UserIdTypeEnum ID_CARD_18
+mobile: "15011032705"
+name: "社会龙"
+smsCode: ""
+uid: "000000000020170612160952709678"
+
+#---------------
+# 银行名异常
+#---------------
+--- !dataBean.dubbo.userSys.MyPersonAccountRequestDto
+id: "wrong_bankName"
+authCode: "2137812891877769427"
+bankName: "xx"
+cardNo: "6214123466778888"
+idNo: "32058219771011997X"
+idType: !com.miaoqian.usersvc.model.enums.UserIdTypeEnum ID_CARD_18
+mobile: "15011032705"
+name: "社会龙"
+smsCode: "111111"
+uid: "000000000020170612160315595717"
+
+#---------------
+# 银行卡号异常
+#---------------
+--- !dataBean.dubbo.userSys.MyPersonAccountRequestDto
+id: "wrong_bankNo"
+authCode: "2137812891877769427"
+bankName: "招商"
+cardNo: "621412346677888811"
+idNo: "32058219771011997X"
+idType: !com.miaoqian.usersvc.model.enums.UserIdTypeEnum ID_CARD_18
+mobile: "15011032705"
+name: "社会龙"
+smsCode: "111111"
+uid: "000000000020170612160315595717"
+
+#---------------
+# 不支持的银行
+#---------------
+--- !dataBean.dubbo.userSys.MyPersonAccountRequestDto
+id: "not_support_Bank"
+authCode: "2137812891877769427"
+bankName: "北京银行"
+cardNo: "602969346677888811"
+idNo: "32058219771011997X"
+idType: !com.miaoqian.usersvc.model.enums.UserIdTypeEnum ID_CARD_18
+mobile: "15011032705"
+name: "社会龙"
+smsCode: "111111"
+uid: "000000000020170612160315595717"

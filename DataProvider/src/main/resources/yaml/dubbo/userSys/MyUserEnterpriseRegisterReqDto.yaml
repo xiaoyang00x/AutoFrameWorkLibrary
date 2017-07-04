@@ -1,0 +1,71 @@
+#---------------
+# 企业正常开户
+#---------------
+--- !dataBean.dubbo.userSys.MyUserEnterpriseRegisterReqDto
+bankCode: "87654321"
+bankName: 招行
+id: regular
+ip: 127.0.0.1
+mobile: "11100000002"
+password: qwertyuioplkjhgfdsazxcvbnm123456
+userJxId: "6212462220000400036"
+
+#---------------
+# 手机号已注册
+#---------------
+--- !dataBean.dubbo.userSys.MyUserEnterpriseRegisterReqDto
+bankCode: "87654321"
+bankName: 招行
+id: exist_Mobile
+ip: 127.0.0.1
+mobile: "15011033333"
+password: qwertyuioplkjhgfdsazxcvbnm123456
+userJxId: "6212462220000350017"
+
+#---------------
+# 密码错误
+#---------------
+--- !dataBean.dubbo.userSys.MyUserEnterpriseRegisterReqDto
+bankCode: "87654321"
+bankName: 招行
+id: wrong_password
+ip: 127.0.0.1
+mobile: "15011033344"
+password:
+userJxId: "6212462220000350017"
+
+#---------------
+# jxid 错误（不存在）
+#---------------
+--- !dataBean.dubbo.userSys.MyUserEnterpriseRegisterReqDto
+bankCode: "87654321"
+bankName: 招行
+id: wrong_jxId
+ip: 127.0.0.1
+mobile: "15011033344"
+password: qwertyuioplkjhgfdsazxcvbnm123456
+userJxId: "6212462220000350022"
+
+#---------------
+# bank name 空
+#---------------
+--- !dataBean.dubbo.userSys.MyUserEnterpriseRegisterReqDto
+bankCode: "87654321"
+bankName:
+id: empty_bankName
+ip: 127.0.0.1
+mobile: "15011033355"
+password: qwertyuioplkjhgfdsazxcvbnm123456
+userJxId: "6212462220000350017"
+
+#---------------
+# bank name 空
+#---------------
+--- !dataBean.dubbo.userSys.MyUserEnterpriseRegisterReqDto
+bankCode:
+bankName: "12345679"
+id: wrong_bankCode
+ip: 127.0.0.1
+mobile: "15011033334"
+password: qwertyuioplkjhgfdsazxcvbnm123456
+userJxId: "6212462220000350017"

@@ -1,0 +1,9 @@
+#---------------
+# 正常更新角色信息
+#---------------
+--- !dataBean.dubbo.userSys.MyUpdateRoleInfoRequestDto
+id: regular
+platform: 风控
+roleDesc: 测试测一下
+roleId: "000000000020170627144504687024"
+roleNameZh: 测试汪汪汪

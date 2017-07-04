@@ -1,0 +1,12 @@
+--- !dataBean.dubbo.userSys.MyUserCardBindPlusReqDto
+authCode: "2261263859197973101"
+bankCode: "12345678"
+bankName: 工行
+cardNo: "6222000266771100"
+id: regular
+idNo: "451201197508204789"
+idType: !com.miaoqian.usersvc.model.enums.UserIdTypeEnum ID_CARD_18
+mobile: "15011032222"
+name: 社会人
+smsCode: "111111"
+uid: "6212462220000350017"

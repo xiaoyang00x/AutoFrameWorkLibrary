@@ -1,0 +1,45 @@
+--- !dataBean.dubbo.userSys.MyUpdateEnterpriseInfoReqDto
+businessScope: 金融
+businessTermBeginTime: !java.util.Date "1347120000000"
+businessTermEndTime: !java.util.Date "1496678400000"
+contactPhone: "13153591919"
+email: mq@163.com
+enterpriseAddress: 北京朝阳
+enterpriseCode: "4000500060007000"
+enterpriseContact: pipipipipipi
+enterpriseName: 北京测测测
+enterpriseType: 民营
+establishTime: !java.util.Date "1347120000000"
+id: regular
+legalPersonAge: 33
+legalPersonIdno: "411503198407184957"
+legalPersonName: 社会法
+legalPersonSex: male
+mobile: "17600012345"
+registeredCapital: !java.math.BigDecimal 10000000
+responsiblePersonId: "230111199101236265"
+responsiblePersonName: zhangpipi
+uid: "000000000020170622141729350711"
+
+--- !dataBean.dubbo.userSys.MyUpdateEnterpriseInfoReqDto
+businessScope: 金融
+businessTermBeginTime: !java.util.Date "1347120000000"
+businessTermEndTime: !java.util.Date "1496678400000"
+contactPhone: "13153591916"
+email: mq2@163.com
+enterpriseAddress: 北京朝阳
+enterpriseCode: "4000500060007002"
+enterpriseContact: pipipipipipi
+enterpriseName: 北京测测测cece
+enterpriseType: 民营
+establishTime: !java.util.Date "1347120000000"
+id: wrong_uid
+legalPersonAge: 33
+legalPersonIdno: "411503198407184952"
+legalPersonName: 社会啊
+legalPersonSex: male
+mobile: "17600012346"
+registeredCapital: !java.math.BigDecimal 10000000
+responsiblePersonId: "230111199101236267"
+responsiblePersonName: zhangpipi
+uid: "011"

@@ -1,0 +1,46 @@
+#---------------
+# 重置交易密码
+#---------------
+--- !dataBean.dubbo.userSys.MyOpenPageParamsReqDto
+authCode: "839423663062756633"
+forgotPwdUrl:
+id: reset_password
+pageTradeTypeEnum: !com.miaoqian.usersvc.model.enums.PageTradeTypeEnum RESET_TRADE_PASSWORD
+retUrl: https://www.baidu.com
+smsCode: 111111
+uid: "000000000020170620135848253599"
+
+#---------------
+# 开启自动投标
+#---------------
+--- !dataBean.dubbo.userSys.MyOpenPageParamsReqDto
+forgotPwdUrl: http://www.sina.com.cn
+id: auto_tender
+pageTradeTypeEnum: !com.miaoqian.usersvc.model.enums.PageTradeTypeEnum AUTO_TENDER
+retUrl: https://www.baidu.com
+uid: "000000000020170703154515204525"
+
+#---------------
+# 设置交易密码
+#---------------
+--- !dataBean.dubbo.userSys.MyOpenPageParamsReqDto
+forgotPwdUrl: http://www.sina.com.cn
+id: set_trade_password
+pageTradeTypeEnum: !com.miaoqian.usersvc.model.enums.PageTradeTypeEnum SET_TRADE_PASSWORD
+retUrl: https://www.baidu.com
+uid: "000000000020170703154515204525"
+
+#---------------
+# 开启自动认购
+#---------------
+--- !dataBean.dubbo.userSys.MyOpenPageParamsReqDto
+forgotPwdUrl: http://www.sina.com.cn
+id: auto_transfer
+pageTradeTypeEnum: !com.miaoqian.usersvc.model.enums.PageTradeTypeEnum AUTO_TRANSFER
+retUrl: https://www.baidu.com
+uid: "000000000020170703154515204525"
+
+
+
+
+

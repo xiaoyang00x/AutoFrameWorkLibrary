@@ -1,0 +1,37 @@
+#---------------
+# 正常登录
+#---------------
+--- !dataBean.dubbo.userSys.MyInnerUserLoginRequestDto
+id: regular
+loginName: test01
+password: "123456"
+
+#---------------
+# wrong_password
+#---------------
+--- !dataBean.dubbo.userSys.MyInnerUserLoginRequestDto
+id: wrong_password
+loginName: test01
+password: "1"
+
+#---------------
+# wrong_loginName
+#---------------
+--- !dataBean.dubbo.userSys.MyInnerUserLoginRequestDto
+id: wrong_loginName
+loginName: test02
+password: "111111"
+
+#---------------
+# no_loginName
+#---------------
+--- !dataBean.dubbo.userSys.MyInnerUserLoginRequestDto
+id: no_loginName
+password: "111111"
+
+#---------------
+# 正常登录
+#---------------
+--- !dataBean.dubbo.userSys.MyInnerUserLoginRequestDto
+id: no_password
+loginName: test01
