@@ -11,7 +11,7 @@
 	</parent>
 
 
-	<groupId>com.lendingtreasure</groupId>
+	<groupId>com.alexAutomationTest</groupId>
 	<artifactId>PageObject</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<name>PageObject</name>

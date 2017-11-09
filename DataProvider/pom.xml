@@ -32,39 +32,4 @@
 		</repository>
 	</repositories>
 
-
-	<dependencies>
-	<!--  秒钱  -->
-	<dependency>
-		<groupId>com.miaoqian.framework</groupId>
-		<artifactId>framework</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
-	</dependency>
-	<dependency>
-		<groupId>com.miaoqian</groupId>
-		<artifactId>prod-api</artifactId>
-		<version>1.0-SNAPSHOT</version>
-	</dependency>
-
-	<dependency>
-		<groupId>com.miaoqian</groupId>
-		<artifactId>proj-api</artifactId>
-		<version>1.0-SNAPSHOT</version>
-	</dependency>
-
-	<dependency>
-		<groupId>com.miaoqian.usersvc</groupId>
-		<artifactId>usersvc-api</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
-	</dependency>
-
-	<dependency>
-		<groupId>com.miaoqian.trade</groupId>
-		<artifactId>trade-api</artifactId>
-		<version>1.0-SNAPSHOT</version>
-	</dependency>
-
-	</dependencies>
-
-
 </project>

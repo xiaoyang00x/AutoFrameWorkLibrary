@@ -1,4 +1,0 @@
---- !dataBean.dubbo.productSys.MyProjectProductRelationQueryDto
-id: default
-productCode: "22233455"
-projectCode: "1123433"
