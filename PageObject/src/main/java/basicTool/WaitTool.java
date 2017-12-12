@@ -1,6 +1,7 @@
 package basicTool;
 
 import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -124,7 +125,7 @@ public class WaitTool {
      *             'until' condition, BUT immediately propagate all others.
      */
     public static <V> V waitFor(WebDriver driver, ExpectedCondition<V> expectedCondition, int timeOutInSeconds) {
-        return new WebDriverWait(driver, timeOutInSeconds, defaultPolling4Element).until(expectedCondition);
+        return new WebDriverWait(driver, timeOutInSeconds, defaultPolling4Element).until((Function<? super WebDriver, V>) expectedCondition);
     }
 
     /**
@@ -132,7 +133,7 @@ public class WaitTool {
      *
      * @param driver
      *            The driver object to be used
-     * @param expectedCondition
+     * @param timeOutInSeconds
      *            The condition to wait for. See the <code>ExpectedConditions</code> class for the conditions one can
      *            wait for.
      * @param webElement
