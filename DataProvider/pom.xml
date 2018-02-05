@@ -22,7 +22,7 @@
 		<repository>
 			<id>public</id>
 			<name>Public Repositories</name>
-			<url>http://172.18.134.34:8081/nexus/content/groups/public/</url>
+			<url>http://10.4.238.10:8081/nexus/content/groups/public/</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
